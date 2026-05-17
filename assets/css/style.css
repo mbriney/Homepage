@@ -470,6 +470,94 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   .gallery.cols-2 { grid-template-columns: 1fr; }
 }
 
+/* Film embed (case study: short films) */
+.film {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.film-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.film-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+.film-body { padding: 1.5rem 1.75rem 1.75rem; }
+.film-head {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: baseline;
+  gap: .5rem 1.5rem;
+  margin-bottom: .6rem;
+}
+.film-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--ink);
+}
+.film-meta {
+  font-size: .82rem;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+.film-tagline {
+  font-style: italic;
+  color: var(--ink-muted);
+  margin: .25rem 0 1rem;
+  font-size: 1.02rem;
+}
+.film-links {
+  display: flex; flex-wrap: wrap; gap: 1rem;
+  margin-top: 1rem; font-size: .9rem;
+}
+.film-links a { font-weight: 600; }
+
+/* Telly Award badge */
+.telly {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .3rem .7rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.telly-gold   { color: #8b6914; background: #fff8e2; }
+.telly-silver { color: #5e5e5e; background: #efeee9; }
+.telly-bronze { color: #7a4419; background: #f6e9d8; }
+.telly-none   { color: var(--ink-muted); background: var(--cream-soft); border-style: dashed; }
+.telly svg { width: 12px; height: 12px; }
+
+/* Distribution platform pills */
+.platforms {
+  display: flex; flex-wrap: wrap; gap: .6rem;
+  margin: 1rem 0 0;
+  padding: 0; list-style: none;
+}
+.platforms li {
+  background: var(--cream-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .4rem .9rem;
+  font-size: .85rem;
+  color: var(--ink);
+}
+
 /* Phone screenshot strip (mv-explorer) */
 .phone-strip {
   display: flex; gap: 1rem;
