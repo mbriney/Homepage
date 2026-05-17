@@ -684,6 +684,7 @@ body.lightbox-open { overflow: hidden; }
   position: relative;
   max-width: min(1600px, 100%);
   max-height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -700,6 +701,48 @@ body.lightbox-open { overflow: hidden; }
   box-shadow: 0 30px 80px rgba(0, 0, 0, .5);
   background: var(--surface);
   animation: lb-pop .2s ease;
+}
+
+/* When the image is taller than the viewport, switch the stage into
+   scroll-mode: the image renders at its natural width (max 1400px),
+   and the stage handles vertical scrolling.
+   NOTE: backdrop-filter creates a new containing block that breaks
+   position:fixed for descendants — we drop the filter in scroll mode
+   so the close/prev/next controls stay anchored to the viewport. */
+.lightbox.scrollable {
+  align-items: flex-start;          /* let content start at top */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.lightbox.scrollable .lightbox-stage {
+  max-height: none;                  /* allow the stage to grow */
+  padding-top: 3rem;                 /* room for the count badge */
+  padding-bottom: 3rem;
+}
+.lightbox.scrollable .lightbox-img {
+  max-height: none;                  /* don't constrain height */
+  width: min(100%, 1400px);
+  height: auto;
+}
+.lightbox.scrollable .lightbox-close,
+.lightbox.scrollable .lightbox-prev,
+.lightbox.scrollable .lightbox-next {
+  position: fixed;                   /* keep controls visible while scrolling */
+}
+.lightbox.scrollable .lightbox-count {
+  position: fixed;
+  top: 1rem;
+}
+.lightbox.scrollable .lightbox-caption {
+  position: sticky;
+  bottom: 1rem;
+  background: rgba(15, 13, 10, .85);
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
 }
 @keyframes lb-pop {
   from { opacity: 0; transform: scale(.98); }

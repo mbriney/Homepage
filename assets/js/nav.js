@@ -87,11 +87,60 @@
     return node.currentSrc || node.src;
   }
 
+  function fullSrcCandidatesFor(node) {
+    // If the page provides a data-full attribute, use that.
+    if (node.dataset.full) return [node.dataset.full];
+    // Otherwise look for an automatic "<name>-full.<ext>" variant next to
+    // the thumbnail (e.g. hero.jpg -> hero-full.jpg).
+    var base = bestSrcFor(node);
+    if (!base) return [];
+    return [base.replace(/\.(jpg|jpeg|png|webp)(\?.*)?$/i, '-full.$1$2')];
+  }
+
+  function loadFullIfAvailable(node) {
+    // Try each candidate URL. First one that loads, we adopt as the src.
+    var candidates = fullSrcCandidatesFor(node);
+    if (!candidates.length) return;
+    var i = 0;
+    var probe = new Image();
+    probe.onload = function () {
+      // Only swap if the user is still viewing the same item.
+      if (targets[current] === node) {
+        imgEl.src = probe.src;
+        applyScrollMode();
+      }
+    };
+    probe.onerror = function () {
+      i += 1;
+      if (i < candidates.length) probe.src = candidates[i];
+    };
+    probe.src = candidates[0];
+  }
+
+  function applyScrollMode() {
+    // Switch into scroll mode only for genuinely tall desktop-width
+    // screenshots — full webpage captures, long pedigree views, etc.
+    // Phone screenshots (small width) and normal 3:2 / 16:10 captures fit
+    // normally and stay centered in the viewport.
+    var natH = imgEl.naturalHeight || 0;
+    var natW = imgEl.naturalWidth || 1;
+    var aspect = natH / natW;
+    var DESKTOP_MIN_W = 800;          // px — below this, treat as a phone/mobile capture
+    var TALL_ASPECT   = 1.6;          // h/w threshold — above this, content goes off-screen
+    if (aspect > TALL_ASPECT && natW >= DESKTOP_MIN_W) {
+      overlay.classList.add('scrollable');
+      overlay.scrollTop = 0;          // start at the top
+    } else {
+      overlay.classList.remove('scrollable');
+    }
+  }
+
   function show(i) {
     if (i < 0) i = targets.length - 1;
     if (i >= targets.length) i = 0;
     current = i;
     var node = targets[i];
+    overlay.classList.remove('scrollable');   // reset until we measure
     imgEl.src = bestSrcFor(node);
     imgEl.alt = node.alt || '';
     var cap = captionFor(node);
@@ -101,6 +150,9 @@
     countEl.hidden = targets.length < 2;
     btnPrev.hidden = targets.length < 2;
     btnNext.hidden = targets.length < 2;
+    imgEl.onload = applyScrollMode;
+    // Async: try to promote to a full-resolution variant in the background.
+    loadFullIfAvailable(node);
   }
 
   function open(i) {
