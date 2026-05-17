@@ -237,6 +237,32 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .section-dark .eyebrow { color: var(--gold-soft); }
 .section-header { max-width: 56ch; margin-bottom: 2.5rem; }
 
+/* -------- Off-the-clock split layout (homepage) -------- */
+.off-clock-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.off-clock-text { max-width: 56ch; }
+.off-clock-photo { margin: 0; }
+.off-clock-photo img {
+  width: 100%; height: auto; display: block;
+  border-radius: 4px;
+  box-shadow: var(--shadow-md);
+}
+.off-clock-photo figcaption {
+  margin-top: .85rem;
+  font-size: .85rem;
+  color: var(--cream-soft);
+  opacity: .75;
+  font-style: italic;
+}
+@media (max-width: 820px) {
+  .off-clock-grid { grid-template-columns: 1fr; }
+  .off-clock-photo { max-width: 540px; margin: 0 auto; }
+}
+
 /* -------- Project cards -------- */
 .projects {
   display: grid;
