@@ -35,7 +35,7 @@ BODY = '''
 </section>
 
 <!-- ====== Currently ====== -->
-<section class="section section-alt">
+<section class="section section-alt section-currently">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Currently</p>
