@@ -134,7 +134,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/be-washington/"><span class="dir">&larr; Previous</span><span class="title"><em>Be Washington</em></span></a>
-    <a class="next" href="/projects/short-films/"><span class="dir">Next &rarr;</span><span class="title">Short Film Series</span></a>
+    <a class="next" href="/projects/ar-tour/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon in AR</span></a>
   </nav>
 </div>
 '''

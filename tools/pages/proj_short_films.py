@@ -144,7 +144,7 @@ BODY = '''
   <p>The series gave Mount Vernon a content asset with an unusually long tail. Each film, once shipped, kept earning attention &mdash; in classrooms via the lesson plans, on streaming services via the distribution deals, on YouTube via free access, and at the estate itself via theater screenings. It&rsquo;s the kind of work that turns a single capital investment into years of audience reach and brand authority. Three Tellys later &mdash; plus a 2018 Gold Telly for the companion <a href="/projects/washingtons-war-4d/">Revolutionary War 4D Theater film <em>Washington&rsquo;s War</em></a>, also part of this production partnership &mdash; the series stands as one of the most-recognized historic-site film programs of its era.</p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/washingtons-war-4d/"><span class="dir">&larr; Previous</span><span class="title">Revolutionary War 4D Theater</span></a>
+    <a class="prev" href="/projects/ar-tour/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon in AR</span></a>
     <a class="next" href="/projects/mv-explorer/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon Explorer App</span></a>
   </nav>
 </div>

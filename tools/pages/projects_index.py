@@ -87,6 +87,24 @@ BODY = '''
         </div>
       </a>
 
+      <a class="teaser" href="/projects/ar-tour/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/ar-tour/hero.webp">
+            <img src="/img/projects/ar-tour/hero.jpg" alt="Smartglasses augmented reality tour at Mount Vernon" loading="lazy" width="750" height="563">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Mount Vernon · 2019–2020 · with ARtGlass</p>
+          <h3>Mount Vernon in AR</h3>
+          <p class="muted">A 45-minute self-guided AR tour on Epson Moverio smartglasses &mdash; one of the first U.S. historic sites with regular wearable-AR visitor offerings.</p>
+          <div class="teaser-meta">
+            <span><strong>1st</strong><br>U.S. site at scale</span>
+            <span><strong>6</strong><br>outdoor stops</span>
+          </div>
+        </div>
+      </a>
+
       <a class="teaser" href="/projects/short-films/">
         <div class="teaser-thumb">
           <picture>

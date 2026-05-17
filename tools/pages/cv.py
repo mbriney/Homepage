@@ -100,7 +100,7 @@ BODY = '''
           <li>Spearheaded development and implementation of a custom e-commerce platform, enabling efficient management of ticket sales, donations, memberships, and donor retention.</li>
           <li>Steered end-to-end migration of Mount Vernon&rsquo;s web and database platforms to Amazon Web Services (AWS), yielding a notable 35% reduction in operating costs.</li>
           <li>Served as the editor of <em>Mount Vernon Magazine</em>, overseeing the tri-annual publication featuring renowned scholars covering diverse topics and themes.</li>
-          <li>Utilized strong technical skills in creating an innovative temporary augmented reality tour utilizing Epson Moverio glasses.</li>
+          <li><a href="/projects/ar-tour/">Created a groundbreaking augmented-reality tour utilizing Epson Moverio smartglasses</a>, produced with ARtGlass, making Mount Vernon one of the first U.S. historic sites with a regular wearable-AR visitor offering.</li>
           <li>Played a pivotal role in adoption of a centralized CRM system, including overseeing seamless integration across the estate.</li>
           <li>Optimized advertising expenditure aimed at generating trackable ROI campaigns delivering a 3.9% average conversion rate.</li>
         </ul>
