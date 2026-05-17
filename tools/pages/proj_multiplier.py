@@ -59,7 +59,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/google-grants-optimizer/"><span class="dir">&larr; Previous</span><span class="title">AI Google Ad Grant Optimizer</span></a>
-    <a class="next" href="/projects/travel-passport/"><span class="dir">Next &rarr;</span><span class="title">Travel Passport</span></a>
+    <a class="next" href="/projects/mlk-memorial/"><span class="dir">Next &rarr;</span><span class="title">MLK Jr. National Memorial</span></a>
   </nav>
 </div>
 '''
