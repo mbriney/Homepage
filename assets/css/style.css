@@ -558,6 +558,140 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   color: var(--ink);
 }
 
+/* Metric-hero (case studies without a hero photo) */
+.metric-hero {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  align-items: center;
+}
+.metric-hero .metric-big {
+  text-align: left;
+}
+.metric-hero .metric-big .num {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.metric-hero .metric-big .num .unit {
+  font-size: .55em;
+  color: var(--gold);
+  margin-left: .1em;
+}
+.metric-hero .metric-big .lbl {
+  display: block;
+  margin-top: .8rem;
+  font-size: .95rem;
+  color: var(--ink-muted);
+  font-weight: 500;
+  max-width: 22ch;
+}
+.metric-hero .metric-big .sub {
+  display: block;
+  margin-top: 1rem;
+  font-size: .85rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  max-width: 28ch;
+}
+
+.metric-chart .bar-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) 2fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: .65rem;
+  font-size: .85rem;
+}
+.metric-chart .bar-label {
+  color: var(--ink-muted);
+  font-weight: 500;
+  text-align: right;
+}
+.metric-chart .bar {
+  position: relative;
+  height: 22px;
+  background: var(--cream-soft);
+  border-radius: 3px;
+  overflow: visible;
+}
+.metric-chart .bar-fill {
+  height: 100%;
+  background: var(--ink-muted);
+  border-radius: 3px;
+  transition: width .8s ease;
+}
+.metric-chart .bar-fill--accent { background: var(--accent); }
+.metric-chart .bar-fill--gold   { background: linear-gradient(90deg, var(--accent) 0%, var(--gold) 100%); }
+.metric-chart .bar-val {
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Fraunces", serif;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 720px) {
+  .metric-hero { grid-template-columns: 1fr; }
+  .metric-chart .bar-row { grid-template-columns: 1fr; gap: .25rem; margin-bottom: 1rem; }
+  .metric-chart .bar-label { text-align: left; font-size: .8rem; }
+}
+
+/* Stepped process flow */
+.flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  counter-reset: flow;
+  margin: 2rem 0;
+}
+.flow-step {
+  background: var(--cream-soft);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.1rem;
+  position: relative;
+  counter-increment: flow;
+}
+.flow-step::before {
+  content: counter(flow, decimal-leading-zero);
+  display: block;
+  font-family: "Fraunces", serif;
+  color: var(--gold);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: .35rem;
+  line-height: 1;
+}
+.flow-step h4 {
+  font-family: "Fraunces", serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 .35rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.flow-step p {
+  font-size: .85rem;
+  color: var(--ink-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
 /* Phone screenshot strip (mv-explorer) */
 .phone-strip {
   display: flex; gap: 1rem;
