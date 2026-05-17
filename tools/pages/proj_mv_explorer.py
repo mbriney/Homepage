@@ -46,7 +46,7 @@ BODY = '''
   <p>It&rsquo;s also one of the rare cultural-institution apps that&rsquo;s stayed in active use rather than getting shelved after launch &mdash; a function of treating it as a permanent product line rather than a one-off project.</p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/short-films/"><span class="dir">&larr; Previous</span><span class="title">Short Film Series</span></a>
+    <a class="prev" href="/projects/magazine/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Magazine</span></a>
     <a class="next" href="/projects/trpl-reading-room/"><span class="dir">Next &rarr;</span><span class="title">TRPL Reading Room</span></a>
   </nav>
 </div>

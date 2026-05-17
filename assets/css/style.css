@@ -692,6 +692,72 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   line-height: 1.45;
 }
 
+/* Issuu embed (magazine case study) */
+.issuu-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 8.5 / 5.5;            /* magazine spread feels close to this */
+  margin: 1.5rem 0;
+  background: #1a1815;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+.issuu-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Cover grid (magazine case study) */
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem 1.25rem;
+  margin: 1.5rem 0 .5rem;
+}
+.cover-grid .cover {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cover-grid .cover picture {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  aspect-ratio: 4 / 5;
+}
+.cover-grid .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .25s ease;
+}
+.cover-grid .cover picture:hover img { transform: scale(1.02); }
+.cover-grid .cover figcaption {
+  margin-top: .75rem;
+  font-size: .82rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+}
+.cover-grid .cover figcaption strong {
+  color: var(--ink);
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  display: block;
+}
+.cover-grid .cover figcaption span {
+  display: block;
+  margin-top: .15rem;
+}
+
 /* Phone screenshot strip (mv-explorer) */
 .phone-strip {
   display: flex; gap: 1rem;
