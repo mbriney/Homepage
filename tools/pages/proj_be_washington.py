@@ -65,7 +65,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/mount-vernon-virtual-tour/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Virtual Tour</span></a>
-    <a class="next" href="/projects/short-films/"><span class="dir">Next &rarr;</span><span class="title">Short Film Series</span></a>
+    <a class="next" href="/projects/washingtons-war-4d/"><span class="dir">Next &rarr;</span><span class="title">Revolutionary War 4D Theater</span></a>
   </nav>
 </div>
 '''

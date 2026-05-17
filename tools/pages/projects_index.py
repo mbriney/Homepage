@@ -69,6 +69,24 @@ BODY = '''
         </div>
       </a>
 
+      <a class="teaser" href="/projects/washingtons-war-4d/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/washingtons-war-4d/hero.webp">
+            <img src="/img/projects/washingtons-war-4d/hero.jpg" alt="Revolutionary War 4D Theater interior with snow falling" loading="lazy" width="1600" height="1066">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Mount Vernon · 2018 · Gold Telly</p>
+          <h3>Revolutionary War 4D Theater</h3>
+          <p class="muted">A $3.5M reinvention of Mount Vernon&rsquo;s second-most-visited attraction &mdash; new 4K original film, curved 32&times;16 ft screen, 9.2 surround, snow, fog, strobes, and gobos.</p>
+          <div class="teaser-meta">
+            <span><strong>$3.5M</strong><br>investment</span>
+            <span><strong>3</strong><br>Telly Awards</span>
+          </div>
+        </div>
+      </a>
+
       <a class="teaser" href="/projects/short-films/">
         <div class="teaser-thumb">
           <picture>
