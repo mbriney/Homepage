@@ -254,9 +254,13 @@ BODY = '''
           </picture>
         </div>
         <div class="teaser-body">
-          <p class="project-tag">Edelman · 2011–2014</p>
-          <h3>Multiplier Engagement Platform</h3>
-          <p class="muted">Salesforce-based proprietary platform powering Edelman&rsquo;s advocacy, fundraising, and engagement work across 60+ client projects.</p>
+          <p class="project-tag">Edelman · 2011–2014 · &ldquo;largest client-facing tech investment to date&rdquo;</p>
+          <h3>Multiplier &mdash; The Engagement Tool</h3>
+          <p class="muted">A modular Salesforce + LAMP multi-tenant platform powering Edelman&rsquo;s advocacy, consumer-marketing, and PR engagement work across 60+ client tenants.</p>
+          <div class="teaser-meta">
+            <span><strong>60+</strong><br>client tenants</span>
+            <span><strong>5&times;</strong><br>industry-standard results</span>
+          </div>
         </div>
       </a>
 
