@@ -123,6 +123,24 @@ BODY = '''
         </div>
       </a>
 
+      <a class="teaser" href="/projects/audio-tour/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/audio-tour/hero.webp">
+            <img src="/img/projects/audio-tour/hero.jpg" alt="A family on the grounds at Mount Vernon" loading="lazy" width="1600" height="600">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Mount Vernon · 2018–2020 · with Guide ID</p>
+          <h3>Audio Tour Replatform</h3>
+          <p class="muted">From a $7 add-on with single-digit adoption to a free-with-admission, 5-language, 53-stop, podcast-style audio tour on the Guide ID Podcatcher Pro.</p>
+          <div class="teaser-meta">
+            <span><strong>53</strong><br>stops &middot; 4+ hrs audio</span>
+            <span><strong>5</strong><br>languages</span>
+          </div>
+        </div>
+      </a>
+
       <a class="teaser" href="/projects/short-films/">
         <div class="teaser-thumb">
           <picture>

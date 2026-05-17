@@ -130,7 +130,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/orientation-film/"><span class="dir">&larr; Previous</span><span class="title">Orientation Film</span></a>
-    <a class="next" href="/projects/short-films/"><span class="dir">Next &rarr;</span><span class="title">Short Film Series</span></a>
+    <a class="next" href="/projects/audio-tour/"><span class="dir">Next &rarr;</span><span class="title">Audio Tour Replatform</span></a>
   </nav>
 </div>
 '''
