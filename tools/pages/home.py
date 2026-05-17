@@ -106,17 +106,17 @@ BODY = '''
         </div>
       </a>
 
-      <a class="teaser" href="/projects/travel-passport/">
+      <a class="teaser" href="/projects/mlk-memorial/">
         <div class="teaser-thumb">
           <picture>
-            <source type="image/webp" srcset="/img/projects/travel-site/hero.webp">
-            <img src="/img/projects/travel-site/hero.jpg" alt="Travel Passport site" loading="lazy" width="1600" height="1040">
+            <source type="image/webp" srcset="/img/projects/mlk-memorial/hero.webp">
+            <img src="/img/projects/mlk-memorial/hero.jpg" alt="The Martin Luther King, Jr. Memorial on the Tidal Basin" loading="lazy" width="1600" height="462">
           </picture>
         </div>
         <div class="teaser-body">
-          <p class="project-tag">Personal · 2026</p>
-          <h3>Travel Passport</h3>
-          <p class="muted">A virtual passport built from a decade of TripIt data — D3 + vanilla JS.</p>
+          <p class="project-tag">Emotive · 2006–2011 · $15M+ raised digitally</p>
+          <h3>MLK Jr. National Memorial</h3>
+          <p class="muted">Digital fundraising, ticketing, and the Morgan Freeman &ldquo;Build The Dream&rdquo; spot for the first African American memorial on the National Mall.</p>
         </div>
       </a>
     </div>
