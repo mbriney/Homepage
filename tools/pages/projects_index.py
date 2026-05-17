@@ -260,8 +260,6 @@ BODY = '''
         </div>
       </a>
 
-    </div>
-
       <a class="teaser" href="/projects/mlk-memorial/">
         <div class="teaser-thumb">
           <picture>
@@ -279,6 +277,8 @@ BODY = '''
           </div>
         </div>
       </a>
+
+    </div>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.5rem 0 1.25rem;">Personal projects</h2>
 
