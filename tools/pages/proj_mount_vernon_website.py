@@ -70,6 +70,13 @@ BODY = '''
     </figure>
     <figure>
       <picture>
+        <source type="image/webp" srcset="/img/projects/mount-vernon-website/04.webp">
+        <img src="/img/projects/mount-vernon-website/04.jpg" alt="Plant Finder entry — Absalon Tulip" width="1600" height="1066">
+      </picture>
+      <figcaption class="gallery-caption">A single Plant Finder entry &mdash; the Absalon Tulip &mdash; with history, growing notes, and provenance.</figcaption>
+    </figure>
+    <figure>
+      <picture>
         <source type="image/webp" srcset="/img/projects/mount-vernon-website/hero.webp">
         <img src="/img/projects/mount-vernon-website/hero.jpg" alt="Ticketing add-ons" width="1600" height="1066">
       </picture>
