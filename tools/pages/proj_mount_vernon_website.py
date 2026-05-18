@@ -30,14 +30,14 @@ BODY = '''
   <div class="case-stats-row">
     <div class="case-stat"><strong>8M+</strong><span>annual visitors (from 2.5M)</span></div>
     <div class="case-stat"><strong>18M+</strong><span>annual pageviews</span></div>
+    <div class="case-stat"><strong>2,000+</strong><span>indexed pages in sitemap</span></div>
     <div class="case-stat"><strong>$8.6M</strong><span>e-commerce (from $1.1M)</span></div>
-    <div class="case-stat"><strong>35%</strong><span>infrastructure cost reduction</span></div>
   </div>
 
   <h2>What we did</h2>
 
   <h3>Content as the front door</h3>
-  <p>Rather than build pages around tickets, we built them around topics &mdash; long-form, primary-source-anchored explorations of Washington&rsquo;s life, the Revolutionary era, the founding, slavery at Mount Vernon, the landscape, the architecture. Each topic became its own SEO target. Over a decade, dozens of those pages claimed the top 2&ndash;3 organic search positions for their query and turned the site into the place teachers, students, journalists, and the curious actually land.</p>
+  <p>Rather than build pages around tickets, we built them around topics &mdash; long-form, primary-source-anchored explorations of Washington&rsquo;s life, the Revolutionary era, the founding, slavery at Mount Vernon, the landscape, the architecture. Each topic became its own SEO target. The site grew to <strong>more than 2,000 indexed pages</strong> across the digital encyclopedia, education and teacher resources, the digital collection, the Plant Finder, articles, events, and visitor planning. Over a decade, dozens of those pages claimed the top 2&ndash;3 organic search positions for their query and turned the site into the place teachers, students, journalists, and the curious actually land.</p>
 
   <div class="gallery cols-1">
     <figure>
@@ -53,7 +53,7 @@ BODY = '''
   <p>We replatformed e-commerce on a custom stack that brought tickets, donations, memberships, and donor retention into a single system. We rebuilt the membership pricing model, hit a 30% lift in new members in year one, and grew online revenue from $1.1M to $8.6M over six years. Email got segmented, mobile got prioritized, and a centralized CRM tied the whole loop together.</p>
 
   <h3>Infrastructure that scaled with the audience</h3>
-  <p>We migrated the entire web and database stack to AWS, cut operating costs ~35%, and gave the platform the headroom to keep up with growth. The website that opened in 2014 doing 4M visits closed out 2021 at 9M.</p>
+  <p>We migrated the entire web and database stack to AWS, <strong>cut operating costs ~35%</strong>, and gave the platform the headroom to keep up with growth. The website that opened in 2014 doing 4M visits closed out 2021 at 9M.</p>
 
   <div class="gallery cols-2">
     <figure>
