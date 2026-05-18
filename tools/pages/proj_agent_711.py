@@ -102,7 +102,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/mv-explorer/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Explorer App</span></a>
-    <a class="next" href="/projects/democracy-symposium/"><span class="dir">Next &rarr;</span><span class="title">Democracy Symposium</span></a>
+    <a class="next" href="/projects/campaign-mount-vernon/"><span class="dir">Next &rarr;</span><span class="title">Campaign for Mount Vernon</span></a>
   </nav>
 </div>
 '''

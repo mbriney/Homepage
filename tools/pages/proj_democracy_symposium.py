@@ -144,7 +144,7 @@ BODY = '''
   <p class="muted" style="margin-top:2rem;font-size:.9rem;">References: <a href="https://www.mountvernon.org/library/library-events-programs/the-2023-george-washington-symposium" target="_blank" rel="noopener">Symposium home &amp; full speaker roster</a> &middot; <a href="https://www.mountvernon.org/about/news/article/new-nationwide-poll-finds-americans-have-deep-concerns-on-health-of-american-democracy-younger-generations-skeptical-of-democracy-but-strong-cross-party-support-remains-for-core-democratic-principles-2" target="_blank" rel="noopener">Press release, Oct 31 2023</a> &middot; <a href="https://issuu.com/gwmv/docs/gw_presidential_library_democracy_poll" target="_blank" rel="noopener">45-page poll report on Issuu</a> &middot; <a href="https://www.mountvernon.org/democracy" target="_blank" rel="noopener">mountvernon.org/democracy</a> &middot; <a href="https://www.mountvernon.org/george-washington/washington-and-democracy/foundations-of-democracy" target="_blank" rel="noopener">Foundations of Democracy film series</a></p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/agent-711/"><span class="dir">&larr; Previous</span><span class="title">Agent 711: Spy Adventure</span></a>
+    <a class="prev" href="/projects/campaign-mount-vernon/"><span class="dir">&larr; Previous</span><span class="title">Campaign for Mount Vernon</span></a>
     <a class="next" href="/projects/trpl-reading-room/"><span class="dir">Next &rarr;</span><span class="title">TRPL Reading Room</span></a>
   </nav>
 </div>
