@@ -72,11 +72,18 @@ BODY = '''
   <h3>Reporting tied to broadcast flights</h3>
   <p>The campaign was running cable, network, and digital ad flights at the same time as town halls, social posts, and major-media appearances on <em>The NewsHour with Jim Lehrer</em>, <em>Good Morning America</em>, <em>The Tonight Show with Jay Leno</em>, <em>Larry King Live</em>, <em>Fox News</em>, and <em>The Daily Show with Jon Stewart</em>. We built a reporting layer that correlated sign-ups, petition signatures, video views, and email engagement back to specific broadcast flights and specific airings &mdash; so we could tell the campaign, the morning after, exactly which spot, which appearance, and which time slot had moved the most people.</p>
 
-  <div class="gallery cols-1">
-    <figure>
-      <picture><source type="image/webp" srcset="/img/projects/pickens-plan/02.webp"><img src="/img/projects/pickens-plan/02.jpg" alt="Three Pickens Plan TV commercials posted to the @PickensPlan YouTube channel: 60-second launch spot, 30-second cutdown, and natural-gas spot"></picture>
-      <figcaption class="gallery-caption">A coordinated rollout across three TV spots, with every airing carrying the same call-to-action: visit pickensplan.com. The infrastructure on the other side of that URL was Emotive&rsquo;s job.</figcaption>
-    </figure>
+  <h2>T. Boone explains the plan</h2>
+  <div class="film" id="whiteboard">
+    <div class="film-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/iUfGokx2Ulk" title="T. Boone Pickens — full whiteboard presentation of the Pickens Plan" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="film-body">
+      <div class="film-head">
+        <h3 class="film-title">The whiteboard presentation</h3>
+        <span class="film-meta">10:37 &middot; @PickensPlan, Sept 2010</span>
+      </div>
+      <p class="film-tagline">Boone&rsquo;s full whiteboard walk-through of the plan: the import slope from 24%&rarr;42%&rarr;70%, the $700B annual transfer of wealth, why the U.S. has the best wind quarter in the world, and the natural-gas-for-transportation pivot that would cut foreign oil imports by 38%. This was the substance under all the marketing infrastructure we built.</p>
+    </div>
   </div>
 
   <h2>The Super Bowl moment</h2>
