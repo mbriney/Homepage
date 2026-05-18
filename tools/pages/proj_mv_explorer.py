@@ -83,7 +83,7 @@ BODY = '''
   <p>The Mount Vernon Explorer is one of the rare cultural-institution &ldquo;mobile companion&rdquo; products that&rsquo;s stayed in active use rather than getting shelved after launch. The reason isn&rsquo;t that it was the perfect app on day one &mdash; it wasn&rsquo;t &mdash; but that we treated it as a <em>permanent product line</em>, made the hard call to pivot off native when the data demanded it, and let it inherit the website&rsquo;s content engine and the estate&rsquo;s real-time operational signal. Same visitors, same grounds, same brief &mdash; nearly 3&times; the reach.</p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/magazine/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Magazine</span></a>
+    <a class="prev" href="/projects/covid-response/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon&rsquo;s COVID-19 Response</span></a>
     <a class="next" href="/projects/agent-711/"><span class="dir">Next &rarr;</span><span class="title">Agent 711: Spy Adventure</span></a>
   </nav>
 </div>
