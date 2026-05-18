@@ -18,7 +18,7 @@ BODY = '''
     <div class="case-hero-image">
       <picture>
         <source type="image/webp" srcset="/img/projects/pickens-plan/hero.webp">
-        <img src="/img/projects/pickens-plan/hero.jpg" alt="pickensplan.com homepage — One Man's Crusade to Achieve American Energy Independence" width="1600" height="1000">
+        <img src="/img/projects/pickens-plan/hero.jpg" alt="Pickens Plan logo on the campaign&rsquo;s signature sky-blue brand color" width="1600" height="900">
       </picture>
     </div>
   </div>
