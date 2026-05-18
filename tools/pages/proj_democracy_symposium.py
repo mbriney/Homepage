@@ -60,7 +60,7 @@ BODY = '''
   <h3>Read the full 45-page report</h3>
   <div class="case-breakout">
     <div class="issuu-embed widescreen" role="region" aria-label="The Great Experiment — Democracy Poll, full 45-page report">
-      <iframe src="https://e.issuu.com/embed.html?backgroundColor=%23a89760&backgroundColorFullscreen=%23a89760&d=gw_presidential_library_democracy_poll&u=gwmv" title="The Great Experiment — Democracy Poll, full 45-page report" loading="lazy" allow="fullscreen" allowfullscreen style="border:0"></iframe>
+      <iframe src="https://e.issuu.com/embed.html?backgroundColor=%23a89760&backgroundColorFullscreen=%23a89760&d=gw_presidential_library_democracy_poll&pageLayout=singlePage&u=gwmv" title="The Great Experiment — Democracy Poll, full 45-page report" loading="lazy" allow="fullscreen" allowfullscreen style="border:0"></iframe>
     </div>
     <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">Use the arrows to flip through. <a href="https://issuu.com/gwmv/docs/gw_presidential_library_democracy_poll" target="_blank" rel="noopener">Open the full report on Issuu &rarr;</a></p>
   </div>
