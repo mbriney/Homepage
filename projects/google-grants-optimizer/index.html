@@ -79,13 +79,13 @@
     <a href="/projects/" class="back">&larr; All projects</a>
     <p class="eyebrow">Case study &middot; Theodore Roosevelt Presidential Library Foundation &middot; 2024–present</p>
     <h1>An AI-Driven Google Ad Grant Optimizer Pulling 16.46% Average CTR</h1>
-    <p class="lede">Google gives qualifying non-profits up to <strong>$10,000 / month</strong> of free advertising through its Ad Grants program. Most institutions leave most of that money on the table because keeping a Grant account healthy at scale is a full-time job. I built one that runs itself &mdash; an AI optimizer that crawls our sitemap, builds and tests campaigns, talks to the Google Ads and Analytics APIs directly, and bids the budget for conversions every month.</p>
+    <p class="lede">Google gives qualifying non-profits up to <strong>$10,000 / month</strong> of free advertising through its Ad Grants program. Most institutions leave most of that money on the table because keeping a Grant account healthy at scale is a full-time job. I built one that runs itself &mdash; an AI optimizer that crawls our sitemap, builds and tests campaigns, talks to the Google Ads and Analytics APIs directly, and bids the budget for conversions every week.</p>
 
     <div class="meta-row">
       <div class="meta-item"><span class="label">Role</span><span class="value">Architect &amp; Operator</span></div>
       <div class="meta-item"><span class="label">Organization</span><span class="value">TRPL Foundation</span></div>
       <div class="meta-item"><span class="label">Stack</span><span class="value">Claude · Google Ads API · GA4 API</span></div>
-      <div class="meta-item"><span class="label">Cadence</span><span class="value">Monthly, fully automated</span></div>
+      <div class="meta-item"><span class="label">Cadence</span><span class="value">Weekly, fully automated</span></div>
     </div>
 
     <div class="metric-hero">
@@ -120,10 +120,10 @@
 
   <h2>The brief</h2>
   <p>Google&rsquo;s Ad Grants program is one of the most generous standing offers in non-profit funding: any eligible 501(c)(3) can use up to <strong>$10,000 a month of search advertising</strong>, free. The catch is that the account has to be actively maintained at a Google Ads professional&rsquo;s level of care &mdash; with a sustained click-through rate above 5%, ad groups under tight quality-score thresholds, conversion tracking wired into Analytics, and a steady drip of new keywords, ad copy, and tests. Most non-profits hire an agency, do it badly themselves, or quietly let the Grant lapse below 5% and lose the spend.</p>
-  <p>I wanted the third path: turn the entire Grant operation into a once-a-month, push-button run that audits the account, finds the gaps, proposes a plan, and &mdash; after I approve &mdash; ships changes via API.</p>
+  <p>I wanted the third path: turn the entire Grant operation into a weekly, push-button run that audits the account, finds the gaps, proposes a plan, and &mdash; after I approve &mdash; ships changes via API.</p>
 
   <h2>How it works</h2>
-  <p>The optimizer runs as a Claude skill against a live Google Ads account. Every monthly run follows the same loop:</p>
+  <p>The optimizer runs as a Claude skill against a live Google Ads account. Every weekly run follows the same loop:</p>
 
   <div class="flow">
     <div class="flow-step">
@@ -155,7 +155,7 @@
   <h2>What it actually does, in detail</h2>
 
   <h3>Sitemap-driven campaign discovery</h3>
-  <p>The traditional Google Ads workflow starts with a marketer guessing what their organization does and writing campaigns from intuition. This one starts with the institution&rsquo;s actual website. Every page that gets discovered in the sitemap is a candidate landing destination; every cluster of related pages becomes a candidate campaign. New content that ships during the month gets picked up automatically on the next run.</p>
+  <p>The traditional Google Ads workflow starts with a marketer guessing what their organization does and writing campaigns from intuition. This one starts with the institution&rsquo;s actual website. Every page that gets discovered in the sitemap is a candidate landing destination; every cluster of related pages becomes a candidate campaign. New content that ships during the week gets picked up automatically on the next run.</p>
 
   <h3>Ad-unit variants, automatically A/B tested</h3>
   <p>For every ad group, the optimizer ships at least three responsive search-ad variants &mdash; varying headlines, descriptions, and call-to-action phrasing. Google&rsquo;s own ad-rotation handles serving; the optimizer watches the results in the next run and prunes anything underperforming relative to peers in the same ad group, then drafts replacements. This is a continuous A+B loop, not a one-time setup.</p>
@@ -181,8 +181,8 @@
   <blockquote>The point of an Ad Grant isn&rsquo;t the badge &mdash; it&rsquo;s the donors, the readers, the ticket buyers, and the researchers it puts in front of your work. An automated optimizer is what turns a passive line on the budget into an active acquisition channel.</blockquote>
 
   <h2>Why I built it</h2>
-  <p>The Theodore Roosevelt Presidential Library is opening from a standing start. Every channel we build now &mdash; email, social, web, ads &mdash; has to be a long-term capability, not a one-off launch. Hiring an agency for the Grant would have meant the work happens at someone else&rsquo;s pace, on someone else&rsquo;s clock, with reporting we don&rsquo;t fully own. Building the optimizer meant the institution&rsquo;s acquisition channel is something we run ourselves, in an afternoon a month, with all the data and all the decisions inside the building.</p>
-  <p>It&rsquo;s also a working argument for what I think AI in non-profit operations should actually look like: an agent that reads your real data, proposes a real plan, and only executes after you approve. Not a chatbot, not a content generator &mdash; an analyst-and-operator that compounds your monthly capacity.</p>
+  <p>The Theodore Roosevelt Presidential Library is opening from a standing start. Every channel we build now &mdash; email, social, web, ads &mdash; has to be a long-term capability, not a one-off launch. Hiring an agency for the Grant would have meant the work happens at someone else&rsquo;s pace, on someone else&rsquo;s clock, with reporting we don&rsquo;t fully own. Building the optimizer meant the institution&rsquo;s acquisition channel is something we run ourselves, in a few minutes a week, with all the data and all the decisions inside the building.</p>
+  <p>It&rsquo;s also a working argument for what I think AI in non-profit operations should actually look like: an agent that reads your real data, proposes a real plan, and only executes after you approve. Not a chatbot, not a content generator &mdash; an analyst-and-operator that compounds your weekly capacity.</p>
 
   <h2>What&rsquo;s next</h2>
   <ul>
