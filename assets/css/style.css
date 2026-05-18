@@ -762,6 +762,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   box-shadow: var(--shadow-md);
 }
 .issuu-embed.single-page { aspect-ratio: 8.5 / 11; }   /* portrait one-up layout */
+.issuu-embed.widescreen   { aspect-ratio: 16 / 9; }    /* landscape two-page spread */
 .issuu-embed iframe {
   position: absolute;
   inset: 0;
