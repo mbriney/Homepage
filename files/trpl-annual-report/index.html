@@ -10,7 +10,7 @@
       --bg: #1a1815;
       --ink: #fff;
       --muted: rgba(255,255,255,.65);
-      --accent: #c89a3a;     /* TR Library gold */
+      --accent: #c89a3a;
     }
     html, body {
       margin: 0; padding: 0; height: 100%;
@@ -24,7 +24,7 @@
       grid-template-rows: auto 1fr auto;
       height: 100%;
       gap: .5rem;
-      padding: .75rem;
+      padding: .6rem .75rem;
       box-sizing: border-box;
     }
     .top {
@@ -33,30 +33,44 @@
       padding: 0 .25rem;
     }
     .top strong { color: var(--ink); font-weight: 600; letter-spacing:.02em; }
+    .top-right { display: flex; align-items: center; gap: 1rem; }
     .stage {
       position: relative;
       display: flex; align-items: center; justify-content: center;
       min-height: 0;
+      overflow: hidden;
     }
-    #book { display: block; }
-    .book-img { display:block; width: 100%; height: auto; }
+    #book {
+      display: block;
+      /* Force the book wrapper to sit centered; StPageFlip computes
+         its own dimensions and we just need it to not break flex. */
+    }
     .controls {
       display: flex; justify-content: center; align-items: center; gap: .75rem;
       font-size: .9rem; color: var(--muted);
     }
-    .controls button {
+    .btn {
       background: rgba(255,255,255,.07);
       color: var(--ink);
       border: 1px solid rgba(255,255,255,.15);
       border-radius: 999px;
-      padding: .45rem .9rem;
+      padding: .42rem .85rem;
       font: inherit; cursor: pointer;
       transition: background .15s, border-color .15s;
+      display: inline-flex; align-items: center; gap: .35rem;
     }
-    .controls button:hover { background: rgba(255,255,255,.14); border-color: var(--accent); }
-    .controls button[disabled] { opacity:.35; cursor: default; }
-    .pageinfo { min-width: 5ch; text-align: center; color: var(--ink); font-variant-numeric: tabular-nums; }
-    .loading { color: var(--muted); font-size: .9rem; }
+    .btn:hover { background: rgba(255,255,255,.14); border-color: var(--accent); }
+    .btn[disabled] { opacity:.35; cursor: default; }
+    .btn svg { width: 16px; height: 16px; flex: 0 0 16px; }
+    .pageinfo {
+      min-width: 5ch; text-align: center; color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .loading {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted); font-size: .9rem;
+    }
     a.download {
       color: var(--accent);
       text-decoration: none;
@@ -64,22 +78,31 @@
       transition: border-color .15s;
     }
     a.download:hover { border-color: var(--accent); }
+    /* Fullscreen tweaks — give the book the whole stage when expanded */
+    :fullscreen .wrap { padding: 1rem 1.5rem; }
+    :fullscreen .top, :fullscreen .controls { font-size: 1rem; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="top">
       <span><strong>TRPL · 2024 Annual Report</strong> · in the arena</span>
-      <span><a class="download" href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF &darr;</a></span>
+      <span class="top-right">
+        <button id="fs" class="btn" type="button" aria-label="Toggle fullscreen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3M21 16v3a2 2 0 0 1-2 2h-3"/></svg>
+          <span id="fs-label">Fullscreen</span>
+        </button>
+        <a class="download" href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </span>
     </div>
-    <div class="stage">
+    <div class="stage" id="stage">
       <div id="book"></div>
       <div id="loading" class="loading">Loading the book…</div>
     </div>
     <div class="controls">
-      <button id="prev" type="button" aria-label="Previous page">&larr; Prev</button>
+      <button id="prev" class="btn" type="button" aria-label="Previous page">← Prev</button>
       <span class="pageinfo" id="pageinfo">— / 41</span>
-      <button id="next" type="button" aria-label="Next page">Next &rarr;</button>
+      <button id="next" class="btn" type="button" aria-label="Next page">Next →</button>
     </div>
   </div>
 
@@ -87,47 +110,51 @@
   <script>
     (function () {
       var TOTAL = 41;
-      var stage = document.querySelector('.stage');
+      var stage = document.getElementById('stage');
       var bookEl = document.getElementById('book');
       var prev = document.getElementById('prev');
       var next = document.getElementById('next');
       var info = document.getElementById('pageinfo');
       var loading = document.getElementById('loading');
+      var fsBtn = document.getElementById('fs');
+      var fsLabel = document.getElementById('fs-label');
+      var wrapEl = document.querySelector('.wrap');
+
+      // 8.5x11 letter — page aspect h/w
+      var PAGE_ASPECT = 11 / 8.5;
 
       function sizeForViewport() {
-        // Page aspect is 8.5x11 (~0.773). Two-page spread → width = ~1.55x height.
-        // Single page (mobile) → width = ~0.77x height.
-        var avail = stage.getBoundingClientRect();
-        var maxW = Math.max(320, avail.width - 12);
-        var maxH = Math.max(320, avail.height - 12);
+        var rect = stage.getBoundingClientRect();
+        // Pad so the book never touches the controls/header
+        var maxW = Math.max(280, rect.width  - 8);
+        var maxH = Math.max(280, rect.height - 8);
         var spread = window.matchMedia('(min-width: 760px)').matches;
-        var pageAspect = 11 / 8.5;
         if (spread) {
-          // width = 2 * pageW; height = pageW * aspect
-          // Find largest pageW satisfying both
-          var pageW = Math.min(maxW / 2, maxH / pageAspect);
-          return { w: Math.floor(pageW * 2), h: Math.floor(pageW * pageAspect), pageW: Math.floor(pageW) };
-        } else {
-          var pw = Math.min(maxW, maxH / pageAspect);
-          return { w: Math.floor(pw), h: Math.floor(pw * pageAspect), pageW: Math.floor(pw) };
+          // Two-page spread: total width = 2 × pageW; height = pageW × ASPECT
+          // Find the largest pageW that fits inside (maxW, maxH).
+          var byWidth  = maxW / 2;
+          var byHeight = maxH / PAGE_ASPECT;
+          var pageW = Math.floor(Math.min(byWidth, byHeight));
+          return { pageW: pageW, pageH: Math.floor(pageW * PAGE_ASPECT), spread: true };
         }
+        // Single-page (mobile)
+        var pw = Math.floor(Math.min(maxW, maxH / PAGE_ASPECT));
+        return { pageW: pw, pageH: Math.floor(pw * PAGE_ASPECT), spread: false };
       }
 
-      var pageFlip;
-      function init() {
+      var pageFlip = null;
+
+      function init(targetPage) {
         var dims = sizeForViewport();
+        bookEl.innerHTML = '';
         pageFlip = new St.PageFlip(bookEl, {
           width: dims.pageW,
-          height: dims.pageW * 11 / 8.5,
+          height: dims.pageH,
           size: 'fixed',
-          minWidth: 200,
-          maxWidth: 1000,
-          minHeight: 260,
-          maxHeight: 1400,
           drawShadow: true,
           showCover: true,
           mobileScrollSupport: true,
-          usePortrait: !window.matchMedia('(min-width: 760px)').matches,
+          usePortrait: !dims.spread,
           flippingTime: 700,
           maxShadowOpacity: 0.5,
           autoSize: false
@@ -143,6 +170,9 @@
 
         pageFlip.on('flip', function (e) { setInfo(e.data); });
         pageFlip.on('init', function (e) { setInfo(e.data.page); });
+        if (typeof targetPage === 'number' && targetPage > 0) {
+          setTimeout(function () { try { pageFlip.turnToPage(targetPage); } catch (_) {} }, 50);
+        }
         setInfo(0);
       }
 
@@ -161,20 +191,41 @@
         if (e.key === 'ArrowRight') pageFlip.flipNext();
       });
 
-      // Re-init on viewport change (orientation, resize)
+      // Fullscreen
+      function toggleFs() {
+        var doc = document;
+        var el  = doc.documentElement;
+        var inFs = !!(doc.fullscreenElement || doc.webkitFullscreenElement);
+        if (!inFs) {
+          (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+        } else {
+          (doc.exitFullscreen || doc.webkitExitFullscreen).call(doc);
+        }
+      }
+      fsBtn.addEventListener('click', toggleFs);
+      document.addEventListener('fullscreenchange', onFsChange);
+      document.addEventListener('webkitfullscreenchange', onFsChange);
+      function onFsChange() {
+        var inFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        fsLabel.textContent = inFs ? 'Exit fullscreen' : 'Fullscreen';
+        // Re-init at the larger size; preserve current page
+        scheduleReinit();
+      }
+
+      // Debounced re-init on resize / fullscreen
       var resizeTimer;
-      window.addEventListener('resize', function () {
+      function scheduleReinit() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
-          if (!pageFlip) return;
+          if (!pageFlip) return init();
           var cur = pageFlip.getCurrentPageIndex();
-          bookEl.innerHTML = '';
-          pageFlip = null;
-          init();
-          if (cur > 0) setTimeout(function(){ pageFlip.turnToPage(cur); }, 50);
-        }, 200);
-      });
+          init(cur);
+        }, 120);
+      }
+      window.addEventListener('resize', scheduleReinit);
+      window.addEventListener('orientationchange', scheduleReinit);
 
+      // Boot
       if (window.St && window.St.PageFlip) {
         init();
       } else {
@@ -182,7 +233,10 @@
         var t = setInterval(function () {
           tries++;
           if (window.St && window.St.PageFlip) { clearInterval(t); init(); }
-          else if (tries > 40) { clearInterval(t); loading.textContent = 'Could not load the page-flip library.'; }
+          else if (tries > 40) {
+            clearInterval(t);
+            loading.textContent = 'Could not load the page-flip library.';
+          }
         }, 100);
       }
     })();

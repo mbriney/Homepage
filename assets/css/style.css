@@ -764,11 +764,13 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .issuu-embed.single-page { aspect-ratio: 8.5 / 11; }   /* portrait one-up layout */
 .issuu-embed.widescreen   { aspect-ratio: 16 / 9; }    /* landscape two-page spread */
 
-/* Custom HTML flipbook embed (TRPL annual report) */
+/* Custom HTML flipbook embed (TRPL annual report).
+   Aspect tuned for an 8.5x11 two-page spread (17:11 ≈ 1.55) plus the
+   header + controls chrome above and below. */
 .flipbook-embed {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
   margin: 1.5rem 0 .25rem;
   border-radius: 6px;
   overflow: hidden;
@@ -780,6 +782,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
 }
 @media (max-width: 760px) {
+  /* Single-page mobile view: 8.5x11 + chrome */
   .flipbook-embed { aspect-ratio: 3 / 4; }
 }
 
