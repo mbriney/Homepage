@@ -1,0 +1,5 @@
+# mattbriney.com
+User-agent: *
+Allow: /
+
+Sitemap: https://mattbriney.com/sitemap.xml

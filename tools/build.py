@@ -52,9 +52,43 @@ def page(slug: str, out: Path, *, title: str, description: str,
     html_doc = render(BASE, head=head, header=header, body=body, footer=FOOTER)
     write(out, html_doc)
 
+# ---------- Sitemap.xml ----------
+SITE_ORIGIN = "https://mattbriney.com"
+
+def build_sitemap(canonicals: list[tuple[str, Path]]):
+    """Emit sitemap.xml at the repo root from the canonical URLs of every built page."""
+    from datetime import date
+    today = date.today().isoformat()
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for canonical, out_path in canonicals:
+        # Use the rendered file's modification time when available; else today
+        try:
+            ts = date.fromtimestamp(out_path.stat().st_mtime).isoformat()
+        except Exception:
+            ts = today
+        parts.append("  <url>")
+        parts.append(f"    <loc>{canonical}</loc>")
+        parts.append(f"    <lastmod>{ts}</lastmod>")
+        parts.append("  </url>")
+    parts.append("</urlset>\n")
+    write(ROOT / "sitemap.xml", "\n".join(parts))
+
+def build_robots():
+    """Tiny robots.txt that points at the sitemap."""
+    body = (
+        "# mattbriney.com\n"
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        f"Sitemap: {SITE_ORIGIN}/sitemap.xml\n"
+    )
+    write(ROOT / "robots.txt", body)
+
+
 # ---------- Build all pages ----------
 def main():
     print("Building site…")
+    canonicals: list[tuple[str, Path]] = []
     # Discover every page file in tools/pages/
     for path in sorted(PAGES_DIR.rglob("*.py")):
         # Each page is a Python module that returns a dict.
@@ -75,6 +109,9 @@ def main():
              og_image=info.get("og_image", "/img/matt-og-1200x630.jpg"),
              extra_css=info.get("extra_css", ""),
              extra_head=info.get("extra_head", ""))
+        canonicals.append((info["canonical"], out))
+    build_sitemap(canonicals)
+    build_robots()
     print("Done.")
 
 if __name__ == "__main__":
