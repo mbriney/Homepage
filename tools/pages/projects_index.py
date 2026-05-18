@@ -300,6 +300,24 @@ BODY = '''
         </div>
       </a>
 
+      <a class="teaser" href="/projects/pickens-plan/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/pickens-plan/hero.webp">
+            <img src="/img/projects/pickens-plan/hero.jpg" alt="pickensplan.com homepage — One Man's Crusade to Achieve American Energy Independence" loading="lazy" width="1600" height="1000">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Emotive · 2008–2010 · T. Boone Pickens</p>
+          <h3>Pickens Plan</h3>
+          <p class="muted">CRM, petition platform, live-streaming, social, email, and broadcast-aligned reporting for T. Boone Pickens&rsquo; self-funded national energy campaign &mdash; including the Super Bowl XLIII ad placement that drove the biggest sign-up day of the campaign.</p>
+          <div class="teaser-meta">
+            <span><strong>$58M</strong><br>self-funded media spend</span>
+            <span><strong>3M+</strong><br>Pickens Army members</span>
+          </div>
+        </div>
+      </a>
+
     </div>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.5rem 0 1.25rem;">Personal projects</h2>

@@ -72,7 +72,7 @@ BODY = '''
   </p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/mlk-memorial/"><span class="dir">&larr; Previous</span><span class="title">MLK Jr. National Memorial</span></a>
+    <a class="prev" href="/projects/pickens-plan/"><span class="dir">&larr; Previous</span><span class="title">Pickens Plan</span></a>
     <a class="next" href="/projects/family-tree/"><span class="dir">Next &rarr;</span><span class="title">Briney Family Tree</span></a>
   </nav>
 </div>
