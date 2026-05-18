@@ -57,54 +57,56 @@ BODY = '''
   <h2>The nationwide poll &mdash; the news hook that made it travel</h2>
   <p>A symposium &mdash; even a great one &mdash; needs a piece of news to drive press coverage. We commissioned an original public-opinion survey on the state of American democracy and released the headline findings five days before the symposium opened. The poll was conducted September 15&ndash;21, 2023 by <strong>Project Home Fire</strong> with <strong>InnovateMR</strong>, sampling 1,020 adults nationwide using Census-weighted quotas, with a margin of error of &plusmn;3.1 percentage points. It was published in publicity partnership with the <strong>University of Virginia Center for Politics</strong> &mdash; the Larry Sabato shop &mdash; which gave it instant credibility in political-press circles.</p>
 
-  <div class="gallery cols-2">
-    <figure>
-      <picture><source type="image/webp" srcset="/img/projects/democracy-symposium/poll.webp"><img src="/img/projects/democracy-symposium/poll.jpg" alt="Cover of the 45-page Democracy Poll report — The Great Experiment: Polling Americans on Democracy from the Founding to the Future"></picture>
-      <figcaption class="gallery-caption">The 45-page report &mdash; <em>Polling Americans on Democracy from the Founding to the Future</em>. Read the full deck on <a href="https://issuu.com/gwmv/docs/gw_presidential_library_democracy_poll" target="_blank" rel="noopener">Issuu</a>.</figcaption>
-    </figure>
-    <figure style="display:flex;flex-direction:column;justify-content:center;padding:1.5rem;background:var(--cream-soft);border-radius:6px;">
-      <h3 style="margin-top:0">Headline findings</h3>
-      <ul style="margin-bottom:0;font-size:.95rem">
-        <li><strong>77%</strong> say American democracy is in jeopardy</li>
-        <li><strong>67%</strong> say it&rsquo;s on the wrong track</li>
-        <li><strong>59%</strong> of Gen Z see democracy as the preferred form of government &mdash; vs. <strong>84%</strong> of Boomers</li>
-        <li><strong>90%</strong> agree the right to vote is a core democratic value</li>
-        <li><strong>92%</strong> of Democrats and <strong>83%</strong> of Republicans agree the peaceful transfer of power is fundamental</li>
-        <li><strong>85%</strong> say &ldquo;despite our differences, we should all see ourselves as Americans first&rdquo;</li>
-      </ul>
-    </figure>
+  <h3>Read the full 45-page report</h3>
+  <div class="case-breakout">
+    <div class="issuu-embed single-page" role="region" aria-label="The Great Experiment — Democracy Poll, full 45-page report">
+      <iframe src="https://e.issuu.com/embed.html?backgroundColor=%23a89760&backgroundColorFullscreen=%23a89760&d=gw_presidential_library_democracy_poll&pageLayout=singlePage&u=gwmv" title="The Great Experiment — Democracy Poll, full 45-page report" loading="lazy" allow="fullscreen" allowfullscreen style="border:0"></iframe>
+    </div>
+    <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">Use the arrows to flip through. <a href="https://issuu.com/gwmv/docs/gw_presidential_library_democracy_poll" target="_blank" rel="noopener">Open the full report on Issuu &rarr;</a></p>
   </div>
+
+  <h3>Headline findings</h3>
+  <ul>
+    <li><strong>77%</strong> say American democracy is in jeopardy</li>
+    <li><strong>67%</strong> say it&rsquo;s on the wrong track</li>
+    <li><strong>59%</strong> of Gen Z see democracy as the preferred form of government &mdash; vs. <strong>84%</strong> of Boomers</li>
+    <li><strong>90%</strong> agree the right to vote is a core democratic value</li>
+    <li><strong>92%</strong> of Democrats and <strong>83%</strong> of Republicans agree the peaceful transfer of power is fundamental</li>
+    <li><strong>85%</strong> say &ldquo;despite our differences, we should all see ourselves as Americans first&rdquo;</li>
+  </ul>
 
   <p>The poll travelled. It gave the press a sharp news peg &mdash; <em>generational confidence in democracy is collapsing, but cross-partisan agreement on the core principles holds</em> &mdash; and gave each panel a piece of empirical scaffolding to react to in the room. The Friday afternoon panel on the survey itself (Sabato, Avlon, Spero) became one of the most-watched videos out of the symposium.</p>
 
   <h2>The &ldquo;Foundations of Democracy&rdquo; celebrity series</h2>
   <p>To carry the symposium to an audience that wasn&rsquo;t watching C-SPAN panels, we produced a four-part short-film series titled <strong>Foundations of Democracy</strong>, each delivered by a friend of Mount Vernon, each speaking to one of Washington&rsquo;s defining democratic contributions:</p>
 
-  <div class="gallery cols-2">
-    <figure>
-      <div class="film-video" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden">
-        <iframe src="https://player.vimeo.com/video/956013360" title="Harrison Ford — Encouraging National Unity" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0"></iframe>
-      </div>
-      <figcaption class="gallery-caption"><strong>Harrison Ford</strong> &mdash; <em>Encouraging National Unity</em></figcaption>
-    </figure>
-    <figure>
-      <div class="film-video" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden">
-        <iframe src="https://player.vimeo.com/video/956023006" title="Zoe Saldana — Inspiring Civic Virtue" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0"></iframe>
-      </div>
-      <figcaption class="gallery-caption"><strong>Zoe Saldana</strong> &mdash; <em>Inspiring Civic Virtue</em></figcaption>
-    </figure>
-    <figure>
-      <div class="film-video" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden">
-        <iframe src="https://player.vimeo.com/video/956062058" title="Don Cheadle — Relinquishing Power" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0"></iframe>
-      </div>
-      <figcaption class="gallery-caption"><strong>Don Cheadle</strong> &mdash; <em>Relinquishing Power</em></figcaption>
-    </figure>
-    <figure>
-      <div class="film-video" style="aspect-ratio:16/9;border-radius:4px;overflow:hidden">
-        <iframe src="https://player.vimeo.com/video/956025530" title="Maya Hawke — Securing Individual Freedoms" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0"></iframe>
-      </div>
-      <figcaption class="gallery-caption"><strong>Maya Hawke</strong> &mdash; <em>Securing Individual Freedoms</em></figcaption>
-    </figure>
+  <div class="case-breakout">
+    <div class="video-grid-2">
+      <figure>
+        <div class="film-video">
+          <iframe src="https://player.vimeo.com/video/956013360" title="Harrison Ford — Encouraging National Unity" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption><strong>Harrison Ford</strong> &mdash; <em>Encouraging National Unity</em></figcaption>
+      </figure>
+      <figure>
+        <div class="film-video">
+          <iframe src="https://player.vimeo.com/video/956023006" title="Zoe Saldana — Inspiring Civic Virtue" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption><strong>Zoe Saldana</strong> &mdash; <em>Inspiring Civic Virtue</em></figcaption>
+      </figure>
+      <figure>
+        <div class="film-video">
+          <iframe src="https://player.vimeo.com/video/956062058" title="Don Cheadle — Relinquishing Power" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption><strong>Don Cheadle</strong> &mdash; <em>Relinquishing Power</em></figcaption>
+      </figure>
+      <figure>
+        <div class="film-video">
+          <iframe src="https://player.vimeo.com/video/956025530" title="Maya Hawke — Securing Individual Freedoms" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption><strong>Maya Hawke</strong> &mdash; <em>Securing Individual Freedoms</em></figcaption>
+      </figure>
+    </div>
   </div>
 
   <p>The four films pulled Washington&rsquo;s legacy into the present tense for an audience that doesn&rsquo;t spend its weekends watching constitutional historians on panel. Each spoke to a single pillar &mdash; unity, civic virtue, relinquishing power, individual freedoms &mdash; and routed viewers to the symposium content and the poll.</p>
