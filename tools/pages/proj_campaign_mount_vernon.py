@@ -18,7 +18,7 @@ BODY = '''
     <div class="case-hero-image">
       <picture>
         <source type="image/webp" srcset="/img/projects/campaign-mount-vernon/hero.webp">
-        <img src="/img/projects/campaign-mount-vernon/hero.jpg" alt="Strengthening Our Foundations — The Campaign for Mount Vernon, a $150M capital campaign for America's 250th anniversary" width="1600" height="900">
+        <img src="/img/projects/campaign-mount-vernon/hero.jpg" alt="campaignformountvernon.org — Strengthening Our Foundations: The Campaign for Mount Vernon" width="1600" height="1000">
       </picture>
     </div>
   </div>
@@ -111,14 +111,11 @@ BODY = '''
   </div>
 
   <h2>The campaign website</h2>
-  <p>We built and operate <a href="https://www.campaignformountvernon.org/" target="_blank" rel="noopener">campaignformountvernon.org</a> as the public destination tied to every campaign touch &mdash; mailer, email, event, press placement. The site keeps the architecture simple on purpose: the three priorities, the films, ways to give, and a clear &ldquo;Act Now&rdquo; call to action. It&rsquo;s the URL that every other piece of the campaign points to.</p>
+  <p>We built and operate <a href="https://www.campaignformountvernon.org/" target="_blank" rel="noopener">campaignformountvernon.org</a> as the public destination tied to every campaign touch &mdash; mailer, email, event, press placement. The site keeps the architecture simple on purpose: the three priorities, the films, ways to give, and a clear &ldquo;Act Now&rdquo; call to action. It&rsquo;s the URL that every other piece of the campaign points to &mdash; the same site shown at the top of this page.</p>
 
-  <div class="gallery cols-1">
-    <figure>
-      <picture><source type="image/webp" srcset="/img/projects/campaign-mount-vernon/site-fullsize.webp"><img src="/img/projects/campaign-mount-vernon/site-fullsize.jpg" alt="campaignformountvernon.org homepage — Strengthening Our Foundations, with the campaign film, the three priority pillars, and ways to give"></picture>
-      <figcaption class="gallery-caption">campaignformountvernon.org. Three priorities, four films, one call to action. <a href="https://www.campaignformountvernon.org/" target="_blank" rel="noopener">Live site &rarr;</a></figcaption>
-    </figure>
-  </div>
+  <p style="margin-top:1rem">
+    <a class="btn btn-primary" href="https://www.campaignformountvernon.org/" target="_blank" rel="noopener">Visit campaignformountvernon.org &rarr;</a>
+  </p>
 
   <h2>What we did</h2>
 
