@@ -2,26 +2,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{title}}</title>
 <meta name="description" content="{{description}}" />
+<meta name="author" content="Matt Briney" />
+<meta name="theme-color" content="#2d4a3e" />
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="{{og_type}}" />
 <meta property="og:title" content="{{title}}" />
 <meta property="og:description" content="{{description}}" />
 <meta property="og:url" content="{{canonical}}" />
 <meta property="og:image" content="https://mattbriney.com{{og_image}}" />
+<meta property="og:site_name" content="Matt Briney" />
+{{og_article_meta}}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@mbriney" />
+<meta name="twitter:creator" content="@mbriney" />
 
 <link rel="canonical" href="{{canonical}}" />
-<link rel="icon" type="image/png" sizes="150x150" href="/img/matt-square-150.jpg" />
-<link rel="apple-touch-icon" href="/img/matt-square-300.jpg" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32"   href="/img/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/img/matt-square-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/img/matt-square-512.png" />
+<link rel="apple-touch-icon" sizes="180x180"      href="/img/matt-square-180.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{preload_hero}}
 
 <link rel="stylesheet" href="/assets/css/style.css" />
 {{extra_css}}
 {{extra_head}}
+
+<!-- Structured data -->
+{{json_ld}}
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41"></script>

@@ -1,0 +1,21 @@
+{
+  "name": "Matt Briney",
+  "short_name": "Briney",
+  "description": "Matt Briney \u2014 Chief Communications & Marketing Officer, Theodore Roosevelt Presidential Library.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6ed",
+  "theme_color": "#2d4a3e",
+  "icons": [
+    {
+      "src": "/img/matt-square-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/matt-square-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
