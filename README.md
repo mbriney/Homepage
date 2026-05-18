@@ -1,61 +1,110 @@
 # mattbriney.com
 
-My personal homepage. Deployed via GitHub Pages from `main`.
+Matt Briney's personal homepage. A static site built with a small Python
+templating system, deployed via GitHub Pages from `main`.
 
 ## Pages
 
-- `/` — home
-- `/bio/` — bio
-- `/cv/` — full CV with PDF download
-- `/projects/` — projects index (teaser grid)
-- `/projects/<slug>/` — eight case study detail pages
+- `/` — home (hero, "Currently" at TRPL, selected work, "Off the clock")
+- `/bio/` — narrative bio with portrait sidebar
+- `/cv/` — full CV with downloadable resume PDF
+- `/projects/` — projects index (teaser grid, institutional + personal)
+- `/projects/<slug>/` — **23 case study detail pages** (see [docs/AUTHORING.md](docs/AUTHORING.md))
 
-## Editing
-
-The HTML files are generated from page templates in `tools/pages/` and shared
-partials in `tools/_partials/`. To change content, edit the corresponding
-`.py` file under `tools/pages/`, then rebuild:
+## Build & deploy
 
 ```bash
+# Generate every HTML file from the templates
 python3 tools/build.py
 ```
 
-Commit both the edited template and the regenerated `index.html`.
+That's it. There's no Node / Jekyll / webpack — the build is one Python
+script that stitches partials together. Commit the edited template and
+the regenerated `index.html` files together.
 
-## Images
-
-Optimized image variants live in `img/`. The original 20 MB portrait was
-deleted from the repo after a high-quality 2400 px backup
-(`img/matt-portrait-original-2400.jpg`) and small/medium derivatives were
-generated. Project screenshots in `img/projects/<slug>/` were similarly
-optimized down from raw screenshots — each project has a `hero.{jpg,webp}`
-and a few numbered detail images.
+GitHub Pages deploys from `main` automatically. The `CNAME` file pins
+the custom domain (`mattbriney.com`) and `.nojekyll` disables Jekyll
+processing.
 
 ## Layout
 
 ```
 .
-├── index.html                   # home
-├── bio/                         # /bio/
-│   └── index.html
-├── cv/                          # /cv/
-│   └── index.html
-├── projects/                    # /projects/
-│   ├── index.html
-│   └── <slug>/                  # one folder per case study
-│       └── index.html
+├── index.html                   # home page (generated)
+├── bio/                         # /bio/   (generated)
+├── cv/                          # /cv/    (generated)
+├── projects/                    # /projects/ + /projects/<slug>/ (generated)
 ├── assets/
-│   ├── css/style.css
-│   └── js/nav.js
+│   ├── css/style.css            # all site styles, one file
+│   └── js/
+│       ├── nav.js               # mobile nav + lightbox
+│       └── analytics.js         # GA4 instrumentation
 ├── img/
 │   ├── matt-*.{jpg,webp}        # portrait variants
-│   └── projects/<slug>/         # project screenshots
+│   └── projects/<slug>/         # case study imagery (hero + 01..N)
 ├── files/
 │   └── Matt-Briney-Resume.pdf
-├── tools/                       # build system (not deployed pages)
+├── tools/                       # build system (NOT deployed as pages)
 │   ├── build.py
-│   ├── _partials/               # shared header / footer / head templates
+│   ├── _partials/               # base / head / header / footer
 │   └── pages/                   # one Python module per page
+├── docs/                        # repo documentation (NOT deployed)
+│   ├── AUTHORING.md             # how to add / edit a case study
+│   └── ANALYTICS.md             # GA4 events + dimensions reference
 ├── CNAME                        # mattbriney.com
-└── .nojekyll                    # disable Jekyll processing on GitHub Pages
+└── .nojekyll                    # disable Jekyll on GitHub Pages
 ```
+
+## Editing content
+
+The HTML files are generated. **Never edit `index.html`, `*/index.html`,
+or anything under `projects/` directly** — your change will get blown
+away on the next build.
+
+To change content:
+
+1. Edit the corresponding module in `tools/pages/` (e.g.
+   `proj_mount_vernon_website.py`) or a partial in `tools/_partials/`.
+2. Run `python3 tools/build.py`.
+3. Commit both the edited template and the regenerated HTML.
+
+## Adding a new case study
+
+The recurring workflow — research → screenshots → page → wire-up — is
+documented in [docs/AUTHORING.md](docs/AUTHORING.md).
+
+## Analytics
+
+GA4 (measurement ID `G-0RQJ767Q41`) is wired up site-wide with content
+groups, Vimeo + YouTube engagement, outbound clicks, PDF downloads, and
+lightbox tracking. See [docs/ANALYTICS.md](docs/ANALYTICS.md) for the
+full event list and the GA4 admin setup needed to surface custom
+dimensions in reports.
+
+## Conventions
+
+A few patterns that recur across case studies, captured here so they
+don't have to be re-discovered:
+
+- **Hero images** are 1600×900 or 1600×1000. JPG + WebP pair via
+  `<picture>`.
+- **Gallery images** follow the `01.jpg`, `02.jpg`, …, `hero.jpg`
+  pattern. For tall scrolling captures, add an `01-full.jpg` variant
+  next to `01.jpg` — the lightbox auto-detects it and switches into
+  scroll mode.
+- **Case-nav chain.** Every case study has a `<nav class="case-nav">`
+  at the bottom with `prev`/`next` links. When you insert a new study,
+  update both neighbors' case-nav as well as `tools/pages/projects_index.py`.
+- **`.case-breakout`** lets a block escape the 720px `.case-content`
+  column out to 1080px — used for the Issuu reader, the video grid,
+  and other wide media.
+- **`.video-grid-2`** is the 2×2 responsive video grid used on the
+  Democracy Symposium and Campaign for Mount Vernon case studies.
+- **`.issuu-embed.widescreen`** = 16:9 Issuu reader.
+  **`.issuu-embed.single-page`** = portrait 8.5:11 reader.
+- **`.podcast-embed`** wraps Spotify Creators mini-player iframes.
+
+## Licensing
+
+All content (text, images, screenshots) © Matt Briney. The build
+tooling is unrestricted; do what you like with it.
