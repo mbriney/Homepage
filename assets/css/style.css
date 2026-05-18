@@ -764,6 +764,25 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .issuu-embed.single-page { aspect-ratio: 8.5 / 11; }   /* portrait one-up layout */
 .issuu-embed.widescreen   { aspect-ratio: 16 / 9; }    /* landscape two-page spread */
 
+/* Custom HTML flipbook embed (TRPL annual report) */
+.flipbook-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0 .25rem;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  background: #1a1815;
+}
+.flipbook-embed iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+@media (max-width: 760px) {
+  .flipbook-embed { aspect-ratio: 3 / 4; }
+}
+
 /* Spotify Creators / podcast mini-player */
 .podcast-embed {
   margin: 1.25rem 0 .25rem;

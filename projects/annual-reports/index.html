@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Tale of Two Annual Reports — Mount Vernon + TRPL Case Study — Matt Briney</title>
+<meta name="description" content="How do you tell the annual story of an institution that's been standing since 1853 — and one that opens July 4, 2026? Editing Mount Vernon's 2023 Annual Report (76 pages, Issuu) and producing TRPL's first-ever Annual Report (41 pages, custom HTML flipbook)." />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="A Tale of Two Annual Reports — Mount Vernon + TRPL Case Study — Matt Briney" />
+<meta property="og:description" content="How do you tell the annual story of an institution that's been standing since 1853 — and one that opens July 4, 2026? Editing Mount Vernon's 2023 Annual Report (76 pages, Issuu) and producing TRPL's first-ever Annual Report (41 pages, custom HTML flipbook)." />
+<meta property="og:url" content="https://mattbriney.com/projects/annual-reports/" />
+<meta property="og:image" content="https://mattbriney.com/img/projects/annual-reports/hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mbriney" />
+
+<link rel="canonical" href="https://mattbriney.com/projects/annual-reports/" />
+<link rel="icon" type="image/png" sizes="150x150" href="/img/matt-square-150.jpg" />
+<link rel="apple-touch-icon" href="/img/matt-square-300.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Derive content_group from URL so GA4 reports split by career chapter
+  var __cg = (function(p){
+    if (p === '/' || p === '/index.html') return 'Home';
+    if (p.indexOf('/bio') === 0) return 'Bio';
+    if (p.indexOf('/cv')  === 0) return 'CV';
+    var m = p.match(/^\/projects\/([^/]+)\//);
+    if (!m) return 'Other';
+    var slug = m[1];
+    var GROUPS = {
+      'Mount Vernon': ['mount-vernon-website','tessitura-ticketing','mount-vernon-virtual-tour','be-washington','washingtons-war-4d','orientation-film','ar-tour','numismatic-kiosk','audio-tour','short-films','magazine','covid-response','mv-explorer','agent-711','campaign-mount-vernon','democracy-symposium'],
+      'TRPL':         ['trpl-reading-room','google-grants-optimizer'],
+      'Edelman':      ['multiplier'],
+      'Emotive':      ['mlk-memorial','pickens-plan'],
+      'Personal':     ['travel-passport','family-tree']
+    };
+    for (var k in GROUPS) if (GROUPS[k].indexOf(slug) !== -1) return k;
+    return 'Projects';
+  })(location.pathname);
+
+  gtag('config', 'G-0RQJ767Q41', { content_group: __cg });
+</script>
+
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand">Matt Briney</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/" class="">Home</a></li>
+      <li><a href="/bio/" class="">Bio</a></li>
+      <li><a href="/projects/" class="active">Projects</a></li>
+      <li><a href="/cv/" class="">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="case-hero">
+  <div class="container">
+    <a href="/projects/" class="back">&larr; All projects</a>
+    <p class="eyebrow">Case study &middot; Mount Vernon + TRPL &middot; 2023&ndash;2024</p>
+    <h1>A Tale of Two Annual Reports: One Institution at 170, One at Day One</h1>
+    <p class="lede">How do you tell the story of an institution that has been standing since 1853 &mdash; and one that doesn&rsquo;t open its doors until July 4, 2026? In 2023 I edited Mount Vernon&rsquo;s annual report after a decade of stewardship there. A year later I joined the Theodore Roosevelt Presidential Library Foundation and built the very first annual report for an institution still being lifted out of the North Dakota Badlands. Two reports, two completely different storytelling problems &mdash; both produced under the same theory of what an annual report is actually <em>for</em>.</p>
+
+    <div class="meta-row">
+      <div class="meta-item"><span class="label">Role</span><span class="value">Editorial lead, both reports</span></div>
+      <div class="meta-item"><span class="label">Mount Vernon report</span><span class="value">2023 &middot; 76 pages</span></div>
+      <div class="meta-item"><span class="label">TRPL report</span><span class="value">2024 &middot; 41 pages &middot; first ever</span></div>
+      <div class="meta-item"><span class="label">Mount Vernon since</span><span class="value">1853 (171 years)</span></div>
+      <div class="meta-item"><span class="label">TRPL opens</span><span class="value">July 4, 2026</span></div>
+      <div class="meta-item"><span class="label">Distribution</span><span class="value">Print + Issuu + custom HTML flipbook</span></div>
+    </div>
+
+    <div class="case-hero-image">
+      <picture>
+        <source type="image/webp" srcset="/img/projects/annual-reports/hero.webp">
+        <img src="/img/projects/annual-reports/hero.jpg" alt="Two annual reports side by side — Mount Vernon's 2023 report on the left, TRPL's 2024 report on the right" width="1600" height="900">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<div class="case-content">
+
+  <h2>The two storytelling problems</h2>
+  <p>Annual reports always have two audiences in the same room: the donors who already gave (here&rsquo;s what your money did) and the donors who haven&rsquo;t yet (here&rsquo;s why this is worth your money). Hitting both at once is hard for any institution. It&rsquo;s much harder when the institution&rsquo;s narrative tools point in opposite directions.</p>
+  <p><strong>Mount Vernon</strong> has been the country&rsquo;s most-visited historic estate for generations, run by the same private association that bought the place from the Washington family in 1858. The 2023 report had a 165-year track record to draw on, an active million-plus-visitor-a-year operation to chronicle, and the editorial weight of an institution that has earned the right to a confident, declarative voice.</p>
+  <p><strong>TRPL</strong>, on the other hand, didn&rsquo;t exist as an open building yet. The 2024 report covered a year in which the most important thing the institution did was finish pouring concrete, get a roof on, and put native grasses in the ground 50 miles outside Medora. The challenge: tell that story in a way that earns the next $114M of giving needed to finish the project &mdash; without the photographic catalog of an operating museum to draw from.</p>
+
+  <h2>Mount Vernon&rsquo;s 2023 Annual Report</h2>
+  <p>76 pages. Published on Issuu in June 2024. Editorial lead: me. The report is structured around Mount Vernon&rsquo;s institutional pillars &mdash; preservation, education, the experience of the place, the people who run it &mdash; and grounded in the past year&rsquo;s programming and fundraising. The Mount Vernon Ladies&rsquo; Association has been doing this annual ritual since 1853; the editorial bar is high, and the tone is closer to a museum&rsquo;s catalogue raisonn&eacute; than a startup&rsquo;s pitch deck.</p>
+
+  <div class="case-breakout">
+    <div class="issuu-embed widescreen" role="region" aria-label="Mount Vernon 2023 Annual Report">
+      <iframe src="https://e.issuu.com/embed.html?d=annual_report_2023&u=gwmv&pageLayout=singlePage" title="Mount Vernon 2023 Annual Report" loading="lazy" allow="fullscreen" allowfullscreen style="border:0"></iframe>
+    </div>
+    <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">76 pages, single-page navigation. <a href="https://issuu.com/gwmv/docs/annual_report_2023" target="_blank" rel="noopener">Open the full issue on Issuu &rarr;</a></p>
+  </div>
+
+  <h2>TRPL&rsquo;s 2024 Annual Report</h2>
+  <p>41 pages. Published April 2025. The very first annual report this institution has ever produced. Designed in InDesign, photographed across the year on the construction site, in the prairie, and at the Fargo Theatre Speaker Series launch. Organized around three deliberately named pillars: <strong>Construction Progress</strong>, <strong>Programming Progress</strong>, and <strong>Financial Progress</strong> &mdash; because for a not-yet-open institution, &ldquo;impact&rdquo; isn&rsquo;t the right word yet. <em>Progress</em> is.</p>
+
+  <p>The case for support has a specific shape, and the report carries it: <strong>$286M raised in private donations</strong> against a $450M total project budget, with <strong>$50M state endowment secured</strong> and <strong>$114M still to raise</strong>. The 2024 single year alone raised <strong>$61M in total revenue</strong>. The report is unembarrassed about being a fundraising instrument; that&rsquo;s its job.</p>
+
+  <h3>Read it in the browser</h3>
+  <p>Mount Vernon&rsquo;s report has Issuu as a distribution channel, with a known reader UI and easy embedding. TRPL didn&rsquo;t have an Issuu shelf, and the InDesign export was a 100MB PDF that no donor was going to open from an email. So we built our own browser flipbook &mdash; HTML5, page-flip animation, single-page on mobile and two-page spread on desktop, with prev/next, keyboard arrows, and a PDF download for accessibility.</p>
+
+  <div class="case-breakout">
+    <div class="flipbook-embed" role="region" aria-label="TRPL 2024 Annual Report flipbook">
+      <iframe src="/files/trpl-annual-report/" title="TRPL 2024 Annual Report — interactive flipbook" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
+    </div>
+    <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">41 pages, HTML5 page-flip. <a href="/files/trpl-annual-report/" target="_blank" rel="noopener">Open the flipbook in its own tab &rarr;</a> &middot; <a href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF (29 MB)</a></p>
+  </div>
+
+  <h2>The story TRPL had to tell in 41 pages</h2>
+  <p>An open museum can show you what it did. A pre-opening museum has to show you what it&rsquo;s becoming. The report works through four sequential acts:</p>
+
+  <h3>Construction progress &mdash; rising from the earth</h3>
+  <p>A quarter-by-quarter narrative of the 2024 build: footings and structural concrete walls in Q1, the Board approving photovoltaic canopies and the Native Plants Project hitting 60,000 plugs in Q2, the site retaining wall and rammed-earth walls (made with local Badlands soil) and underground plumbing reaching 85% in Q3, and in Q4 the mass timber structure topped out on October 9, concrete roof pours on October 18, structural steel finished October 23, and the prairie roof landscaping hitting 20% completion. The August 14 ceremonial beam signing with Governor Doug Burgum and 400 supporters; the December 17 dedication of the Harold Hamm Campus following Hamm&rsquo;s $50M gift; the project&rsquo;s presentations at Living Future 2024 and Greenbuild 2024 sustainability conferences.</p>
+
+  <h3>Programming progress &mdash; the institution begins to teach</h3>
+  <p>Even without a building, TRPL was already shipping educational product: the Native Plants Project &mdash; 200+ native species collected within a 50-mile radius of the site, propagated with Resources Environmental Solutions and Dr. Ben Geaumont at NDSU&rsquo;s Hettinger Research Extension Center, destined for the Library&rsquo;s living prairie roof. <strong>Teach with TR</strong>, the Library&rsquo;s first-ever K&ndash;12 digital education suite, launched in 2024 with 20 lesson plans, hands-on activities, primary-source packets, National History Day guides, and timelines, aligned to North Dakota and National C3 Standards &mdash; with 620 students participating in the Presidential Primary Sources Project. The October 2 <strong>Speaker Series</strong> launch at the Fargo Theatre with Arthur Brooks drew 730 attendees. And the year produced the first significant additions to the collection: Roosevelt&rsquo;s 1884 &ldquo;In Memory&rdquo; manuscript, the 1907 and 1908 Saint-Gaudens high-relief gold coins, his Springfield Model 1896 Krag rifle from the Rough Rider years, and a James Earle Fraser bronze plaque.</p>
+
+  <h3>Programming progress &mdash; a first look at what visitors will see</h3>
+  <p>The report includes a chapter-by-chapter walk-through of the permanent exhibit, designed with The Future of Storytelling, Local Projects, and Dimensional Innovations. Eight chapters from Roosevelt&rsquo;s life &mdash; Childhood, Young Adulthood, Becoming a Leader, the Path to the Presidency, the Presidency itself, After the White House, the Last Adventure, and the Final Chapter &mdash; structured around &ldquo;Adventure Galleries&rdquo; (marksmanship, leadership in battle, conservation at Elkhorn Ranch) and &ldquo;Narrative Galleries&rdquo; with authentic artifacts, plus the institution-defining <em>Trailblazer System</em> that gives each visitor a personalized takeaway against the four core TR values: <em>dare greatly, think boldly, care deeply, live passionately</em>.</p>
+
+  <h3>Financial progress &mdash; the case for the next 114 million dollars</h3>
+  <p>The financial section is the report&rsquo;s argument, presented cleanly enough that a donor evaluating their next gift can see exactly where the project is: 75% funded against the $450M total. The 2024 revenue mix &mdash; unrestricted contributions $46.4M, restricted $5.25M, investment earnings $3.5M, in-kind $2.4M, endowment support $2.1M, grant support $836K. The closing pages are a thank-you and an explicit ask to share the report with others who might join &ldquo;in the arena.&rdquo;</p>
+
+  <h2>What was different about producing the TRPL report</h2>
+  <ul>
+    <li><strong>Photography came from a single year of fieldwork.</strong> Mount Vernon&rsquo;s 2023 report could draw on a 165-year photographic archive of the estate. TRPL&rsquo;s 2024 report was photographed almost entirely on the construction site, in the prairie, and at the Fargo Theatre &mdash; one year of imagery, one institution coming into focus.</li>
+    <li><strong>The pillars were named for the moment.</strong> &ldquo;Construction Progress&rdquo; isn&rsquo;t the kind of pillar you&rsquo;ll find in next year&rsquo;s report; by then there&rsquo;ll be visitor metrics. The report was deliberately named for the moment the institution was in.</li>
+    <li><strong>The financial section had to do real work.</strong> A 170-year-old institution&rsquo;s annual report can put financials in the back. For TRPL, the financials &mdash; specifically the $114M-still-to-raise gap &mdash; <em>is</em> the headline.</li>
+    <li><strong>Distribution didn&rsquo;t come for free.</strong> Mount Vernon has Issuu, a member email list with decades of cultivation, and a press contact list. TRPL had to stand up its own browser flipbook because a 100MB PDF doesn&rsquo;t move through email and the institution didn&rsquo;t want its very-first report sitting behind an Issuu signup wall.</li>
+  </ul>
+
+  <h2>The flipbook itself &mdash; a small piece of distribution engineering</h2>
+  <p>The TRPL flipbook above is a single static HTML page that loads the page-flip library from a CDN, then loads the 41 page images in order. The original 100MB InDesign export was compressed to a 29MB PDF (still available as a download for accessibility), and each page image was rendered at 1200px wide and 82-quality JPG &mdash; about 150KB per page, ~6MB total for the full book. On a phone the reader collapses to single-page view; on desktop it shows the two-page spread. It deploys with the rest of the static site to GitHub Pages, with no Issuu account, no PDF viewer plugin, and no third-party tracking.</p>
+
+  <div class="case-stats-row">
+    <div class="case-stat"><strong>$286M</strong><span>TRPL private donations secured</span></div>
+    <div class="case-stat"><strong>$50M</strong><span>state endowment secured</span></div>
+    <div class="case-stat"><strong>$114M</strong><span>still needed to complete the project</span></div>
+    <div class="case-stat"><strong>July 4, 2026</strong><span>opening day, America&rsquo;s 250th</span></div>
+  </div>
+
+  <h2>What we learned</h2>
+  <ul>
+    <li><strong>The shape of the report should match the shape of the institution.</strong> A 170-year-old institution&rsquo;s annual report carries the editorial confidence of inheritance. A pre-opening institution&rsquo;s annual report carries the urgency of an ask. Trying to make either one read like the other is a mistake.</li>
+    <li><strong>&ldquo;Progress&rdquo; is the right word before &ldquo;impact.&rdquo;</strong> Naming TRPL&rsquo;s three pillars Construction / Programming / Financial Progress was a small word choice that did a lot of work &mdash; it told the donor where the institution actually is.</li>
+    <li><strong>Distribution is an editorial decision.</strong> The choice to build a custom HTML flipbook for TRPL wasn&rsquo;t engineering vanity. It was the only way to send a clickable, mobile-readable annual report to a major-prospect inbox without asking the recipient to download 100 megabytes or sign up for a third-party reader.</li>
+    <li><strong>The financial story belongs at the front for a building institution.</strong> Pre-open, the financial section is the central narrative, not the appendix.</li>
+  </ul>
+
+  <h2>Why it mattered</h2>
+  <blockquote>An annual report is the institution looking at itself out loud. What it chooses to call its pillars, where it puts the financials, and how it reaches the reader on a phone are all editorial decisions disguised as production ones.</blockquote>
+  <p>Editing back-to-back annual reports for two institutions at opposite ends of their life cycles was a clarifying exercise in what these documents are actually for. Mount Vernon&rsquo;s 2023 report had to honor 170 years of stewardship without becoming a self-congratulatory souvenir. TRPL&rsquo;s 2024 report had to convince donors to fund the last 25% of a project they couldn&rsquo;t yet walk through. Both reports use the same toolkit &mdash; print, web, photography, financial transparency &mdash; pointed at completely different rhetorical targets. The work was figuring out how to point them.</p>
+
+  <p class="muted" style="margin-top:2rem;font-size:.9rem;">References: <a href="https://issuu.com/gwmv/docs/annual_report_2023" target="_blank" rel="noopener">Mount Vernon 2023 Annual Report on Issuu</a> &middot; <a href="/files/trpl-annual-report/" target="_blank" rel="noopener">TRPL 2024 Annual Report flipbook</a> &middot; <a href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">TRPL 2024 Annual Report PDF</a> &middot; <a href="https://www.trlibrary.com" target="_blank" rel="noopener">trlibrary.com</a></p>
+
+  <nav class="case-nav" aria-label="Case study navigation">
+    <a class="prev" href="/projects/trpl-reading-room/"><span class="dir">&larr; Previous</span><span class="title">TRPL Reading Room</span></a>
+    <a class="next" href="/projects/google-grants-optimizer/"><span class="dir">Next &rarr;</span><span class="title">AI Google Ad Grant Optimizer</span></a>
+  </nav>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="brand-foot">Matt Briney</div>
+      <p class="meta">Dallas, TX · <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a></p>
+    </div>
+    <ul class="socials" aria-label="Social profiles" style="list-style:none;padding:0;margin:0;">
+      <li><a href="https://www.linkedin.com/in/mbriney/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.91 1.65-1.86 3.4-1.86 3.64 0 4.31 2.39 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+      <li><a href="https://github.com/mbriney" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a></li>
+      <li><a href="https://x.com/mbriney" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/mbriney/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.22.06 1.27.07 1.65.07 4.86s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.22.41-1.27.06-1.65.07-4.86.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.34 4.14.63a5.85 5.85 0 0 0-2.13 1.38A5.85 5.85 0 0 0 .63 4.14C.34 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.27 2.14.56 2.9.3.79.7 1.46 1.38 2.13a5.85 5.85 0 0 0 2.13 1.38c.76.3 1.63.5 2.9.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.14-.27 2.9-.56a5.85 5.85 0 0 0 2.13-1.38 5.85 5.85 0 0 0 1.38-2.13c.3-.76.5-1.63.56-2.9.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.27-2.14-.56-2.9a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.63-.5-2.9-.56C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a></li>
+      <li><a href="https://www.facebook.com/briney" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.67 0H1.33A1.33 1.33 0 0 0 0 1.33v21.34C0 23.4.6 24 1.33 24h11.5v-9.3H9.69V11.1h3.13V8.42c0-3.1 1.9-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.92c-1.5 0-1.8.72-1.8 1.77v2.31h3.59l-.47 3.62h-3.12V24h6.12c.74 0 1.33-.6 1.33-1.33V1.33C24 .6 23.4 0 22.67 0"/></svg></a></li>
+      <li><a href="https://www.alltrails.com/members/matt-briney" aria-label="AllTrails" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M3 19h18L15 9l-3 4-2-2-7 8z"/><circle cx="17" cy="6" r="1.8" fill="currentColor" stroke="none"/></svg></a></li>
+    </ul>
+    <p class="meta">&copy; <span id="year">2026</span> Matt Briney</p>
+  </div>
+</footer>
+
+<script src="/assets/js/nav.js" defer></script>
+<script src="/assets/js/analytics.js" defer></script>
+</body>
+</html>

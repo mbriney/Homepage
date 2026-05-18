@@ -317,6 +317,24 @@ BODY = '''
         </div>
       </a>
 
+      <a class="teaser" href="/projects/annual-reports/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/annual-reports/hero.webp">
+            <img src="/img/projects/annual-reports/hero.jpg" alt="Mount Vernon 2023 + TRPL 2024 annual report covers side by side" loading="lazy" width="1600" height="900">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Mount Vernon + TRPL · 2023–2024</p>
+          <h3>A Tale of Two Annual Reports</h3>
+          <p class="muted">Editing back-to-back annual reports for two institutions at opposite ends of their life cycles &mdash; Mount Vernon at 170 years, TRPL at year zero. Issuu reader plus a custom HTML flipbook built from scratch.</p>
+          <div class="teaser-meta">
+            <span><strong>76 + 41</strong><br>pages, two reports</span>
+            <span><strong>1853 / 2026</strong><br>year founded / year opens</span>
+          </div>
+        </div>
+      </a>
+
       <a class="teaser" href="/projects/google-grants-optimizer/">
         <div class="teaser-thumb" style="background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);text-align:center;padding:1.5rem;">
           <div>

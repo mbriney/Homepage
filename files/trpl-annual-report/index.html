@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Theodore Roosevelt Presidential Library — 2024 Annual Report</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #1a1815;
+      --ink: #fff;
+      --muted: rgba(255,255,255,.65);
+      --accent: #c89a3a;     /* TR Library gold */
+    }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
+      overflow: hidden;
+    }
+    .wrap {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100%;
+      gap: .5rem;
+      padding: .75rem;
+      box-sizing: border-box;
+    }
+    .top {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: .85rem; color: var(--muted);
+      padding: 0 .25rem;
+    }
+    .top strong { color: var(--ink); font-weight: 600; letter-spacing:.02em; }
+    .stage {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 0;
+    }
+    #book { display: block; }
+    .book-img { display:block; width: 100%; height: auto; }
+    .controls {
+      display: flex; justify-content: center; align-items: center; gap: .75rem;
+      font-size: .9rem; color: var(--muted);
+    }
+    .controls button {
+      background: rgba(255,255,255,.07);
+      color: var(--ink);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 999px;
+      padding: .45rem .9rem;
+      font: inherit; cursor: pointer;
+      transition: background .15s, border-color .15s;
+    }
+    .controls button:hover { background: rgba(255,255,255,.14); border-color: var(--accent); }
+    .controls button[disabled] { opacity:.35; cursor: default; }
+    .pageinfo { min-width: 5ch; text-align: center; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .loading { color: var(--muted); font-size: .9rem; }
+    a.download {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color .15s;
+    }
+    a.download:hover { border-color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <span><strong>TRPL · 2024 Annual Report</strong> · in the arena</span>
+      <span><a class="download" href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF &darr;</a></span>
+    </div>
+    <div class="stage">
+      <div id="book"></div>
+      <div id="loading" class="loading">Loading the book…</div>
+    </div>
+    <div class="controls">
+      <button id="prev" type="button" aria-label="Previous page">&larr; Prev</button>
+      <span class="pageinfo" id="pageinfo">— / 41</span>
+      <button id="next" type="button" aria-label="Next page">Next &rarr;</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+  <script>
+    (function () {
+      var TOTAL = 41;
+      var stage = document.querySelector('.stage');
+      var bookEl = document.getElementById('book');
+      var prev = document.getElementById('prev');
+      var next = document.getElementById('next');
+      var info = document.getElementById('pageinfo');
+      var loading = document.getElementById('loading');
+
+      function sizeForViewport() {
+        // Page aspect is 8.5x11 (~0.773). Two-page spread → width = ~1.55x height.
+        // Single page (mobile) → width = ~0.77x height.
+        var avail = stage.getBoundingClientRect();
+        var maxW = Math.max(320, avail.width - 12);
+        var maxH = Math.max(320, avail.height - 12);
+        var spread = window.matchMedia('(min-width: 760px)').matches;
+        var pageAspect = 11 / 8.5;
+        if (spread) {
+          // width = 2 * pageW; height = pageW * aspect
+          // Find largest pageW satisfying both
+          var pageW = Math.min(maxW / 2, maxH / pageAspect);
+          return { w: Math.floor(pageW * 2), h: Math.floor(pageW * pageAspect), pageW: Math.floor(pageW) };
+        } else {
+          var pw = Math.min(maxW, maxH / pageAspect);
+          return { w: Math.floor(pw), h: Math.floor(pw * pageAspect), pageW: Math.floor(pw) };
+        }
+      }
+
+      var pageFlip;
+      function init() {
+        var dims = sizeForViewport();
+        pageFlip = new St.PageFlip(bookEl, {
+          width: dims.pageW,
+          height: dims.pageW * 11 / 8.5,
+          size: 'fixed',
+          minWidth: 200,
+          maxWidth: 1000,
+          minHeight: 260,
+          maxHeight: 1400,
+          drawShadow: true,
+          showCover: true,
+          mobileScrollSupport: true,
+          usePortrait: !window.matchMedia('(min-width: 760px)').matches,
+          flippingTime: 700,
+          maxShadowOpacity: 0.5,
+          autoSize: false
+        });
+
+        var pages = [];
+        for (var i = 1; i <= TOTAL; i++) {
+          var n = i < 10 ? '0' + i : '' + i;
+          pages.push('/files/trpl-annual-report/pages/page-' + n + '.jpg');
+        }
+        pageFlip.loadFromImages(pages);
+        loading.style.display = 'none';
+
+        pageFlip.on('flip', function (e) { setInfo(e.data); });
+        pageFlip.on('init', function (e) { setInfo(e.data.page); });
+        setInfo(0);
+      }
+
+      function setInfo(zeroIdx) {
+        var human = Math.min(TOTAL, Math.max(1, zeroIdx + 1));
+        info.textContent = human + ' / ' + TOTAL;
+        prev.disabled = (zeroIdx <= 0);
+        next.disabled = (zeroIdx >= TOTAL - 1);
+      }
+
+      prev.addEventListener('click', function () { if (pageFlip) pageFlip.flipPrev(); });
+      next.addEventListener('click', function () { if (pageFlip) pageFlip.flipNext(); });
+      document.addEventListener('keydown', function (e) {
+        if (!pageFlip) return;
+        if (e.key === 'ArrowLeft')  pageFlip.flipPrev();
+        if (e.key === 'ArrowRight') pageFlip.flipNext();
+      });
+
+      // Re-init on viewport change (orientation, resize)
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          if (!pageFlip) return;
+          var cur = pageFlip.getCurrentPageIndex();
+          bookEl.innerHTML = '';
+          pageFlip = null;
+          init();
+          if (cur > 0) setTimeout(function(){ pageFlip.turnToPage(cur); }, 50);
+        }, 200);
+      });
+
+      if (window.St && window.St.PageFlip) {
+        init();
+      } else {
+        var tries = 0;
+        var t = setInterval(function () {
+          tries++;
+          if (window.St && window.St.PageFlip) { clearInterval(t); init(); }
+          else if (tries > 40) { clearInterval(t); loading.textContent = 'Could not load the page-flip library.'; }
+        }, 100);
+      }
+    })();
+  </script>
+</body>
+</html>
