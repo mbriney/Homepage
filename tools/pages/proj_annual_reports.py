@@ -53,7 +53,7 @@ BODY = '''
     <div class="flipbook-embed" role="region" aria-label="TRPL 2024 Annual Report flipbook">
       <iframe src="/files/trpl-annual-report/" title="TRPL 2024 Annual Report — interactive flipbook" loading="lazy" allow="fullscreen" allowfullscreen></iframe>
     </div>
-    <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">41 pages, HTML5 page-flip. <a href="/files/trpl-annual-report/" target="_blank" rel="noopener">Open the flipbook in its own tab &rarr;</a> &middot; <a href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF (29 MB)</a></p>
+    <p class="muted" style="font-size:.88rem;margin-top:.5rem;text-align:center">HTML5 page-flip &middot; click the corners or use ←/→ to turn pages &middot; <a href="/files/trpl-annual-report/" target="_blank" rel="noopener">Open in a full tab &rarr;</a> &middot; <a href="/files/trpl-annual-report/trpl-annual-report-2024.pdf" target="_blank" rel="noopener">Download PDF (29 MB)</a></p>
   </div>
 
   <h2>The story TRPL had to tell in 41 pages</h2>

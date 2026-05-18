@@ -101,7 +101,7 @@
     </div>
     <div class="controls">
       <button id="prev" class="btn" type="button" aria-label="Previous page">← Prev</button>
-      <span class="pageinfo" id="pageinfo">— / 41</span>
+      <span class="pageinfo" id="pageinfo">— / 79</span>
       <button id="next" class="btn" type="button" aria-label="Next page">Next →</button>
     </div>
   </div>
@@ -109,7 +109,7 @@
   <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
   <script>
     (function () {
-      var TOTAL = 41;
+      var TOTAL = 79;
       var stage = document.getElementById('stage');
       var bookEl = document.getElementById('book');
       var prev = document.getElementById('prev');
@@ -162,7 +162,7 @@
 
         var pages = [];
         for (var i = 1; i <= TOTAL; i++) {
-          var n = i < 10 ? '0' + i : '' + i;
+          var n = i < 10 ? '00' + i : (i < 100 ? '0' + i : '' + i);
           pages.push('/files/trpl-annual-report/pages/page-' + n + '.jpg');
         }
         pageFlip.loadFromImages(pages);
