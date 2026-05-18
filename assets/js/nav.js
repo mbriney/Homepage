@@ -163,6 +163,17 @@
     // Give focus to close button so Esc/Enter work immediately.
     setTimeout(function () { btnClose.focus(); }, 0);
     document.addEventListener('keydown', onKey);
+    // GA4 instrumentation: high-intent "they want to see the work" signal.
+    if (typeof gtag === 'function') {
+      var node = targets[i];
+      gtag('event', 'lightbox_open', {
+        image_src: bestSrcFor(node),
+        image_alt: (node.alt || '').slice(0, 120),
+        image_index: i + 1,
+        image_total: targets.length,
+        source_page: location.pathname
+      });
+    }
   }
 
   function close() {

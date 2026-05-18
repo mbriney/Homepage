@@ -32,7 +32,27 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-0RQJ767Q41');
+
+  // Derive content_group from URL so GA4 reports split by career chapter
+  var __cg = (function(p){
+    if (p === '/' || p === '/index.html') return 'Home';
+    if (p.indexOf('/bio') === 0) return 'Bio';
+    if (p.indexOf('/cv')  === 0) return 'CV';
+    var m = p.match(/^\/projects\/([^/]+)\//);
+    if (!m) return 'Other';
+    var slug = m[1];
+    var GROUPS = {
+      'Mount Vernon': ['mount-vernon-website','tessitura-ticketing','mount-vernon-virtual-tour','be-washington','washingtons-war-4d','orientation-film','ar-tour','numismatic-kiosk','audio-tour','short-films','magazine','covid-response','mv-explorer','agent-711','campaign-mount-vernon','democracy-symposium'],
+      'TRPL':         ['trpl-reading-room','google-grants-optimizer'],
+      'Edelman':      ['multiplier'],
+      'Emotive':      ['mlk-memorial','pickens-plan'],
+      'Personal':     ['travel-passport','family-tree']
+    };
+    for (var k in GROUPS) if (GROUPS[k].indexOf(slug) !== -1) return k;
+    return 'Projects';
+  })(location.pathname);
+
+  gtag('config', 'G-0RQJ767Q41', { content_group: __cg });
 </script>
 
 </head>
@@ -138,5 +158,6 @@
 </footer>
 
 <script src="/assets/js/nav.js" defer></script>
+<script src="/assets/js/analytics.js" defer></script>
 </body>
 </html>
