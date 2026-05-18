@@ -60,44 +60,44 @@ S["contact"] = ParagraphStyle(
     textColor=INK_MUTED, alignment=TA_RIGHT,
 )
 S["h2"] = ParagraphStyle(
-    "h2", fontName="Fraunces-Sb", fontSize=14, leading=18,
-    textColor=ACCENT, spaceBefore=14, spaceAfter=6,
+    "h2", fontName="Fraunces-Sb", fontSize=13, leading=16,
+    textColor=ACCENT, spaceBefore=9, spaceAfter=3,
 )
 S["body"] = ParagraphStyle(
-    "body", fontName="Inter", fontSize=9.5, leading=14,
-    textColor=INK, spaceAfter=6, alignment=TA_LEFT,
+    "body", fontName="Inter", fontSize=9, leading=13,
+    textColor=INK, spaceAfter=4, alignment=TA_LEFT,
 )
 S["summary"] = ParagraphStyle(
-    "summary", fontName="Inter", fontSize=9.5, leading=14,
-    textColor=INK_MUTED, spaceAfter=8, alignment=TA_LEFT,
+    "summary", fontName="Inter", fontSize=9, leading=13,
+    textColor=INK_MUTED, spaceAfter=5, alignment=TA_LEFT,
 )
 S["lead"] = ParagraphStyle(
-    "lead", fontName="Inter", fontSize=10.5, leading=15,
-    textColor=INK, spaceAfter=8, alignment=TA_LEFT,
+    "lead", fontName="Inter", fontSize=10, leading=14,
+    textColor=INK, spaceAfter=5, alignment=TA_LEFT,
 )
 S["role_title"] = ParagraphStyle(
-    "role_title", fontName="Fraunces-Sb", fontSize=11.5, leading=14,
+    "role_title", fontName="Fraunces-Sb", fontSize=11, leading=13,
     textColor=INK, spaceAfter=1,
 )
 S["role_dates"] = ParagraphStyle(
-    "role_dates", fontName="Inter-Sb", fontSize=8.5, leading=14,
+    "role_dates", fontName="Inter-Sb", fontSize=8.5, leading=13,
     textColor=GOLD, alignment=TA_RIGHT,
 )
 S["role_company"] = ParagraphStyle(
-    "role_company", fontName="Inter-Sb", fontSize=9.5, leading=13,
-    textColor=ACCENT, spaceAfter=3,
+    "role_company", fontName="Inter-Sb", fontSize=9, leading=12,
+    textColor=ACCENT, spaceAfter=2,
 )
 S["bullet"] = ParagraphStyle(
-    "bullet", fontName="Inter", fontSize=9, leading=13,
-    textColor=INK, spaceAfter=3, alignment=TA_LEFT,
-    leftIndent=12, bulletIndent=0,
+    "bullet", fontName="Inter", fontSize=8.6, leading=12,
+    textColor=INK, spaceAfter=2, alignment=TA_LEFT,
+    leftIndent=11, bulletIndent=0,
 )
 S["expertise"] = ParagraphStyle(
-    "expertise", fontName="Inter-Sb", fontSize=8.8, leading=12,
+    "expertise", fontName="Inter-Sb", fontSize=8.6, leading=11,
     textColor=ACCENT,
 )
 S["board"] = ParagraphStyle(
-    "board", fontName="Inter", fontSize=9.5, leading=14,
+    "board", fontName="Inter", fontSize=9, leading=13,
     textColor=INK, spaceAfter=2,
 )
 
@@ -118,7 +118,7 @@ def role(title, dates, company, summary, bullets):
     head = Table(
         [[Paragraph(title, S["role_title"]),
           Paragraph(dates or "", S["role_dates"])]],
-        colWidths=[5.6 * inch, 1.6 * inch],
+        colWidths=[5.7 * inch, 1.6 * inch],
         style=TableStyle([
             ("VALIGN", (0,0), (-1,-1), "TOP"),
             ("LEFTPADDING", (0,0), (-1,-1), 0),
@@ -133,7 +133,7 @@ def role(title, dates, company, summary, bullets):
     for b in bullets:
         parts.append(Paragraph(f"<font color='#a06b2c'>▪</font>&nbsp;&nbsp;{b}",
                                S["bullet"]))
-    parts.append(Spacer(1, 6))
+    parts.append(Spacer(1, 3))
     return parts
 
 
@@ -150,7 +150,7 @@ def expertise_grid(items, cols=3):
             else:
                 row.append("")
         rows.append(row)
-    col_w = (7.2 * inch) / cols
+    col_w = (7.3 * inch) / cols
     t = Table(rows, colWidths=[col_w] * cols,
               style=TableStyle([
                   ("VALIGN", (0,0), (-1,-1), "TOP"),
@@ -350,10 +350,10 @@ def build_pdf(out_path):
     doc = BaseDocTemplate(
         out_path,
         pagesize=LETTER,
-        leftMargin=0.7 * inch,
-        rightMargin=0.7 * inch,
-        topMargin=0.6 * inch,
-        bottomMargin=0.65 * inch,
+        leftMargin=0.6 * inch,
+        rightMargin=0.6 * inch,
+        topMargin=0.55 * inch,
+        bottomMargin=0.55 * inch,
         title="Matt Briney — Curriculum Vitae",
         author="Matt Briney",
         subject="Resume",
@@ -377,7 +377,7 @@ def build_pdf(out_path):
              Paragraph(CV_ROLE, S["role"])],
             Paragraph(CV_CONTACT, S["contact"]),
         ]],
-        colWidths=[4.6 * inch, 2.6 * inch],
+        colWidths=[4.7 * inch, 2.6 * inch],
         style=TableStyle([
             ("VALIGN", (0,0), (0,0), "TOP"),
             ("VALIGN", (1,0), (1,0), "TOP"),
