@@ -4,7 +4,7 @@ BODY = '''
     <a href="/projects/" class="back">&larr; All projects</a>
     <p class="eyebrow">Case study · Mount Vernon · 2014–2024</p>
     <h1>Mount Vernon&rsquo;s Website Reborn as the Country&rsquo;s Largest Open Classroom on George Washington</h1>
-    <p class="lede">A ten-year content-and-SEO rebuild that grew the website from 2.5M to 8M+ annual visitors and turned digital into a self-funding pillar of the operating model.</p>
+    <p class="lede">A ten-year content-and-SEO rebuild that grew the website from 2.5M to 8M+ annual visitors and 18M+ pageviews, and turned digital into a self-funding pillar of the operating model.</p>
 
     <div class="meta-row">
       <div class="meta-item"><span class="label">Role</span><span class="value">VP, Media &amp; Communications</span></div>
@@ -16,7 +16,7 @@ BODY = '''
     <div class="case-hero-image">
       <picture>
         <source type="image/webp" srcset="/img/projects/mount-vernon-website/hero.webp">
-        <img src="/img/projects/mount-vernon-website/hero.jpg" alt="Mount Vernon website — Buy Tickets / itinerary builder" width="1600" height="1066">
+        <img src="/img/projects/mount-vernon-website/hero.jpg" alt="MountVernon.org homepage — the country's open classroom on George Washington" width="1600" height="1066">
       </picture>
     </div>
   </div>
@@ -29,7 +29,7 @@ BODY = '''
 
   <div class="case-stats-row">
     <div class="case-stat"><strong>8M+</strong><span>annual visitors (from 2.5M)</span></div>
-    <div class="case-stat"><strong>3.5m</strong><span>average dwell time</span></div>
+    <div class="case-stat"><strong>18M+</strong><span>annual pageviews</span></div>
     <div class="case-stat"><strong>$8.6M</strong><span>e-commerce (from $1.1M)</span></div>
     <div class="case-stat"><strong>35%</strong><span>infrastructure cost reduction</span></div>
   </div>
@@ -39,18 +39,13 @@ BODY = '''
   <h3>Content as the front door</h3>
   <p>Rather than build pages around tickets, we built them around topics &mdash; long-form, primary-source-anchored explorations of Washington&rsquo;s life, the Revolutionary era, the founding, slavery at Mount Vernon, the landscape, the architecture. Each topic became its own SEO target. Over a decade, dozens of those pages claimed the top 2&ndash;3 organic search positions for their query and turned the site into the place teachers, students, journalists, and the curious actually land.</p>
 
-  <div class="gallery cols-2">
-    <figure>
-      <picture>
-        <source type="image/webp" srcset="/img/projects/mount-vernon-website/01.webp">
-        <img src="/img/projects/mount-vernon-website/01.jpg" alt="Mount Vernon homepage" width="1600" height="1066">
-      </picture>
-    </figure>
+  <div class="gallery cols-1">
     <figure>
       <picture>
         <source type="image/webp" srcset="/img/projects/mount-vernon-website/03.webp">
-        <img src="/img/projects/mount-vernon-website/03.jpg" alt="George Washington biography landing page" width="1600" height="1066">
+        <img src="/img/projects/mount-vernon-website/03.jpg" alt="George Washington biography landing page on MountVernon.org" width="1600" height="1066">
       </picture>
+      <figcaption class="gallery-caption">The George Washington biography hub &mdash; one of dozens of long-form topic pages that own the top of the search results for their query.</figcaption>
     </figure>
   </div>
 
@@ -77,8 +72,8 @@ BODY = '''
     </figure>
     <figure>
       <picture>
-        <source type="image/webp" srcset="/img/projects/mount-vernon-website/hero.webp">
-        <img src="/img/projects/mount-vernon-website/hero.jpg" alt="Ticketing add-ons" width="1600" height="1066">
+        <source type="image/webp" srcset="/img/projects/mount-vernon-website/05.webp">
+        <img src="/img/projects/mount-vernon-website/05.jpg" alt="Ticketing add-ons" width="1600" height="1066">
       </picture>
       <figcaption class="gallery-caption">The visit-builder: tickets, time slots, and add-on experiences in one flow.</figcaption>
     </figure>
@@ -102,7 +97,7 @@ def build():
     return dict(
         out="projects/mount-vernon-website/index.html",
         title="Mount Vernon Website Redesign — Matt Briney",
-        description="How we rebuilt Mount Vernon's website around SEO-led content marketing, grew annual visitors from 2.5M to 8M+, and grew e-commerce from $1.1M to $8.6M.",
+        description="How we rebuilt Mount Vernon's website around SEO-led content marketing, grew annual visitors from 2.5M to 8M+ at 18M+ pageviews a year, and grew e-commerce from $1.1M to $8.6M.",
         active="projects",
         canonical="https://mattbriney.com/projects/mount-vernon-website/",
         og_image="/img/projects/mount-vernon-website/hero.jpg",

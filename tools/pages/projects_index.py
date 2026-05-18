@@ -27,7 +27,7 @@ BODY = '''
           <p class="muted">An SEO-led content rebuild that turned the website into the institution&rsquo;s biggest classroom and a self-funding part of the operating model.</p>
           <div class="teaser-meta">
             <span><strong>8M+</strong><br>annual visitors</span>
-            <span><strong>3.5m</strong><br>avg dwell</span>
+            <span><strong>18M+</strong><br>annual pageviews</span>
             <span><strong>$8.6M</strong><br>e-commerce</span>
           </div>
         </div>
