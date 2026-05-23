@@ -91,7 +91,9 @@ BODY = '''
     <ul class="cv-list" style="max-width:70ch">
       <li><strong>Board Member, Vice Chair</strong> (rose from Secretary) &mdash; <a href="https://projects.propublica.org/nonprofits/organizations/364552990" target="_blank" rel="noopener">Visit Fairfax</a> (2019&ndash;2022)</li>
       <li><strong>Board Member</strong> &mdash; Explore Fairfax South / Potomac Banks tourism brand (2022)</li>
-      <li><strong>Member</strong> &mdash; Fairfax County VA250 Commission, America&rsquo;s 250th (2024)</li>
+      <li><strong>Member</strong> &mdash; <a href="https://www.fairfaxcounty.gov/planning-development/sites/planning-development/files/Assets/Documents/historic/250-workgroup/january-2024-minutes.pdf" target="_blank" rel="noopener">Fairfax County VA250 Commission</a>, America&rsquo;s 250th (2024)</li>
+      <li><strong>Advisory position</strong> &mdash; <a href="https://eservice.pwcgov.org/documents/bocs/agendas/2019/1015/3-G.pdf" target="_blank" rel="noopener">Potomac Heritage National Scenic Trail</a> (2019)</li>
+      <li><strong>Volunteer</strong> &mdash; <a href="https://arlhist.org/wp-content/uploads/2018/07/AHSnewsletter2017_09_00.pdf" target="_blank" rel="noopener">Arlington Historical Society</a> (2017)</li>
       <li><strong>Participating Member</strong> &mdash; Mount Vernon Tourism Taskforce (2019&ndash;2022)</li>
       <li><strong>Board Member</strong> &mdash; <a href="https://www.campagnacenter.org/wp-content/uploads/TCC%202013%20Annual%20Report.pdf" target="_blank" rel="noopener">The Campagna Center</a>, Alexandria (2013&ndash;2016)</li>
     </ul>
@@ -100,7 +102,12 @@ BODY = '''
 
     <div class="press-strip">
       <span class="ps-label">As featured in</span>
+      <span class="ps-outlet">The New Yorker</span>
       <span class="ps-outlet">The Washington Post</span>
+      <span class="ps-outlet">Associated Press</span>
+      <span class="ps-outlet">Reuters</span>
+      <span class="ps-outlet">USA Today</span>
+      <span class="ps-outlet">Voice of America</span>
       <span class="ps-outlet">The Washington Times</span>
       <span class="ps-outlet">WJLA ABC7</span>
       <span class="ps-outlet">FOX&nbsp;5 DC</span>
@@ -247,6 +254,177 @@ BODY = '''
         <span class="press-action">Read &rarr;</span>
       </a>
 
+      <a class="press-entry" href="https://www.newyorker.com/magazine/2022/03/14/did-george-washington-have-an-enslaved-son" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">The New Yorker</span>
+          <span class="press-desc">On the historical question of an enslaved Washington relative &mdash; Mount Vernon&rsquo;s research and interpretation (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.reuters.com/article/world/fact-check-inaccurate-george-washington-quote-about-the-right-to-bear-arms-idUSKBN29V27G/" target="_blank" rel="noopener">
+        <span class="press-type">Fact check</span>
+        <span class="press-main">
+          <span class="press-outlet">Reuters</span>
+          <span class="press-desc">Debunking a fabricated George Washington &lsquo;right to bear arms&rsquo; quote (2021).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.militarytimes.com/off-duty/military-culture/2023/05/17/the-challenge-of-portraying-americas-first-president-in-film/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Military Times</span>
+          <span class="press-desc">On the challenge of portraying America&rsquo;s first president on film (2023).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.voanews.com/a/usa_tours-former-us-plantations-focus-telling-truth-about-enslavement/6209773.html" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Voice of America</span>
+          <span class="press-desc">On historic sites telling the fuller truth about enslavement (2021).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.usatoday.com/story/travel/news/2020/06/22/plantation-tours-evolve-putting-more-focus-experience-enslaved/3226429001/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">USA Today</span>
+          <span class="press-desc">On plantation tours evolving to center the experience of the enslaved (2020).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.welt.de/reise/Fern/article238592031/Virginia-in-den-USA-Von-Sklaven-wollte-man-in-Mount-Vernon-nichts-wissen.html" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Die Welt</span>
+          <span class="press-desc">German-language feature on Mount Vernon&rsquo;s interpretation of slavery.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.washingtontimes.com/news/2022/aug/10/conservatives-decry-racialist-agenda-monticello-mo/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">The Washington Times</span>
+          <span class="press-desc">On debates over interpretation at Mount Vernon and Monticello (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://wtop.com/alexandria/2023/02/big-crowds-in-virginia-celebrate-presidents-day-at-washingtons-mount-vernon-estate/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">WTOP</span>
+          <span class="press-desc">Big Presidents&rsquo; Day crowds at Mount Vernon (2023).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://wtop.com/alexandria/2022/02/george-washingtons-290th-birthday-celebrated-at-mount-vernon-estate/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">WTOP</span>
+          <span class="press-desc">Washington&rsquo;s 290th birthday at Mount Vernon (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://wjla.com/features/7news-mornings/new-exhibit-at-mount-vernon" target="_blank" rel="noopener">
+        <span class="press-type">TV</span>
+        <span class="press-main">
+          <span class="press-outlet">WJLA &middot; 7News</span>
+          <span class="press-desc">A new exhibit at Mount Vernon.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.voanews.com/a/usa_george-washingtons-mount-vernon-estate-glows-christmas/6199847.html" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Voice of America</span>
+          <span class="press-desc">Mount Vernon aglow for Christmas (2021).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.voanews.com/a/usa_many-us-july-4-fireworks-festivities-canceled-due-coronavirus/6192091.html" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Voice of America</span>
+          <span class="press-desc">On Fourth of July fireworks amid the pandemic (2020).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://virginiabusiness.com/a-historic-challenge/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Virginia Business</span>
+          <span class="press-desc">Navigating the pandemic as one of the nation&rsquo;s most-visited historic sites (2020).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.bizjournals.com/washington/news/2020/12/11/dc-museums-teaching-during-covid.html" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Washington Business Journal</span>
+          <span class="press-desc">How D.C.-area museums kept teaching through COVID-19 (2020).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://sidwellhorizon.org/1838/past-editions-of-features/washington-transitions-into-phase-two-of-reopening/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">The Sidwell Horizon</span>
+          <span class="press-desc">On Mount Vernon&rsquo;s phased reopening.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://washingtonenfrancais.com/visite-mount-vernon-en-francais/" target="_blank" rel="noopener">
+        <span class="press-type">Feature</span>
+        <span class="press-main">
+          <span class="press-outlet">Washington en Fran&ccedil;ais</span>
+          <span class="press-desc">French-language guide to visiting Mount Vernon.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://harpersmagazine.substack.com/p/state-of-nature" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Harper&rsquo;s Magazine</span>
+          <span class="press-desc">&lsquo;State of Nature.&rsquo;</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://grabien.com/file?id=3378080" target="_blank" rel="noopener">
+        <span class="press-type">Clip</span>
+        <span class="press-main">
+          <span class="press-outlet">Grabien</span>
+          <span class="press-desc">A licensed broadcast news clip featuring Mount Vernon.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.alltrailsleadtoicecream.com/2022/09/bike-paths.html" target="_blank" rel="noopener">
+        <span class="press-type">Feature</span>
+        <span class="press-main">
+          <span class="press-outlet">All Trails Lead to Ice Cream</span>
+          <span class="press-desc">A cycling guide featuring the Mount Vernon Trail (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
       <a class="press-entry" href="https://www.tessitura.com/en/Items/Articles/Success-Stories/Mt-Vernon-Matthew-Briney" target="_blank" rel="noopener">
         <span class="press-type">Feature</span>
         <span class="press-main">
@@ -340,6 +518,33 @@ BODY = '''
         <span class="press-main">
           <span class="press-outlet">St. Albert Gazette &middot; AP</span>
           <span class="press-desc">A reconstructed road opens grand views at Theodore Roosevelt National Park, beside the Library.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://apnews.com/article/north-dakota-theodore-roosevelt-presidential-library-e7ceda12b626cc3f80a8cda0eb033be6" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Associated Press</span>
+          <span class="press-desc">Federal cost-share and the future of the Theodore Roosevelt Presidential Library.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.kxnet.com/news/a-theodore-roosevelt-library-is-opening-soon-visitors-must-pack-a-bag-for-north-dakota/" target="_blank" rel="noopener">
+        <span class="press-type">TV</span>
+        <span class="press-main">
+          <span class="press-outlet">KX News</span>
+          <span class="press-desc">&lsquo;A Theodore Roosevelt library is opening soon&rsquo; &mdash; what visitors should know.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.roadscholar.org/blog/americas-newest-presidential-libraries/" target="_blank" rel="noopener">
+        <span class="press-type">Feature</span>
+        <span class="press-main">
+          <span class="press-outlet">Road Scholar</span>
+          <span class="press-desc">&lsquo;America&rsquo;s newest presidential libraries.&rsquo;</span>
         </span>
         <span class="press-action">Read &rarr;</span>
       </a>
@@ -496,6 +701,42 @@ BODY = '''
       </div>
 
     </div>
+
+      <a class="press-entry" href="https://www.themedattraction.com/tea-summit-2019/" target="_blank" rel="noopener">
+        <span class="press-type">Talk</span>
+        <span class="press-main">
+          <span class="press-outlet">TEA Summit 2019</span>
+          <span class="press-desc">Presented at the Themed Entertainment Association summit (2019).</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://assets.noviams.com/novi-file-uploads/tam/TAM_Program_2023_Final_Compressed-6a85108a.pdf" target="_blank" rel="noopener">
+        <span class="press-type">Talk</span>
+        <span class="press-main">
+          <span class="press-outlet">Texas Association of Museums</span>
+          <span class="press-desc">Conference presentation at the TAM annual meeting (2023).</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.americanheritagechocolate.com/hcs-2024/agenda/" target="_blank" rel="noopener">
+        <span class="press-type">Talk</span>
+        <span class="press-main">
+          <span class="press-outlet">Historic Chocolate Society</span>
+          <span class="press-desc">Presentation at the society&rsquo;s 2024 annual meeting.</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.goerie.com/story/news/local/crawford-county/2017/09/10/washington-s-visit-to-be/18788454007/" target="_blank" rel="noopener">
+        <span class="press-type">Panel</span>
+        <span class="press-main">
+          <span class="press-outlet">Washington Trail Summit</span>
+          <span class="press-desc">Participated in a summit on commemorating George Washington&rsquo;s frontier travels (2017).</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
 
     <p class="muted" style="max-width:70ch;margin-top:1.25rem">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. <a href="mailto:mkbriney@gmail.com?subject=Speaking%20inquiry">Get in touch about speaking &rarr;</a></p>
 
