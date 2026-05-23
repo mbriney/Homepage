@@ -78,7 +78,7 @@ BODY = '''
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Boards &amp; affiliations</h2>
     <ul class="cv-list" style="max-width:70ch">
-      <li><strong>Board Member, Secretary</strong> &mdash; Visit Fairfax (2019&ndash;2022)</li>
+      <li><strong>Board Member, Vice Chair</strong> (rose from Secretary) &mdash; Visit Fairfax (2019&ndash;2022)</li>
       <li><strong>Participating Member</strong> &mdash; Mount Vernon Tourism Taskforce (2019&ndash;2022)</li>
       <li><strong>Board Member</strong> &mdash; The Campagna Center, Alexandria (2013&ndash;2016)</li>
     </ul>
