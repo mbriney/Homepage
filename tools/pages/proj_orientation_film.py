@@ -112,6 +112,22 @@ BODY = '''
     </div>
   </div>
 
+  <h2>On set</h2>
+  <div class="gallery cols-3">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-01.webp"><img src="/img/gallery/orientation-onset-01.jpg" alt="On set for Mount Vernon's orientation film" loading="lazy"></picture>
+      <figcaption class="gallery-caption">On set for the orientation film.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-05.webp"><img src="/img/gallery/orientation-onset-05.jpg" alt="Filming the Mount Vernon orientation film" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Production on the grounds.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-09.webp"><img src="/img/gallery/orientation-onset-09.jpg" alt="Behind the scenes on the Mount Vernon orientation film" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Behind the scenes.</figcaption>
+    </figure>
+  </div>
+
   <h2>What we did</h2>
 
   <h3>Started with the audience, not the institution</h3>

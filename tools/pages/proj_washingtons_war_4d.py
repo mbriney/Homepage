@@ -87,6 +87,18 @@ BODY = '''
     </figure>
   </div>
 
+  <h3>On set</h3>
+  <div class="gallery cols-2">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/revwar4d-onset-01.webp"><img src="/img/gallery/revwar4d-onset-01.jpg" alt="On set filming the Revolutionary War 4D Theater film" loading="lazy"></picture>
+      <figcaption class="gallery-caption">On location for the new film &mdash; July 2017.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/revwar4d-onset-07.webp"><img src="/img/gallery/revwar4d-onset-07.jpg" alt="Reenactors on set for the Revolutionary War 4D Theater film" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Reenactors between takes on the shoot.</figcaption>
+    </figure>
+  </div>
+
   <h2>The theater: a full sensory rebuild</h2>
   <p>The theater itself was rebuilt around the new film. <a href="https://solomongroup.com/projects/george-washingtons-mt-vernon" target="_blank" rel="noopener">Solomon Group</a> led AV integration, scenic fabrication, lighting, and show control, partnered with <strong>Gallagher &amp; Associates</strong> on experience design.</p>
 

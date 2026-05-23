@@ -63,6 +63,12 @@ BODY = '''
 
   <h3>Ported to VR &mdash; Oculus &amp; Google Cardboard</h3>
   <p>We took the same estate into virtual reality, porting the experience to <strong>Oculus</strong> headsets and to <strong>Google Cardboard</strong> so a classroom with a stack of cheap viewers and a few phones could stand inside the Mansion. The HDR panoramas that anchored the web tour translated naturally to a head-tracked, 360&deg; view &mdash; the same photography, the same stories, now wrapped around the viewer instead of framed on a screen. It put a genuinely immersive Mount Vernon within reach of school budgets that would never see a VR studio.</p>
+  <div class="gallery cols-1">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/vr-demo-01.webp"><img src="/img/gallery/vr-demo-01.jpg" alt="Demonstrating the Mount Vernon VR experience in 2015" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Demonstrating the VR experience &mdash; 2015.</figcaption>
+    </figure>
+  </div>
 
   <h2>Why it mattered</h2>
   <blockquote>An 18-minute dwell time on a website is museum-grade engagement &mdash; proof that depth and craft online can rival the visit itself.</blockquote>

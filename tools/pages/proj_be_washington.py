@@ -55,10 +55,14 @@ BODY = '''
   </div>
 
   <h2>On set</h2>
-  <div class="gallery cols-1">
+  <div class="gallery cols-2">
     <figure>
       <picture><source type="image/webp" srcset="/img/projects/be-washington/onset-01.webp"><img src="/img/projects/be-washington/onset-01.jpg" alt="On set for Be Washington — an actor in George Washington costume during filming" loading="lazy"></picture>
       <figcaption class="gallery-caption">On set during production &mdash; April 2017.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/bew-onset-01.webp"><img src="/img/gallery/bew-onset-01.jpg" alt="Christopher Jackson on set as host of Be Washington" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Christopher Jackson filming his role as host &mdash; October 2017.</figcaption>
     </figure>
   </div>
 

@@ -118,6 +118,18 @@ BODY = '''
   <p>The actor playing the enslaved gardener said it best:</p>
   <blockquote>Bringing to life the stories of those enslaved at Mount Vernon was an enriching experience. Standing on the grounds of where they lived made the experience even more visceral. <span style="display:block;margin-top:.7rem;font-style:normal;font-size:.9rem;color:var(--ink-muted)">— Jamar Jones, actor (in the &ldquo;Mount Vernon in a New Lens&rdquo; blog by ARtGlass CEO Greg Werkheiser, 2019)</span></blockquote>
 
+  <h2>From the field</h2>
+  <div class="gallery cols-2">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/ar-tour-01.webp"><img src="/img/gallery/ar-tour-01.jpg" alt="Testing the Mount Vernon augmented-reality tour on Epson Moverio smartglasses" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Testing the AR tour on the grounds &mdash; 2018.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/gallery/ar-tour-02.webp"><img src="/img/gallery/ar-tour-02.jpg" alt="A visitor wearing smartglasses on the Mount Vernon AR tour" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Smartglasses in the field at Mount Vernon.</figcaption>
+    </figure>
+  </div>
+
   <h2>What we learned</h2>
   <p>We ran the tour as a paid add-on for two years. The Epson Moverio glasses worked &mdash; daylight-readable, untethered, comfortable enough for a 45-minute walk &mdash; but the form factor was still early-generation: cabled, head-worn, and not yet at the &ldquo;put it on, forget it&rsquo;s there&rdquo; comfort threshold that AR needs for true mass adoption. We learned a lot about how visitors actually behave with wearables on a guided tour: where they trip up, where they want to look away from the AR layer, how long they&rsquo;ll keep the glasses on before needing a break.</p>
   <p>More importantly, the <em>content</em> we produced has long outlived the hardware: the 3D models, the live-action plates, the hologram scenes, the narrative scripts, and the curatorial research that anchored all of it became reusable institutional assets &mdash; later folded into Mount Vernon&rsquo;s virtual tour, classroom resources, and other digital experiences.</p>
