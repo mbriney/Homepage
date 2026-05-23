@@ -39,6 +39,19 @@ BODY = '''
   <h2>Going live, five days a week</h2>
   <p>Within days of the closure we launched a daily livestream program on Mount Vernon&rsquo;s social channels &mdash; five episodes a week, hosted by a rotating cast of curators, historians, gardeners, archeologists, and animal caretakers. The format was deliberately simple: a member of the staff, a corner of the empty estate, and a half-hour with the audience. Cherry trees in bloom; the sheep in their pasture; the smokehouse; the Slave Memorial; Washington&rsquo;s tomb; the Mansion&rsquo;s exterior. People watched in real time and brought their kids. The series ran throughout the closure and well into the reopening period and gave Mount Vernon a daily presence in households exactly as those households were doing their hardest work without ever leaving them.</p>
 
+  <div class="film" id="program-example">
+    <div class="film-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/iJhA0bB7o5o" title="A Mount Vernon online program from the pandemic" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="film-body">
+      <div class="film-head">
+        <h3 class="film-title">An example program from the closure</h3>
+        <span class="film-meta">Mount Vernon &middot; 2020</span>
+      </div>
+      <p class="film-tagline">One of the daily online programs produced while the estate was closed &mdash; staff bringing a corner of Mount Vernon to households in real time.</p>
+    </div>
+  </div>
+
   <h2>An online estate for the classroom</h2>
   <p>The single biggest pivot was for teachers. K&ndash;12 educators across the country had been thrown into virtual classrooms with almost no warning, and the most valuable thing Mount Vernon could give them was a curated, ready-to-use library of primary sources, lesson plans, distance-learning programs, and interactive tools that could be dropped straight into a Google Classroom on Monday morning. We rebuilt the website&rsquo;s online-learning hub around exactly that.</p>
 

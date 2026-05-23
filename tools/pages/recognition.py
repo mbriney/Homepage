@@ -58,6 +58,17 @@ BODY = '''
         </div>
       </a>
 
+      <a class="award-card" href="https://segd.org/projects/be-washington-its-your-turn-lead/" target="_blank" rel="noopener">
+        <div class="award-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M5 4H3v2a3 3 0 0 0 3 3M19 4h2v2a3 3 0 0 1-3 3"/></svg>
+        </div>
+        <div class="award-body">
+          <p class="award-name">SEGD Merit Award</p>
+          <p class="award-meta"><em>Be Washington</em> &middot; Society for Experiential Graphic Design &middot; 2019</p>
+          <p class="award-note">A Global Design Awards honor in Digital Experiences for the interactive theater.</p>
+        </div>
+      </a>
+
     </div>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Film &amp; Executive Producer credits</h2>
@@ -209,6 +220,132 @@ BODY = '''
 
     </div>
 
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">The Theodore Roosevelt Library in the news</h2>
+    <p class="muted" style="max-width:70ch;margin:-.4rem 0 1rem">As CCMO and spokesperson, leading press for a presidential library under construction &mdash; selected coverage:</p>
+
+    <div class="press-index">
+
+      <a class="press-entry" href="https://ny1.com/nyc/all-boroughs/ap-top-news/2024/04/23/federal-money-eyed-for-theodore-roosevelt-presidential-library-in-north-dakota" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Spectrum News NY1 &middot; AP</span>
+          <span class="press-desc">Federal cost-share eyed for the Theodore Roosevelt Presidential Library (2024).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.newsfromthestates.com/article/theodore-roosevelt-presidential-library-bill-aims-federal-cost-share-access-artifacts" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">States Newsroom</span>
+          <span class="press-desc">A bill to set a federal cost-share and public access to the Library&rsquo;s artifacts.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://news.prairiepublic.org/local-news/2024-08-15/tr-library-reaches-milestone-loop-road-work-nears-completion" target="_blank" rel="noopener">
+        <span class="press-type">Radio</span>
+        <span class="press-main">
+          <span class="press-outlet">Prairie Public</span>
+          <span class="press-desc">The Library reaches a construction milestone as loop-road work nears completion (2024).</span>
+        </span>
+        <span class="press-action">Listen &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.kvrr.com/2025/07/10/kvrr-connections-tourism-inside-the-theodore-roosevelt-presidential-library-one-year-before-it-opens/" target="_blank" rel="noopener">
+        <span class="press-type">TV</span>
+        <span class="press-main">
+          <span class="press-outlet">KVRR &middot; Connections</span>
+          <span class="press-desc">Inside the Theodore Roosevelt Presidential Library, one year before it opens (2025).</span>
+        </span>
+        <span class="press-action">Watch &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://northdakotamonitor.com/2025/10/06/theodore-roosevelt-presidential-library-using-70m-bank-of-north-dakota-line-of-credit/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">North Dakota Monitor</span>
+          <span class="press-desc">The Library&rsquo;s use of a $70M Bank of North Dakota line of credit (2025).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.thedickinsonpress.com/news/local/good-morning-medora-national-television-airing-live-segment-from-theodore-roosevelt-presidential-library" target="_blank" rel="noopener">
+        <span class="press-type">TV</span>
+        <span class="press-main">
+          <span class="press-outlet">The Dickinson Press</span>
+          <span class="press-desc">&lsquo;Good Morning America&rsquo; airs a live segment from the Library.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.inforum.com/news/north-dakota/theodore-roosevelt-presidential-library-launches-virtual-event-series" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">InForum</span>
+          <span class="press-desc">The Library launches a virtual event series.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://northdakotamonitor.com/2026/02/12/north-dakota-spreads-wealth-to-help-communities-celebrate-americas-250th-birthday/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">North Dakota Monitor</span>
+          <span class="press-desc">North Dakota helps communities mark America&rsquo;s 250th birthday (2026).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.stalbertgazette.com/lifestyle-news/reconstructed-road-opens-grand-views-at-theodore-roosevelt-national-park-in-north-dakota-11535602" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">St. Albert Gazette &middot; AP</span>
+          <span class="press-desc">A reconstructed road opens grand views at Theodore Roosevelt National Park, beside the Library.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.newswire.com/news/theodore-roosevelts-groundbreaking-firsts-and-feats-in-celebration-of-22728498" target="_blank" rel="noopener">
+        <span class="press-type">Release</span>
+        <span class="press-main">
+          <span class="press-outlet">Newswire</span>
+          <span class="press-desc">&ldquo;Theodore Roosevelt&rsquo;s groundbreaking firsts and feats&rdquo; &mdash; an issued release celebrating the Library.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+    </div>
+
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Campaigns &amp; press releases</h2>
+
+    <div class="gallery-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/DdcUzVgduSA" title="There's a Washington App — Mount Vernon April Fools campaign" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <p class="gallery-video-cap">&ldquo;There&rsquo;s a Washington App&rdquo; &mdash; a tongue-in-cheek April Fools&rsquo; viral campaign for Mount Vernon.</p>
+
+    <div class="press-index">
+
+      <a class="press-entry" href="https://www.mountvernon.org/george-washington/theres-washington-app" target="_blank" rel="noopener">
+        <span class="press-type">Campaign</span>
+        <span class="press-main">
+          <span class="press-outlet">&ldquo;There&rsquo;s a Washington App&rdquo;</span>
+          <span class="press-desc">An April Fools&rsquo; viral marketing effort &mdash; the spoof landing page on mountvernon.org.</span>
+        </span>
+        <span class="press-action">View &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.mountvernon.org/about/news/article/announcement-of-the-finalists-for-the-2021-washington-prize" target="_blank" rel="noopener">
+        <span class="press-type">Release</span>
+        <span class="press-main">
+          <span class="press-outlet">2021 Washington Prize finalists</span>
+          <span class="press-desc">An institutional press release issued announcing the finalists for the 2021 George Washington Prize.</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+    </div>
+
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Podcasts</h2>
 
     <div class="press-index">
@@ -254,6 +391,15 @@ BODY = '''
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Speaking</h2>
 
     <div class="press-index">
+
+      <a class="press-entry" href="https://www.whitehousehistory.org/presidential-sites-summit/presidential-sites-summit-schedule-2026" target="_blank" rel="noopener">
+        <span class="press-type">Upcoming</span>
+        <span class="press-main">
+          <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
+          <span class="press-desc">Speaking at the national gathering of presidential libraries, homes, and historic sites &mdash; 2026.</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
 
       <a class="press-entry" href="https://www.youtube.com/watch?v=J82hjGTuUZA" target="_blank" rel="noopener">
         <img class="press-thumb" src="/img/recognition/acc-summit.jpg" alt="Matt Briney delivering a keynote at the ACC Summit 2025" loading="lazy">
