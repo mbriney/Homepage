@@ -54,6 +54,7 @@ def page(slug: str, out: Path, *, title: str, description: str,
         cls_home="active" if active=="home" else "",
         cls_bio="active" if active=="bio" else "",
         cls_proj="active" if active=="projects" else "",
+        cls_recognition="active" if active=="recognition" else "",
         cls_cv="active" if active=="cv" else "",
     )
     html_doc = render(BASE, head=head, header=header, body=body, footer=FOOTER)

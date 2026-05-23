@@ -366,6 +366,15 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   box-shadow: var(--shadow-md);
   color: var(--ink);
 }
+/* Featured flagship cards — gold top accent so they read as a tier above the grid */
+.teaser--featured {
+  border-color: var(--gold);
+  box-shadow: 0 1px 0 var(--gold) inset, 0 6px 22px -14px rgba(0,0,0,.35);
+}
+.teaser--featured .teaser-body { border-top: 3px solid var(--gold); }
+@media (min-width: 900px) {
+  .teaser-grid--featured { grid-template-columns: repeat(2, 1fr); }
+}
 .teaser-thumb {
   aspect-ratio: 16 / 10;
   overflow: hidden;
@@ -399,6 +408,71 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
   font-size: .8rem; color: var(--ink-muted);
 }
 .teaser-meta strong { color: var(--accent); font-family: "Fraunces", serif; font-weight: 500; font-size: 1.05rem; }
+
+/* -------- Awards / recognition -------- */
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+.award-card {
+  display: flex; gap: 1rem; align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 1.25rem 1.4rem;
+  color: var(--ink);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.award-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); color: var(--ink); }
+.award-badge {
+  flex: 0 0 auto;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+}
+.award-badge svg { width: 26px; height: 26px; }
+.award-name { font-family: "Fraunces", serif; font-size: 1.2rem; font-weight: 500; margin: 0 0 .15rem; }
+.award-meta { font-size: .82rem; letter-spacing: .04em; color: var(--accent); font-weight: 600; margin: 0 0 .4rem; }
+.award-note { font-size: .9rem; color: var(--ink-muted); margin: 0; }
+
+.recognition-callout {
+  display: flex; gap: 1.1rem; align-items: flex-start;
+  background: var(--cream-soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  max-width: 80ch;
+}
+.recognition-callout-icon { flex: 0 0 auto; color: var(--gold); }
+.recognition-callout-icon svg { width: 30px; height: 30px; }
+
+/* -------- Recruiter / inquiry CTA -------- */
+.inquiry-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 1.75rem 2rem;
+}
+.inquiry-cta-text { flex: 1 1 320px; }
+.inquiry-cta-text h2 { font-size: 1.5rem; margin: .15rem 0 .5rem; }
+.inquiry-cta-text .muted { margin: 0; max-width: 56ch; }
+.inquiry-cta-actions {
+  display: flex; flex-wrap: wrap; gap: .75rem;
+  flex: 0 0 auto;
+}
+@media (max-width: 640px) {
+  .inquiry-cta { padding: 1.5rem 1.25rem; }
+  .inquiry-cta-actions { width: 100%; }
+  .inquiry-cta-actions .btn { flex: 1 1 auto; text-align: center; }
+}
 
 /* -------- Case study detail page -------- */
 .case-hero {
@@ -965,6 +1039,25 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .cv-list { margin: 0; padding-left: 1.25rem; }
 .cv-list li { margin-bottom: .35rem; }
 .cv-list li::marker { color: var(--gold); }
+/* Demoted "additional work" bullets — present but visually secondary */
+.cv-list li.cv-more { color: var(--ink-muted); font-size: .92rem; }
+.cv-list li.cv-more:first-of-type {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+  list-style: none;
+  margin-left: -1.25rem;
+}
+.cv-list li.cv-more:first-of-type::before {
+  content: "Additional work";
+  display: block;
+  font-size: .7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

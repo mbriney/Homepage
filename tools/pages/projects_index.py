@@ -10,11 +10,11 @@ BODY = '''
 <section class="section section--tight">
   <div class="container">
 
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin-bottom:1.25rem;">Institutional work</h2>
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin-bottom:1.25rem;">Featured</h2>
 
-    <div class="teaser-grid">
+    <div class="teaser-grid teaser-grid--featured">
 
-      <a class="teaser" href="/projects/mount-vernon-website/">
+      <a class="teaser teaser--featured" href="/projects/mount-vernon-website/">
         <div class="teaser-thumb">
           <picture>
             <source type="image/webp" srcset="/img/projects/mount-vernon-website/hero.webp">
@@ -32,6 +32,67 @@ BODY = '''
           </div>
         </div>
       </a>
+
+      <a class="teaser teaser--featured" href="/projects/trpl-reading-room/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/tr-llm/hero.webp">
+            <img src="/img/projects/tr-llm/hero.jpg" alt="Theodore Roosevelt Reading Room AI tool" loading="lazy" width="1600" height="856">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">TR Presidential Library · 2024–present</p>
+          <h3>Reading Room: AI Collections</h3>
+          <p class="muted">A GPT-powered way to explore TR&rsquo;s life and the Library&rsquo;s primary sources through natural language &mdash; AI shipped in production at a nonprofit.</p>
+          <div class="teaser-meta">
+            <span><strong>GPT-powered</strong><br>natural-language search</span>
+            <span><strong>In production</strong><br>at the TR Library</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="teaser teaser--featured" href="/projects/be-washington/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/be-washington/hero.webp">
+            <img src="/img/projects/be-washington/hero.jpg" alt="Be Washington interactive theater" loading="lazy" width="1600" height="1030">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">Mount Vernon · 2017–2018 · Thea Award</p>
+          <h3><em>Be Washington</em></h3>
+          <p class="muted">A $3.5M, 36-seat first-person leadership theater hosted by Christopher Jackson &mdash; and a free web/classroom version that reaches 10&times; more players.</p>
+          <div class="teaser-meta">
+            <span><strong>Thea</strong><br>Award winner</span>
+            <span><strong>10&times;</strong><br>classroom reach</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="teaser teaser--featured" href="/projects/google-grants-optimizer/">
+        <div class="teaser-thumb" style="background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);text-align:center;padding:1.5rem;">
+          <div>
+            <div style="font-family:Fraunces,serif;font-size:3rem;line-height:1;font-weight:500;color:var(--cream);letter-spacing:-0.02em;">16.46<span style="color:var(--gold);font-size:.6em;margin-left:.05em;">%</span></div>
+            <div style="font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;margin-top:.6rem;">avg click-through rate</div>
+            <div style="font-size:.72rem;color:var(--cream-soft);opacity:.7;margin-top:.4rem;">vs. 5% Grant minimum</div>
+          </div>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">TRPL Foundation · 2024–present</p>
+          <h3>AI Google Ad Grant Optimizer</h3>
+          <p class="muted">An AI agent that audits the Grant account, drafts a change plan, and executes via the Google Ads &amp; GA4 APIs &mdash; sustaining 3&times; the Grant&rsquo;s minimum CTR.</p>
+          <div class="teaser-meta">
+            <span><strong>25.78%</strong><br>peak CTR</span>
+            <span><strong>$10K/mo</strong><br>Grant deployed</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.5rem 0 1.25rem;">Institutional work</h2>
+
+    <div class="teaser-grid">
 
       <a class="teaser" href="/projects/tessitura-ticketing/">
         <div class="teaser-thumb">
@@ -65,24 +126,6 @@ BODY = '''
           <div class="teaser-meta">
             <span><strong>4M+</strong><br>visitors</span>
             <span><strong>18m</strong><br>avg dwell</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="teaser" href="/projects/be-washington/">
-        <div class="teaser-thumb">
-          <picture>
-            <source type="image/webp" srcset="/img/projects/be-washington/hero.webp">
-            <img src="/img/projects/be-washington/hero.jpg" alt="Be Washington interactive theater" loading="lazy" width="1600" height="1030">
-          </picture>
-        </div>
-        <div class="teaser-body">
-          <p class="project-tag">Mount Vernon · 2017–2018 · Thea Award</p>
-          <h3><em>Be Washington</em></h3>
-          <p class="muted">A $3.5M, 36-seat first-person leadership theater hosted by Christopher Jackson &mdash; and a free web/classroom version that reaches 10&times; more players.</p>
-          <div class="teaser-meta">
-            <span><strong>Thea</strong><br>Award winner</span>
-            <span><strong>10&times;</strong><br>classroom reach</span>
           </div>
         </div>
       </a>
@@ -303,20 +346,6 @@ BODY = '''
         </div>
       </a>
 
-      <a class="teaser" href="/projects/trpl-reading-room/">
-        <div class="teaser-thumb">
-          <picture>
-            <source type="image/webp" srcset="/img/projects/tr-llm/hero.webp">
-            <img src="/img/projects/tr-llm/hero.jpg" alt="Theodore Roosevelt Reading Room AI tool" loading="lazy" width="1600" height="856">
-          </picture>
-        </div>
-        <div class="teaser-body">
-          <p class="project-tag">TR Presidential Library · 2024–present</p>
-          <h3>Reading Room: AI Collections</h3>
-          <p class="muted">A GPT-powered way to explore TR&rsquo;s life and the Library&rsquo;s primary sources through natural language.</p>
-        </div>
-      </a>
-
       <a class="teaser" href="/projects/annual-reports/">
         <div class="teaser-thumb">
           <picture>
@@ -331,25 +360,6 @@ BODY = '''
           <div class="teaser-meta">
             <span><strong>76 + 41</strong><br>pages, two reports</span>
             <span><strong>1853 / 2026</strong><br>year founded / year opens</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="teaser" href="/projects/google-grants-optimizer/">
-        <div class="teaser-thumb" style="background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);text-align:center;padding:1.5rem;">
-          <div>
-            <div style="font-family:Fraunces,serif;font-size:3rem;line-height:1;font-weight:500;color:var(--cream);letter-spacing:-0.02em;">16.46<span style="color:var(--gold);font-size:.6em;margin-left:.05em;">%</span></div>
-            <div style="font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;margin-top:.6rem;">avg click-through rate</div>
-            <div style="font-size:.72rem;color:var(--cream-soft);opacity:.7;margin-top:.4rem;">vs. 5% Grant minimum</div>
-          </div>
-        </div>
-        <div class="teaser-body">
-          <p class="project-tag">TRPL Foundation · 2024–present</p>
-          <h3>AI Google Ad Grant Optimizer</h3>
-          <p class="muted">An AI agent that audits the Grant account, drafts a change plan, and executes via the Google Ads &amp; GA4 APIs &mdash; sustaining 3&times; the Grant&rsquo;s minimum CTR.</p>
-          <div class="teaser-meta">
-            <span><strong>25.78%</strong><br>peak CTR</span>
-            <span><strong>$10K/mo</strong><br>Grant deployed</span>
           </div>
         </div>
       </a>

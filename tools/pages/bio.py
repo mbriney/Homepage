@@ -3,7 +3,7 @@ BODY = '''
   <div class="container">
     <p class="eyebrow">Bio</p>
     <h1 style="margin-bottom:.2em">Matt Briney</h1>
-    <p class="lede" style="max-width:60ch">A museum and cultural institution executive with twenty years of building public-facing brands, digital products, and audience experiences for mission-driven organizations.</p>
+    <p class="lede" style="max-width:62ch">A museum and cultural institution executive with twenty years of building public-facing brands, digital products, and audience experiences for mission-driven organizations &mdash; and one of a small number of nonprofit leaders shipping AI in production.</p>
   </div>
 </section>
 
