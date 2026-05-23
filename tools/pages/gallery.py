@@ -4,12 +4,15 @@ BODY = '''
     <p class="eyebrow">Gallery</p>
     <h1 style="margin-bottom:.2em">In the field</h1>
     <p class="lede" style="max-width:66ch">Twenty years of the work, off the page &mdash; heads of state and film crews, awards nights and keynote stages, the R&amp;D behind the experiences, and the building of a new presidential library. Click any photo to enlarge.</p>
+    <nav class="gallery-jump" aria-label="Jump to a section">
+<a href="#heads-of-state">Heads of state</a><a href="#on-camera">On camera</a><a href="#awards">Awards</a><a href="#speaking">Speaking</a><a href="#behind-the-scenes">Behind the scenes</a><a href="#building">Building the experience</a><a href="#trpl">TR Library</a><a href="#appearances">Appearances</a>
+    </nav>
   </div>
 </section>
 
 <section class="section section--tight">
   <div class="container">
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Heads of state &amp; dignitaries</h2>
+    <h2 id="heads-of-state" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Heads of state &amp; dignitaries</h2>
     <h3 class="gallery-event">Prince Charles · 2015</h3>
     <div class="photo-masonry">
       <figure>
@@ -112,27 +115,12 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/biden-nga-02.webp"><img src="/img/gallery/biden-nga-02.jpg" alt="The National Governors Association dinner at Mount Vernon, hosted with President Biden - 2022" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">On camera &mdash; film &amp; television</h2>
+    <h2 id="on-camera" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">On camera &mdash; film &amp; television</h2>
     <div class="gallery-video">
       <iframe src="https://www.youtube-nocookie.com/embed/liSRJUqFaD4" title="Good Morning America — 50 Weeks in 50 States visits North Dakota" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <p class="gallery-video-cap">Good Morning America&rsquo;s &lsquo;50 Weeks in 50 States&rsquo; broadcast live from the Theodore Roosevelt Presidential Library &mdash; 2026.</p>
 
-    <h3 class="gallery-event">CNN Films — George Washington · 2022</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-01.webp"><img src="/img/gallery/cnn-gw-01.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-02.webp"><img src="/img/gallery/cnn-gw-02.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-03.webp"><img src="/img/gallery/cnn-gw-03.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-04.webp"><img src="/img/gallery/cnn-gw-04.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
     <h3 class="gallery-event">History Channel — Washington, with Doris Kearns Goodwin · 2020</h3>
     <div class="photo-masonry">
       <figure>
@@ -143,96 +131,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/history-washington-03.webp"><img src="/img/gallery/history-washington-03.jpg" alt="History Channel's Washington premiere with Doris Kearns Goodwin - 2020" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">George Washington TV series · 2021–22</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-01.webp"><img src="/img/gallery/gw-tv-series-01.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-02.webp"><img src="/img/gallery/gw-tv-series-02.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-03.webp"><img src="/img/gallery/gw-tv-series-03.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-04.webp"><img src="/img/gallery/gw-tv-series-04.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-05.webp"><img src="/img/gallery/gw-tv-series-05.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-06.webp"><img src="/img/gallery/gw-tv-series-06.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-07.webp"><img src="/img/gallery/gw-tv-series-07.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-08.webp"><img src="/img/gallery/gw-tv-series-08.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-09.webp"><img src="/img/gallery/gw-tv-series-09.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-10.webp"><img src="/img/gallery/gw-tv-series-10.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Bret Baier's Special Report · 2023</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-01.webp"><img src="/img/gallery/bret-baier-01.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-02.webp"><img src="/img/gallery/bret-baier-02.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-03.webp"><img src="/img/gallery/bret-baier-03.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">CBS Sunday Morning · 2026</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-01.webp"><img src="/img/gallery/cbs-sunday-01.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-02.webp"><img src="/img/gallery/cbs-sunday-02.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-03.webp"><img src="/img/gallery/cbs-sunday-03.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-04.webp"><img src="/img/gallery/cbs-sunday-04.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-05.webp"><img src="/img/gallery/cbs-sunday-05.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-06.webp"><img src="/img/gallery/cbs-sunday-06.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-07.webp"><img src="/img/gallery/cbs-sunday-07.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-08.webp"><img src="/img/gallery/cbs-sunday-08.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">CBS Saturday Morning · 2024</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-01.webp"><img src="/img/gallery/cbs-saturday-01.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-02.webp"><img src="/img/gallery/cbs-saturday-02.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-03.webp"><img src="/img/gallery/cbs-saturday-03.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">The Cowboy Channel · 2024</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/cowboy-tv-01.webp"><img src="/img/gallery/cowboy-tv-01.jpg" alt="The Cowboy Channel at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Drive Thru History · 2020</h3>
@@ -248,12 +146,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/drive-thru-history-04.webp"><img src="/img/gallery/drive-thru-history-04.jpg" alt="Drive Thru History filming at Mount Vernon - 2020" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">PBS — American Muslims · 2021</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/pbs-muslims-01.webp"><img src="/img/gallery/pbs-muslims-01.jpg" alt="PBS American Muslims: A History Revealed' at Mount Vernon - 2021" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">CBS segment at Mount Vernon · 2020</h3>
@@ -301,6 +193,51 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/dog-bounty-01.webp"><img src="/img/gallery/dog-bounty-01.jpg" alt="Dog the Bounty Hunter films at Mount Vernon - 2020" width="1000" height="1333" loading="lazy"></picture>
       </figure>
     </div>
+    <h3 class="gallery-event">The Washington Post · 2020</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/wapo-mv-01.webp"><img src="/img/gallery/wapo-mv-01.jpg" alt="A Washington Post shoot at Mount Vernon - 2020" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">George Washington TV series · 2021–22</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-01.webp"><img src="/img/gallery/gw-tv-series-01.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-02.webp"><img src="/img/gallery/gw-tv-series-02.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-03.webp"><img src="/img/gallery/gw-tv-series-03.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-04.webp"><img src="/img/gallery/gw-tv-series-04.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-05.webp"><img src="/img/gallery/gw-tv-series-05.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-06.webp"><img src="/img/gallery/gw-tv-series-06.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-07.webp"><img src="/img/gallery/gw-tv-series-07.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-08.webp"><img src="/img/gallery/gw-tv-series-08.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-09.webp"><img src="/img/gallery/gw-tv-series-09.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/gw-tv-series-10.webp"><img src="/img/gallery/gw-tv-series-10.jpg" alt="On set for a George Washington television series - 2021-2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">PBS — American Muslims · 2021</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/pbs-muslims-01.webp"><img src="/img/gallery/pbs-muslims-01.jpg" alt="PBS American Muslims: A History Revealed' at Mount Vernon - 2021" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">WJLA live weather · 2021</h3>
     <div class="photo-masonry">
       <figure>
@@ -310,10 +247,76 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/wjla-weather-02.webp"><img src="/img/gallery/wjla-weather-02.jpg" alt="A live WJLA weather report from Mount Vernon - 2021" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
-    <h3 class="gallery-event">The Washington Post · 2020</h3>
+    <h3 class="gallery-event">CNN Films — George Washington · 2022</h3>
     <div class="photo-masonry">
       <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/wapo-mv-01.webp"><img src="/img/gallery/wapo-mv-01.jpg" alt="A Washington Post shoot at Mount Vernon - 2020" width="1000" height="750" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-01.webp"><img src="/img/gallery/cnn-gw-01.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-02.webp"><img src="/img/gallery/cnn-gw-02.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-03.webp"><img src="/img/gallery/cnn-gw-03.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cnn-gw-04.webp"><img src="/img/gallery/cnn-gw-04.jpg" alt="On set for CNN Films' George Washington - 2022" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">Bret Baier's Special Report · 2023</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-01.webp"><img src="/img/gallery/bret-baier-01.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-02.webp"><img src="/img/gallery/bret-baier-02.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/bret-baier-03.webp"><img src="/img/gallery/bret-baier-03.jpg" alt="Filming Bret Baier's Special Report at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">CBS Saturday Morning · 2024</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-01.webp"><img src="/img/gallery/cbs-saturday-01.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-02.webp"><img src="/img/gallery/cbs-saturday-02.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-saturday-03.webp"><img src="/img/gallery/cbs-saturday-03.jpg" alt="CBS Saturday Morning at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">The Cowboy Channel · 2024</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cowboy-tv-01.webp"><img src="/img/gallery/cowboy-tv-01.jpg" alt="The Cowboy Channel at the TR Presidential Library - 2024" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">CBS Sunday Morning · 2026</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-01.webp"><img src="/img/gallery/cbs-sunday-01.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-02.webp"><img src="/img/gallery/cbs-sunday-02.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-03.webp"><img src="/img/gallery/cbs-sunday-03.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-04.webp"><img src="/img/gallery/cbs-sunday-04.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-05.webp"><img src="/img/gallery/cbs-sunday-05.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-06.webp"><img src="/img/gallery/cbs-sunday-06.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-07.webp"><img src="/img/gallery/cbs-sunday-07.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/cbs-sunday-08.webp"><img src="/img/gallery/cbs-sunday-08.jpg" alt="CBS Sunday Morning at the Theodore Roosevelt Presidential Library - 2026" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Good Morning America · 2026</h3>
@@ -331,7 +334,7 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/gma-nd-04.webp"><img src="/img/gallery/gma-nd-04.jpg" alt="Good Morning America's 50 Weeks in 50 States' at the TR Library - 2026" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Awards</h2>
+    <h2 id="awards" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Awards</h2>
     <h3 class="gallery-event">The Thea Awards · 2019</h3>
     <div class="photo-masonry">
       <figure>
@@ -362,23 +365,14 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/thea-09.webp"><img src="/img/gallery/thea-09.jpg" alt="The 25th Annual Thea Awards - Be Washington, April 2019" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Speaking &amp; conferences</h2>
-    <h3 class="gallery-event">ACC Summit · 2025</h3>
+    <h2 id="speaking" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Speaking &amp; conferences</h2>
+    <h3 class="gallery-event">Republican National Convention · Minneapolis</h3>
     <div class="photo-masonry">
       <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/acc-summit-01.webp"><img src="/img/gallery/acc-summit-01.jpg" alt="ACC Summit 2025 keynote - American Conservation Coalition" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Microsoft — Empowered Cultural Institutions · 2025</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-01.webp"><img src="/img/gallery/microsoft-atlanta-01.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="750" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="/img/gallery/rnc-01.webp"><img src="/img/gallery/rnc-01.jpg" alt="Presenting at the Republican National Convention, Minneapolis (Emotive era)" width="1000" height="1248" loading="lazy"></picture>
       </figure>
       <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-02.webp"><img src="/img/gallery/microsoft-atlanta-02.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="753" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-03.webp"><img src="/img/gallery/microsoft-atlanta-03.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="753" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="/img/gallery/rnc-02.webp"><img src="/img/gallery/rnc-02.jpg" alt="Presenting at the Republican National Convention, Minneapolis (Emotive era)" width="1000" height="1248" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Presidential Sites Summit · 2023</h3>
@@ -394,18 +388,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/presidential-sites-04.webp"><img src="/img/gallery/presidential-sites-04.jpg" alt="Presidential Sites Summit - 2023" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">More Perfect — the road to the 250th</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-01.webp"><img src="/img/gallery/more-perfect-01.jpg" alt="Presidential centers gather for the 250th - November 2025" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-02.webp"><img src="/img/gallery/more-perfect-02.jpg" alt="More Perfect - democracy & the road to the 250th" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-03.webp"><img src="/img/gallery/more-perfect-03.jpg" alt="More Perfect - democracy & the road to the 250th" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">LOC National Book Festival · 2023</h3>
@@ -435,16 +417,37 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/embassy-spain-04.webp"><img src="/img/gallery/embassy-spain-04.jpg" alt="Mount Vernon at the Embassy of Spain - 2023" width="1000" height="674" loading="lazy"></picture>
       </figure>
     </div>
-    <h3 class="gallery-event">Republican National Convention · Minneapolis</h3>
+    <h3 class="gallery-event">ACC Summit · 2025</h3>
     <div class="photo-masonry">
       <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/rnc-01.webp"><img src="/img/gallery/rnc-01.jpg" alt="Presenting at the Republican National Convention, Minneapolis (Emotive era)" width="1000" height="1248" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/rnc-02.webp"><img src="/img/gallery/rnc-02.jpg" alt="Presenting at the Republican National Convention, Minneapolis (Emotive era)" width="1000" height="1248" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="/img/gallery/acc-summit-01.webp"><img src="/img/gallery/acc-summit-01.jpg" alt="ACC Summit 2025 keynote - American Conservation Coalition" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Behind the scenes &mdash; film &amp; production</h2>
+    <h3 class="gallery-event">Microsoft — Empowered Cultural Institutions · 2025</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-01.webp"><img src="/img/gallery/microsoft-atlanta-01.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-02.webp"><img src="/img/gallery/microsoft-atlanta-02.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="753" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/microsoft-atlanta-03.webp"><img src="/img/gallery/microsoft-atlanta-03.jpg" alt="Empowered Cultural Institutions' panel - Microsoft, Atlanta, 2025" width="1000" height="753" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">More Perfect — the road to the 250th</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-01.webp"><img src="/img/gallery/more-perfect-01.jpg" alt="Presidential centers gather for the 250th - November 2025" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-02.webp"><img src="/img/gallery/more-perfect-02.jpg" alt="More Perfect - democracy & the road to the 250th" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/more-perfect-03.webp"><img src="/img/gallery/more-perfect-03.jpg" alt="More Perfect - democracy & the road to the 250th" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h2 id="behind-the-scenes" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Behind the scenes &mdash; film &amp; production</h2>
     <div class="gallery-video">
       <video controls preload="none" poster="/img/gallery/video/georges-big-day-out.jpg">
         <source src="/img/gallery/video/georges-big-day-out.mp4" type="video/mp4">
@@ -452,6 +455,99 @@ BODY = '''
     </div>
     <p class="gallery-video-cap">A clip from <em>George&rsquo;s Big Day Out</em>, an animated short for young visitors &mdash; 2014.</p>
 
+    <h3 class="gallery-event">Mount Vernon — film & video production</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-01.webp"><img src="/img/gallery/mv-filming-01.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-02.webp"><img src="/img/gallery/mv-filming-02.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-03.webp"><img src="/img/gallery/mv-filming-03.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1777" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-04.webp"><img src="/img/gallery/mv-filming-04.jpg" alt="Filming a web series with the Smithsonian National Air and Space Museum - George Washington and early ballooning (2016)" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-05.webp"><img src="/img/gallery/mv-filming-05.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-06.webp"><img src="/img/gallery/mv-filming-06.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-07.webp"><img src="/img/gallery/mv-filming-07.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1778" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-08.webp"><img src="/img/gallery/mv-filming-08.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-09.webp"><img src="/img/gallery/mv-filming-09.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-10.webp"><img src="/img/gallery/mv-filming-10.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-11.webp"><img src="/img/gallery/mv-filming-11.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-12.webp"><img src="/img/gallery/mv-filming-12.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-13.webp"><img src="/img/gallery/mv-filming-13.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1500" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-14.webp"><img src="/img/gallery/mv-filming-14.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-15.webp"><img src="/img/gallery/mv-filming-15.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-16.webp"><img src="/img/gallery/mv-filming-16.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-17.webp"><img src="/img/gallery/mv-filming-17.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-18.webp"><img src="/img/gallery/mv-filming-18.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-19.webp"><img src="/img/gallery/mv-filming-19.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-20.webp"><img src="/img/gallery/mv-filming-20.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-21.webp"><img src="/img/gallery/mv-filming-21.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-22.webp"><img src="/img/gallery/mv-filming-22.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-23.webp"><img src="/img/gallery/mv-filming-23.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-24.webp"><img src="/img/gallery/mv-filming-24.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-25.webp"><img src="/img/gallery/mv-filming-25.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-26.webp"><img src="/img/gallery/mv-filming-26.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-27.webp"><img src="/img/gallery/mv-filming-27.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-28.webp"><img src="/img/gallery/mv-filming-28.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-29.webp"><img src="/img/gallery/mv-filming-29.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-30.webp"><img src="/img/gallery/mv-filming-30.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">Be Washington — on set · 2017</h3>
     <div class="photo-masonry">
       <figure>
@@ -501,42 +597,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/bew-theater-03.webp"><img src="/img/gallery/bew-theater-03.jpg" alt="Inside the Be Washington interactive theater" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Orientation film — on set</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-01.webp"><img src="/img/gallery/orientation-onset-01.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="1338" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-02.webp"><img src="/img/gallery/orientation-onset-02.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="747" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-03.webp"><img src="/img/gallery/orientation-onset-03.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-04.webp"><img src="/img/gallery/orientation-onset-04.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-05.webp"><img src="/img/gallery/orientation-onset-05.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-06.webp"><img src="/img/gallery/orientation-onset-06.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-07.webp"><img src="/img/gallery/orientation-onset-07.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="1500" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-08.webp"><img src="/img/gallery/orientation-onset-08.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-09.webp"><img src="/img/gallery/orientation-onset-09.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-10.webp"><img src="/img/gallery/orientation-onset-10.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-11.webp"><img src="/img/gallery/orientation-onset-11.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Revolutionary War 4D — on set · 2017</h3>
@@ -668,6 +728,75 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/winter-patriots-19.webp"><img src="/img/gallery/winter-patriots-19.jpg" alt="On set for The Winter Patriots - 2017" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
+    <h3 class="gallery-event">Producing through the pandemic · 2020–21</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-01.webp"><img src="/img/gallery/mv-covid-filming-01.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-02.webp"><img src="/img/gallery/mv-covid-filming-02.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-03.webp"><img src="/img/gallery/mv-covid-filming-03.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-04.webp"><img src="/img/gallery/mv-covid-filming-04.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-05.webp"><img src="/img/gallery/mv-covid-filming-05.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-06.webp"><img src="/img/gallery/mv-covid-filming-06.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-07.webp"><img src="/img/gallery/mv-covid-filming-07.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="1333" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-08.webp"><img src="/img/gallery/mv-covid-filming-08.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-09.webp"><img src="/img/gallery/mv-covid-filming-09.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-10.webp"><img src="/img/gallery/mv-covid-filming-10.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">Orientation film — on set</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-01.webp"><img src="/img/gallery/orientation-onset-01.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="1338" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-02.webp"><img src="/img/gallery/orientation-onset-02.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="747" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-03.webp"><img src="/img/gallery/orientation-onset-03.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-04.webp"><img src="/img/gallery/orientation-onset-04.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-05.webp"><img src="/img/gallery/orientation-onset-05.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-06.webp"><img src="/img/gallery/orientation-onset-06.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-07.webp"><img src="/img/gallery/orientation-onset-07.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="1500" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-08.webp"><img src="/img/gallery/orientation-onset-08.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-09.webp"><img src="/img/gallery/orientation-onset-09.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-10.webp"><img src="/img/gallery/orientation-onset-10.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/orientation-onset-11.webp"><img src="/img/gallery/orientation-onset-11.jpg" alt="On set for Mount Vernon's orientation film" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">Religious Freedom — set & premiere · 2021–22</h3>
     <div class="photo-masonry">
       <figure>
@@ -707,132 +836,6 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/religious-freedom-12.webp"><img src="/img/gallery/religious-freedom-12.jpg" alt="George Washington and the Pursuit of Religious Freedom - on set & premiere, Newport, RI (2021-2022)" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
-    <h3 class="gallery-event">Mount Vernon — film & video production</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-01.webp"><img src="/img/gallery/mv-filming-01.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-02.webp"><img src="/img/gallery/mv-filming-02.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-03.webp"><img src="/img/gallery/mv-filming-03.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1777" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-04.webp"><img src="/img/gallery/mv-filming-04.jpg" alt="Filming a web series with the Smithsonian National Air and Space Museum - George Washington and early ballooning (2016)" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-05.webp"><img src="/img/gallery/mv-filming-05.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-06.webp"><img src="/img/gallery/mv-filming-06.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-07.webp"><img src="/img/gallery/mv-filming-07.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1778" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-08.webp"><img src="/img/gallery/mv-filming-08.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-09.webp"><img src="/img/gallery/mv-filming-09.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-10.webp"><img src="/img/gallery/mv-filming-10.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-11.webp"><img src="/img/gallery/mv-filming-11.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-12.webp"><img src="/img/gallery/mv-filming-12.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-13.webp"><img src="/img/gallery/mv-filming-13.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1500" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-14.webp"><img src="/img/gallery/mv-filming-14.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-15.webp"><img src="/img/gallery/mv-filming-15.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="563" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-16.webp"><img src="/img/gallery/mv-filming-16.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-17.webp"><img src="/img/gallery/mv-filming-17.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-18.webp"><img src="/img/gallery/mv-filming-18.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-19.webp"><img src="/img/gallery/mv-filming-19.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-20.webp"><img src="/img/gallery/mv-filming-20.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-21.webp"><img src="/img/gallery/mv-filming-21.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-22.webp"><img src="/img/gallery/mv-filming-22.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-23.webp"><img src="/img/gallery/mv-filming-23.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-24.webp"><img src="/img/gallery/mv-filming-24.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-25.webp"><img src="/img/gallery/mv-filming-25.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-26.webp"><img src="/img/gallery/mv-filming-26.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-27.webp"><img src="/img/gallery/mv-filming-27.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-28.webp"><img src="/img/gallery/mv-filming-28.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-29.webp"><img src="/img/gallery/mv-filming-29.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-filming-30.webp"><img src="/img/gallery/mv-filming-30.jpg" alt="Behind the scenes - Mount Vernon film & video production" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Producing through the pandemic · 2020–21</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-01.webp"><img src="/img/gallery/mv-covid-filming-01.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-02.webp"><img src="/img/gallery/mv-covid-filming-02.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-03.webp"><img src="/img/gallery/mv-covid-filming-03.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-04.webp"><img src="/img/gallery/mv-covid-filming-04.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-05.webp"><img src="/img/gallery/mv-covid-filming-05.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-06.webp"><img src="/img/gallery/mv-covid-filming-06.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-07.webp"><img src="/img/gallery/mv-covid-filming-07.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="1333" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-08.webp"><img src="/img/gallery/mv-covid-filming-08.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-09.webp"><img src="/img/gallery/mv-covid-filming-09.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-10.webp"><img src="/img/gallery/mv-covid-filming-10.jpg" alt="Producing video through the pandemic at Mount Vernon (2020-2021)" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
     <h3 class="gallery-event">Bobblehead George — Lessons on the Road · 2021</h3>
     <div class="photo-masonry">
       <figure>
@@ -848,29 +851,11 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/bobblehead-04.webp"><img src="/img/gallery/bobblehead-04.jpg" alt="Filming Bobblehead George Lessons on the Road' - 2021" width="1000" height="1333" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Building the experience &mdash; digital &amp; interpretive</h2>
-    <h3 class="gallery-event">Augmented-reality tour · 2018</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/ar-tour-01.webp"><img src="/img/gallery/ar-tour-01.jpg" alt="Testing the Mount Vernon augmented-reality tour - 2018" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/ar-tour-02.webp"><img src="/img/gallery/ar-tour-02.jpg" alt="Testing the Mount Vernon augmented-reality tour - 2018" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
+    <h2 id="building" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Building the experience &mdash; digital &amp; interpretive</h2>
     <h3 class="gallery-event">Virtual-reality demo · 2015</h3>
     <div class="photo-masonry">
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/vr-demo-01.webp"><img src="/img/gallery/vr-demo-01.jpg" alt="Demonstrating the Mount Vernon virtual tour - 2015" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">HoloLens testing · 2017</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/hololens-01.webp"><img src="/img/gallery/hololens-01.jpg" alt="Testing Microsoft HoloLens at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/hololens-02.webp"><img src="/img/gallery/hololens-02.jpg" alt="Testing Microsoft HoloLens at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Stereograph tour · 2015</h3>
@@ -888,6 +873,30 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/stereograph-04.webp"><img src="/img/gallery/stereograph-04.jpg" alt="The Mount Vernon stereograph tour - 2015" width="1000" height="563" loading="lazy"></picture>
       </figure>
     </div>
+    <h3 class="gallery-event">Tessitura launch · 2016</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/tessitura-01.webp"><img src="/img/gallery/tessitura-01.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/tessitura-02.webp"><img src="/img/gallery/tessitura-02.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/tessitura-03.webp"><img src="/img/gallery/tessitura-03.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/tessitura-04.webp"><img src="/img/gallery/tessitura-04.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">HoloLens testing · 2017</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/hololens-01.webp"><img src="/img/gallery/hololens-01.jpg" alt="Testing Microsoft HoloLens at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/hololens-02.webp"><img src="/img/gallery/hololens-02.jpg" alt="Testing Microsoft HoloLens at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">Google Street View capture · 2017</h3>
     <div class="photo-masonry">
       <figure>
@@ -895,15 +904,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/street-view-02.webp"><img src="/img/gallery/street-view-02.jpg" alt="Capturing Mount Vernon for Google Street View - 2017" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Pohick Church virtual tour · 2021</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/pohick-01.webp"><img src="/img/gallery/pohick-01.jpg" alt="Producing a virtual tour of Pohick Church - 2021" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/pohick-02.webp"><img src="/img/gallery/pohick-02.jpg" alt="Producing a virtual tour of Pohick Church - 2021" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Architectural light projection · 2017</h3>
@@ -921,6 +921,24 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/light-projection-04.webp"><img src="/img/gallery/light-projection-04.jpg" alt="Architectural light projection on the Mansion - 2017" width="1000" height="667" loading="lazy"></picture>
       </figure>
     </div>
+    <h3 class="gallery-event">Augmented-reality tour · 2018</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/ar-tour-01.webp"><img src="/img/gallery/ar-tour-01.jpg" alt="Testing the Mount Vernon augmented-reality tour - 2018" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/ar-tour-02.webp"><img src="/img/gallery/ar-tour-02.jpg" alt="Testing the Mount Vernon augmented-reality tour - 2018" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
+    <h3 class="gallery-event">Pohick Church virtual tour · 2021</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/pohick-01.webp"><img src="/img/gallery/pohick-01.jpg" alt="Producing a virtual tour of Pohick Church - 2021" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/pohick-02.webp"><img src="/img/gallery/pohick-02.jpg" alt="Producing a virtual tour of Pohick Church - 2021" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">Lighting the Mansion · 2022</h3>
     <div class="photo-masonry">
       <figure>
@@ -936,22 +954,7 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/pose-prez-01.webp"><img src="/img/gallery/pose-prez-01.jpg" alt="The Pose Like the Prez' photo op at Mount Vernon" width="382" height="578" loading="lazy"></picture>
       </figure>
     </div>
-    <h3 class="gallery-event">Tessitura launch · 2016</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/tessitura-01.webp"><img src="/img/gallery/tessitura-01.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/tessitura-02.webp"><img src="/img/gallery/tessitura-02.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/tessitura-03.webp"><img src="/img/gallery/tessitura-03.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/tessitura-04.webp"><img src="/img/gallery/tessitura-04.jpg" alt="The Tessitura ticketing platform launch at Mount Vernon - January 2016" width="1000" height="667" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Theodore Roosevelt Presidential Library</h2>
+    <h2 id="trpl" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Theodore Roosevelt Presidential Library</h2>
     <h3 class="gallery-event">Beam-signing event · 2024</h3>
     <div class="photo-masonry">
       <figure>
@@ -1000,7 +1003,7 @@ BODY = '''
         <picture><source type="image/webp" srcset="/img/gallery/trpl-dkg-03.webp"><img src="/img/gallery/trpl-dkg-03.jpg" alt="Touring the TR Library collections with Doris Kearns Goodwin - 2025" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Appearances &amp; events</h2>
+    <h2 id="appearances" class="gallery-section" style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:2.6rem 0 1.1rem;">Appearances &amp; events</h2>
     <div class="gallery-video">
       <video controls preload="none" poster="/img/gallery/video/lockheed-f35-sim.jpg">
         <source src="/img/gallery/video/lockheed-f35-sim.mp4" type="video/mp4">
@@ -1008,6 +1011,15 @@ BODY = '''
     </div>
     <p class="gallery-video-cap">In the F-35 Joint Strike Fighter simulator at Lockheed Martin &mdash; 2018.</p>
 
+    <h3 class="gallery-event">Revolutionary War Weekend</h3>
+    <div class="photo-masonry">
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/revwar-weekend-01.webp"><img src="/img/gallery/revwar-weekend-01.jpg" alt="Revolutionary War Weekend at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+      <figure>
+        <picture><source type="image/webp" srcset="/img/gallery/revwar-weekend-02.webp"><img src="/img/gallery/revwar-weekend-02.jpg" alt="Revolutionary War Weekend at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
+      </figure>
+    </div>
     <h3 class="gallery-event">USS George Washington · 2023–24</h3>
     <div class="photo-masonry">
       <figure>
@@ -1027,15 +1039,6 @@ BODY = '''
       </figure>
       <figure>
         <picture><source type="image/webp" srcset="/img/gallery/uss-gw-06.webp"><img src="/img/gallery/uss-gw-06.jpg" alt="Receiving a plaque aboard USS George Washington - 2023" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-    </div>
-    <h3 class="gallery-event">Revolutionary War Weekend</h3>
-    <div class="photo-masonry">
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/revwar-weekend-01.webp"><img src="/img/gallery/revwar-weekend-01.jpg" alt="Revolutionary War Weekend at Mount Vernon - 2017" width="1000" height="750" loading="lazy"></picture>
-      </figure>
-      <figure>
-        <picture><source type="image/webp" srcset="/img/gallery/revwar-weekend-02.webp"><img src="/img/gallery/revwar-weekend-02.jpg" alt="Revolutionary War Weekend at Mount Vernon - 2023" width="1000" height="750" loading="lazy"></picture>
       </figure>
     </div>
     <h3 class="gallery-event">Elkhorn premiere — Medora</h3>
