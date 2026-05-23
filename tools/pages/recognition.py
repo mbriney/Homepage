@@ -89,7 +89,9 @@ BODY = '''
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Boards &amp; affiliations</h2>
     <ul class="cv-list" style="max-width:70ch">
-      <li><strong>Board Member, Vice Chair</strong> (rose from Secretary) &mdash; Visit Fairfax (2019&ndash;2022)</li>
+      <li><strong>Board Member, Vice Chair</strong> (rose from Secretary) &mdash; <a href="https://projects.propublica.org/nonprofits/organizations/364552990" target="_blank" rel="noopener">Visit Fairfax</a> (2019&ndash;2022)</li>
+      <li><strong>Board Member</strong> &mdash; Explore Fairfax South / Potomac Banks tourism brand (2022)</li>
+      <li><strong>Member</strong> &mdash; Fairfax County VA250 Commission, America&rsquo;s 250th (2024)</li>
       <li><strong>Participating Member</strong> &mdash; Mount Vernon Tourism Taskforce (2019&ndash;2022)</li>
       <li><strong>Board Member</strong> &mdash; The Campagna Center, Alexandria (2013&ndash;2016)</li>
     </ul>
@@ -205,6 +207,42 @@ BODY = '''
         <span class="press-main">
           <span class="press-outlet">Dogwood &middot; Virginia</span>
           <span class="press-desc">Quirky George Washington facts &mdash; setting the record straight on the viral &ldquo;40-yard dash&rdquo; myth (2023).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.ffxnow.com/2022/05/23/george-washingtons-mount-vernon-undergoes-restoration/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">FFXnow</span>
+          <span class="press-desc">Quoted on Mount Vernon&rsquo;s mansion restoration and its post-pandemic visitation recovery (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.ffxnow.com/2022/07/26/community-leaders-are-trying-to-save-gum-springs-from-fading-into-history/" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">FFXnow</span>
+          <span class="press-desc">On community efforts to preserve historic Gum Springs, the freedmen&rsquo;s community near Mount Vernon (2022).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://connection.media.clients.ellingtoncms.com/news/documents/2023/06/21/Mt_Vernon.pdf" target="_blank" rel="noopener">
+        <span class="press-type">Press</span>
+        <span class="press-main">
+          <span class="press-outlet">Mount Vernon Gazette / Connection</span>
+          <span class="press-desc">Quoted in &ldquo;Historic Gum Springs Celebrates 190 Years&rdquo; (2023).</span>
+        </span>
+        <span class="press-action">Read &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.fxva.com/blog/post/tourism-week-musings-on-the-power-of-travel/" target="_blank" rel="noopener">
+        <span class="press-type">Feature</span>
+        <span class="press-main">
+          <span class="press-outlet">Visit Fairfax</span>
+          <span class="press-desc">Among the Fairfax County tourism leaders sharing &ldquo;the power of travel&rdquo; for National Travel &amp; Tourism Week (2021).</span>
         </span>
         <span class="press-action">Read &rarr;</span>
       </a>
