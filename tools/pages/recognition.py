@@ -179,6 +179,7 @@ BODY = '''
     </div>
 
       <a class="press-entry" href="https://www.themedattraction.com/tea-summit-2019/" target="_blank" rel="noopener">
+        <img class="press-thumb" src="/img/recognition/tea-summit.jpg" alt="Matt Briney presenting the Be Washington case study at the TEA Summit 2019" loading="lazy">
         <span class="press-type">Case study</span>
         <span class="press-main">
           <span class="press-outlet">TEA Summit 2019 &middot; Anaheim</span>
