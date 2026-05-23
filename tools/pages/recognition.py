@@ -106,7 +106,7 @@ BODY = '''
         <span class="press-type">Upcoming</span>
         <span class="press-main">
           <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
-          <span class="press-desc">Speaking at the national gathering of presidential libraries, homes, and historic sites &mdash; 2026.</span>
+          <span class="press-desc">Panelist on &ldquo;Digital Frontiers: Integrating Technology for Post-250 Engagement,&rdquo; with Elizabeth Merritt (American Alliance of Museums) and Stephen Platenberg (Cortina Productions) &mdash; 2026.</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
@@ -144,7 +144,7 @@ BODY = '''
         <span class="press-type">Talk</span>
         <span class="press-main">
           <span class="press-outlet">Museums and the Web 2015</span>
-          <span class="press-desc">&ldquo;Help Us Improve George Washington&rsquo;s Home&rdquo; &mdash; presented Mount Vernon&rsquo;s website in the conference Web Crit Room.</span>
+          <span class="press-desc">&ldquo;Help Us Improve George Washington&rsquo;s Home&rdquo; &mdash; presented Mount Vernon&rsquo;s website for live expert critique in the conference Web Crit Room (2015).</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
@@ -170,10 +170,10 @@ BODY = '''
     </div>
 
       <a class="press-entry" href="https://www.themedattraction.com/tea-summit-2019/" target="_blank" rel="noopener">
-        <span class="press-type">Talk</span>
+        <span class="press-type">Case study</span>
         <span class="press-main">
-          <span class="press-outlet">TEA Summit 2019</span>
-          <span class="press-desc">Presented at the Themed Entertainment Association summit (2019).</span>
+          <span class="press-outlet">TEA Summit 2019 &middot; Anaheim</span>
+          <span class="press-desc">Co-presented the <em>Be Washington</em> case study (Thea for Museum Experience on a Limited Budget) with Rob Shenk and Cortina Productions at the Themed Entertainment Association summit &mdash; April 2019.</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
@@ -182,7 +182,7 @@ BODY = '''
         <span class="press-type">Talk</span>
         <span class="press-main">
           <span class="press-outlet">Texas Association of Museums</span>
-          <span class="press-desc">Conference presentation at the TAM annual meeting (2023).</span>
+          <span class="press-desc">Conference presentation at the TAM annual meeting &mdash; San Antonio, April 2023.</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
@@ -190,8 +190,8 @@ BODY = '''
       <a class="press-entry" href="https://www.americanheritagechocolate.com/hcs-2024/agenda/" target="_blank" rel="noopener">
         <span class="press-type">Talk</span>
         <span class="press-main">
-          <span class="press-outlet">Historic Chocolate Society</span>
-          <span class="press-desc">Presentation at the society&rsquo;s 2024 annual meeting.</span>
+          <span class="press-outlet">Historic Chocolate Society 2024</span>
+          <span class="press-desc">Panelist on &ldquo;Crisis Communications in an Era of Extreme Scrutiny,&rdquo; with Mount Vernon, Stratford Hall, and Mars Wrigley &mdash; Washington, D.C., 2024.</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
