@@ -448,6 +448,52 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 .recognition-callout-icon { flex: 0 0 auto; color: var(--gold); }
 .recognition-callout-icon svg { width: 30px; height: 30px; }
 
+/* -------- Press: credibility strip + editorial index -------- */
+.press-strip {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .55rem 1.6rem;
+  padding: 1.1rem 1.4rem;
+  background: var(--cream-soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.press-strip .ps-label {
+  font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+}
+.press-strip .ps-outlet {
+  font-family: "Fraunces", serif; font-size: 1.05rem; color: var(--ink); opacity: .9;
+}
+
+.press-index { border-top: 1px solid var(--border); }
+a.press-entry {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .25rem 1.1rem;
+  padding: 1.05rem .4rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  transition: background .15s ease, padding-left .15s ease;
+}
+a.press-entry:hover { background: var(--cream-soft); padding-left: .9rem; color: var(--ink); }
+.press-type {
+  flex: 0 0 76px;
+  font-size: .64rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700;
+  color: var(--gold);
+}
+.press-main { flex: 1 1 260px; }
+.press-outlet { font-family: "Fraunces", serif; font-size: 1.16rem; font-weight: 500; margin: 0; }
+.press-desc { color: var(--ink-muted); font-size: .9rem; margin: .12rem 0 0; }
+.press-action {
+  margin-left: auto; white-space: nowrap;
+  font-size: .82rem; font-weight: 600; color: var(--accent);
+}
+a.press-entry:hover .press-action { color: var(--gold); }
+@media (max-width: 560px) {
+  .press-type { flex-basis: 100%; }
+  .press-action { margin-left: 0; flex-basis: 100%; }
+}
+
 /* -------- Recruiter / inquiry CTA -------- */
 .inquiry-cta {
   display: flex;
