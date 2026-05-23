@@ -4,12 +4,13 @@ BODY = '''
     <a href="/projects/" class="back">&larr; All projects</a>
     <p class="eyebrow">Case study &middot; Mount Vernon &middot; 2015&ndash;2017</p>
     <h1>Plan Your Day: A Custom Ticketing Workflow on Tessitura&rsquo;s API That Took Online Sales from 12% to 45%</h1>
-    <p class="lede">Mount Vernon&rsquo;s default Tessitura purchase path was getting the institution roughly 12% of its tickets online. We started from scratch with the Tessitura API and built a custom &ldquo;Plan Your Day&rdquo; workflow that walks visitors through date selection, general admission, the timed-entry Mansion tour, specialty add-ons, enhancement items, and discounts &mdash; on desktop and on the phone the visitor was already holding. Online ticket share went to <strong>45%</strong>, and mobile became Mount Vernon&rsquo;s single largest sales channel.</p>
+    <p class="lede">When Matt arrived, Mount Vernon was selling roughly 12% of its tickets online through its legacy stack &mdash; Raiser&rsquo;s Edge for constituents and fundraising, Gateway for ticketing. He was part of the team that implemented Tessitura and migrated the institution off those systems &mdash; then rebuilt the visitor-facing purchase path from scratch on the Tessitura API. The custom &ldquo;Plan Your Day&rdquo; workflow walks visitors through date selection, general admission, the timed-entry Mansion tour, specialty add-ons, enhancement items, and discounts &mdash; on desktop and on the phone the visitor was already holding. Online ticket share went to <strong>45%</strong>, and mobile became Mount Vernon&rsquo;s single largest sales channel.</p>
 
     <div class="meta-row">
       <div class="meta-item"><span class="label">Role</span><span class="value">VP, New Media (digital lead)</span></div>
       <div class="meta-item"><span class="label">Organization</span><span class="value">George Washington&rsquo;s Mount Vernon</span></div>
       <div class="meta-item"><span class="label">Platform</span><span class="value">Tessitura (custom build on the Tessitura API)</span></div>
+      <div class="meta-item"><span class="label">Migrated from</span><span class="value">Raiser&rsquo;s Edge + Gateway</span></div>
       <div class="meta-item"><span class="label">Online share</span><span class="value">12% &rarr; 45%</span></div>
       <div class="meta-item"><span class="label">Mobile result</span><span class="value">#1 sales channel by Jul 2016</span></div>
       <div class="meta-item"><span class="label">Featured by</span><span class="value">Tessitura Success Stories, 2017</span></div>
@@ -27,7 +28,10 @@ BODY = '''
 <div class="case-content">
 
   <h2>The brief</h2>
-  <p>Tessitura is the unified CRM / ticketing / fundraising platform that powers most of the world&rsquo;s major cultural institutions. Mount Vernon was already running on it when we came in &mdash; but the out-of-the-box web purchase path was leaving most of the institution&rsquo;s ticket sales at the gate. Roughly <strong>12% of tickets</strong> were being sold online; the rest of the audience was showing up to the visitor center and standing in line. With foot traffic above a million people a year and a growing share of visitors arriving from a hotel room in D.C. with their phones already out, that ratio was leaving conversion, revenue, and visitor experience all on the table at once.</p>
+  <p>Tessitura is the unified CRM / ticketing / fundraising platform that powers most of the world&rsquo;s major cultural institutions. Mount Vernon <em>wasn&rsquo;t</em> running on it when Matt arrived. The estate was on Raiser&rsquo;s Edge for fundraising and constituent data and on Gateway for ticketing &mdash; two separate systems, and a legacy web purchase path that was leaving most of the institution&rsquo;s ticket sales at the gate. Roughly <strong>12% of tickets</strong> were being sold online; the rest of the audience was showing up to the visitor center and standing in line. With foot traffic above a million people a year and a growing share of visitors arriving from a hotel room in D.C. with their phones already out, that ratio was leaving conversion, revenue, and visitor experience all on the table at once.</p>
+
+  <h2>Implementing Tessitura &amp; retiring the old stack</h2>
+  <p>Matt was part of the team that brought Tessitura to Mount Vernon and migrated the institution off Raiser&rsquo;s Edge and Gateway &mdash; consolidating constituent records, ticketing inventory, membership, and fundraising onto a single platform. That consolidation was the precondition for everything that followed: once the data lived in one place and the platform exposed it through an open API, the visitor-facing purchase path could finally be rebuilt around how people actually plan a visit.</p>
 
   <h2>What we built &mdash; the &ldquo;Plan Your Day&rdquo; workflow</h2>
   <p>We started from scratch with the Tessitura API rather than wrapping the standard web purchase path. The result was a guided, step-by-step funnel that treats the ticket purchase as the act of planning a day at Mount Vernon &mdash; not just buying a single bar-coded item. Each step is a deliberate decision point, and each step earns the upsell.</p>
@@ -150,7 +154,7 @@ def build():
     return dict(
         out="projects/tessitura-ticketing/index.html",
         title="Plan Your Day — Mount Vernon's Custom Tessitura Ticketing Workflow — Matt Briney",
-        description="How Mount Vernon went from 12% to 45% online ticket sales — and made mobile the #1 sales channel — by building a custom Plan Your Day purchase workflow on the Tessitura API. Six-step funnel: date, ground pass, timed Mansion tour, specialty add-ons, enhancement items, discounts.",
+        description="How Mount Vernon migrated off Raiser's Edge and Gateway to Tessitura, then went from 12% to 45% online ticket sales — and made mobile the #1 sales channel — by building a custom Plan Your Day purchase workflow on the Tessitura API. Six-step funnel: date, ground pass, timed Mansion tour, specialty add-ons, enhancement items, discounts.",
         active="projects",
         canonical="https://mattbriney.com/projects/tessitura-ticketing/",
         og_image="/img/projects/tessitura/hero.jpg",

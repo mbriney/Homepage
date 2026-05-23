@@ -4,13 +4,13 @@ BODY = '''
     <a href="/projects/" class="back">&larr; All projects</a>
     <p class="eyebrow">Case study · Mount Vernon · 2018–2024</p>
     <h1>An Immersive Virtual Mount Vernon, Used in Classrooms Nationwide</h1>
-    <p class="lede">A custom-built virtual tour built on HDR photography, layered stories, and curatorial commentary. Reached 4M+ visitors with an 18-minute average dwell time &mdash; museum-grade engagement for a website experience.</p>
+    <p class="lede">A custom-built virtual tour built on HDR photography, layered stories, and curatorial commentary &mdash; wrapped in a full set of classroom lesson plans and ported to VR for Oculus and Google Cardboard. Reached 4M+ visitors with an 18-minute average dwell time &mdash; museum-grade engagement for a website experience.</p>
 
     <div class="meta-row">
       <div class="meta-item"><span class="label">Role</span><span class="value">Executive Producer</span></div>
       <div class="meta-item"><span class="label">Organization</span><span class="value">George Washington&rsquo;s Mount Vernon</span></div>
       <div class="meta-item"><span class="label">Audience</span><span class="value">Classrooms nationwide</span></div>
-      <div class="meta-item"><span class="label">Format</span><span class="value">Web-native interactive</span></div>
+      <div class="meta-item"><span class="label">Format</span><span class="value">Web-native interactive + VR (Oculus, Google Cardboard)</span></div>
     </div>
 
     <div class="case-hero-image">
@@ -57,8 +57,12 @@ BODY = '''
     </figure>
   </div>
 
-  <h3>Built for classrooms</h3>
-  <p>The tour was designed with teachers in mind from day one: clean navigation, accessible language toggling across five languages, and an interpretive depth that supports a real lesson plan. It became a fixture in social studies curricula nationwide and a quiet workhorse for schools that couldn&rsquo;t bring kids to Virginia.</p>
+  <h3>Built for classrooms &mdash; with a lesson-plan layer</h3>
+  <p>The tour was designed with teachers in mind from day one: clean navigation, accessible language toggling across five languages, and an interpretive depth that supports a real lesson plan. We didn&rsquo;t stop at the experience itself &mdash; we built a full set of teacher resources <em>around</em> it: scaffolded activity sheets for elementary, middle, and high school; primary-source prompts; and classroom activities tied to specific stops on the tour. Those lesson plans still live on Mount Vernon&rsquo;s site today, and the tour became a fixture in social studies curricula nationwide and a quiet workhorse for schools that couldn&rsquo;t bring kids to Virginia.</p>
+  <p><a href="https://www.mountvernon.org/education/interactive-tools/virtual-tour-resources" target="_blank" rel="noopener">Browse the Virtual Tour teacher resources &amp; lesson plans on mountvernon.org &rarr;</a></p>
+
+  <h3>Ported to VR &mdash; Oculus &amp; Google Cardboard</h3>
+  <p>We took the same estate into virtual reality, porting the experience to <strong>Oculus</strong> headsets and to <strong>Google Cardboard</strong> so a classroom with a stack of cheap viewers and a few phones could stand inside the Mansion. The HDR panoramas that anchored the web tour translated naturally to a head-tracked, 360&deg; view &mdash; the same photography, the same stories, now wrapped around the viewer instead of framed on a screen. It put a genuinely immersive Mount Vernon within reach of school budgets that would never see a VR studio.</p>
 
   <h2>Why it mattered</h2>
   <blockquote>An 18-minute dwell time on a website is museum-grade engagement &mdash; proof that depth and craft online can rival the visit itself.</blockquote>
@@ -79,7 +83,7 @@ def build():
     return dict(
         out="projects/mount-vernon-virtual-tour/index.html",
         title="Mount Vernon Virtual Tour — Matt Briney",
-        description="An immersive web-based virtual tour of George Washington's Mount Vernon with HDR photography, layered storytelling, and 5-language support. Reached 4M+ visitors at an 18-minute dwell.",
+        description="An immersive web-based virtual tour of George Washington's Mount Vernon with HDR photography, layered storytelling, and 5-language support — plus classroom lesson plans and VR ports for Oculus and Google Cardboard. Reached 4M+ visitors at an 18-minute dwell.",
         active="projects",
         canonical="https://mattbriney.com/projects/mount-vernon-virtual-tour/",
         og_image="/img/projects/mv-virtual-tour/hero.jpg",
