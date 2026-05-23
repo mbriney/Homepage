@@ -5,3 +5,6 @@ __pycache__/
 
 # Private job-search / strategy notes — never deploy
 _private/
+
+# Raw photo ingestion folder — process into img/, never deploy
+Photos/

@@ -54,6 +54,18 @@ BODY = '''
     <figure><picture><source type="image/webp" srcset="/img/projects/be-washington/04.webp"><img src="/img/projects/be-washington/04.jpg" alt="Be Washington scenario screen"></picture></figure>
   </div>
 
+  <h2>On set &amp; on stage</h2>
+  <div class="gallery cols-2">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/be-washington/onset-01.webp"><img src="/img/projects/be-washington/onset-01.jpg" alt="On set for Be Washington — an actor in George Washington costume during filming" loading="lazy"></picture>
+      <figcaption class="gallery-caption">On set during production &mdash; April 2017.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/be-washington/theater-01.webp"><img src="/img/projects/be-washington/theater-01.jpg" alt="Inside the Be Washington interactive theater" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Inside the finished theater &mdash; 2018.</figcaption>
+    </figure>
+  </div>
+
   <h2>What we did</h2>
   <ul>
     <li>Directed end-to-end creation of the $3.5M capital project &mdash; narrative, scripts, advisor recruitment, casting (including Christopher Jackson as host), set design, AV stack, and software.</li>
@@ -135,6 +147,12 @@ BODY = '''
   <h2>Recognition</h2>
   <blockquote>&ldquo;<em>Be Washington</em> is an excellent example of bringing historical education to life in a present-time environment.&rdquo; &mdash; Thea Awards Committee</blockquote>
   <p>The Thea is the entertainment industry&rsquo;s top recognition for immersive experiences, typically awarded to major theme-park attractions. <em>Be Washington</em> winning one in 2018 was a working argument that civic and historical content, given enough craft and risk, can compete with anything in the immersive-entertainment world. A year later, it picked up a Merit Award from the <a href="https://www.mountvernon.org/about/news/article/mount-vernons-be-washington-experience-wins-global-design-award" target="_blank" rel="noopener">Society for Experiential Graphic Design</a>.</p>
+  <div class="gallery cols-1">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/be-washington/thea-night.webp"><img src="/img/projects/be-washington/thea-night.jpg" alt="The Be Washington team at the Thea Awards gala" loading="lazy"></picture>
+      <figcaption class="gallery-caption">The <em>Be Washington</em> team at the 25th Annual Thea Awards gala &mdash; April 13, 2019.</figcaption>
+    </figure>
+  </div>
 
   <h2>Why it mattered</h2>
   <p>The theater is the part that wins awards. The web version is the part that does the work. Building both at the same time, with the same media and decision architecture, meant Mount Vernon got the press value of a major immersive attraction <em>and</em> the audience reach of a free educational platform &mdash; from a single capital investment. That&rsquo;s a model the cultural-institution sector should steal more often.</p>

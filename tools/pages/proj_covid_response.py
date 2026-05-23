@@ -52,6 +52,19 @@ BODY = '''
   </ul>
   <p style="margin-top:1rem"><a class="kicker" href="https://web.archive.org/web/20220121051456/https://www.mountvernon.org/education/resources-for-online-learning/" target="_blank" rel="noopener">Browse the archived online-learning hub on the Wayback Machine &rarr;</a></p>
 
+  <h3>Filming &ldquo;Lessons on the Road&rdquo; &mdash; Bobblehead George</h3>
+  <p>To keep teachers and families connected to the estate while the doors were closed, we produced new educational video on-site &mdash; including the playful <a href="https://www.bobbleheadgeorge.org/gw-mountvernon" target="_blank" rel="noopener">Bobblehead George</a> &ldquo;Lessons on the Road&rdquo; series, filmed across Mount Vernon and the Fred W. Smith National Library in early 2021.</p>
+  <div class="gallery cols-2">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/covid-response/lessons-on-the-road.webp"><img src="/img/projects/covid-response/lessons-on-the-road.jpg" alt="Filming the Lessons on the Road education series on the Mount Vernon grounds with the Mansion behind" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Filming &ldquo;Lessons on the Road&rdquo; on the estate &mdash; April 2021.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/covid-response/bobblehead-george.webp"><img src="/img/projects/covid-response/bobblehead-george.jpg" alt="Behind the scenes on the Bobblehead George series at the Fred W. Smith National Library" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Behind the scenes at the Fred W. Smith National Library &mdash; March 2021.</figcaption>
+    </figure>
+  </div>
+
   <h2>The educator podcast</h2>
   <p>The Washington Library&rsquo;s <em>Conversations at the Washington Library</em> podcast launched a COVID-era episode early in the closure: <strong>&ldquo;Teaching Online in a Time of COVID-19,&rdquo;</strong> a conversation with Mount Vernon Student Learning Specialist Sadie Troy about how Mount Vernon&rsquo;s education team was meeting teachers where they suddenly had to work. It became a sleeper resource for K&ndash;12 educators figuring out their own pivots in real time.</p>
 

@@ -481,7 +481,12 @@ a.press-entry:hover { background: var(--cream-soft); padding-left: .9rem; color:
   font-size: .64rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700;
   color: var(--gold);
 }
-.press-main { flex: 1 1 260px; }
+.press-thumb {
+  flex: 0 0 104px; width: 104px; height: 70px;
+  object-fit: cover; border-radius: 5px; border: 1px solid var(--border);
+}
+.press-entry--static { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.1rem; padding: 1.05rem .4rem; border-bottom: 1px solid var(--border); }
+.press-main { flex: 1 1 240px; }
 .press-outlet { font-family: "Fraunces", serif; font-size: 1.16rem; font-weight: 500; margin: 0; }
 .press-desc { color: var(--ink-muted); font-size: .9rem; margin: .12rem 0 0; }
 .press-action {
@@ -492,6 +497,7 @@ a.press-entry:hover .press-action { color: var(--gold); }
 @media (max-width: 560px) {
   .press-type { flex-basis: 100%; }
   .press-action { margin-left: 0; flex-basis: 100%; }
+  .press-thumb { flex-basis: 100%; width: 100%; height: 180px; }
 }
 
 /* -------- Recruiter / inquiry CTA -------- */
@@ -628,6 +634,7 @@ a.press-entry:hover .press-action { color: var(--gold); }
   margin: 2.25rem 0;
 }
 .gallery.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.gallery.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .gallery img {
   width: 100%;
   display: block;
@@ -643,8 +650,12 @@ a.press-entry:hover .press-action { color: var(--gold); }
   text-align: center;
   margin-top: .5rem;
 }
+@media (max-width: 920px) {
+  .gallery.cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 720px) {
   .gallery.cols-2 { grid-template-columns: 1fr; }
+  .gallery.cols-3 { grid-template-columns: 1fr; }
 }
 
 /* Film embed (case study: short films) */

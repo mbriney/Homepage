@@ -88,6 +88,19 @@ BODY = '''
     </figure>
   </div>
 
+  <h2>Launch day</h2>
+  <p>The new platform went live in January 2016 &mdash; the culmination of the migration off Raiser&rsquo;s Edge and Gateway and the build of the custom purchase path on top of it.</p>
+  <div class="gallery cols-2">
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/tessitura/launch-01.webp"><img src="/img/projects/tessitura/launch-01.jpg" alt="The Mount Vernon team at the Tessitura launch, January 2016" loading="lazy"></picture>
+      <figcaption class="gallery-caption">The team at the Tessitura launch &mdash; January 20, 2016.</figcaption>
+    </figure>
+    <figure>
+      <picture><source type="image/webp" srcset="/img/projects/tessitura/launch-02.webp"><img src="/img/projects/tessitura/launch-02.jpg" alt="Mount Vernon staff at workstations during the Tessitura go-live" loading="lazy"></picture>
+      <figcaption class="gallery-caption">Go-live at the visitor center.</figcaption>
+    </figure>
+  </div>
+
   <h2>Watch the testimonial</h2>
   <div class="film" id="testimonial">
     <div class="film-video">
