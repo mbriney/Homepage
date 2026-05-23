@@ -123,6 +123,12 @@
     // screenshots — full webpage captures, long pedigree views, etc.
     // Phone screenshots (small width) and normal 3:2 / 16:10 captures fit
     // normally and stay centered in the viewport.
+    // Photographs (the masonry Gallery) always fit — never scroll, even when tall.
+    var node = targets[current];
+    if (node && node.closest && node.closest('.photo-masonry')) {
+      overlay.classList.remove('scrollable');
+      return;
+    }
     var natH = imgEl.naturalHeight || 0;
     var natW = imgEl.naturalWidth || 1;
     var aspect = natH / natW;

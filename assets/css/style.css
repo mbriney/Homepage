@@ -674,6 +674,15 @@ a.press-entry:hover .press-action { color: var(--gold); }
 }
 
 /* -------- Photo masonry (Gallery page) -------- */
+.gallery-event {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 1.6rem 0 .8rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--border);
+}
 .photo-masonry {
   column-count: 3;
   column-gap: 14px;
