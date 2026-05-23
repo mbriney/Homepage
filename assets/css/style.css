@@ -690,6 +690,7 @@ a.press-entry:hover .press-action { color: var(--gold); }
 }
 .photo-masonry img {
   width: 100%;
+  height: auto;
   display: block;
   cursor: zoom-in;
   transition: opacity .15s ease;
