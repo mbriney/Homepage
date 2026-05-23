@@ -115,6 +115,24 @@ BODY = '''
         <span class="press-action">Watch &rarr;</span>
       </a>
 
+      <a class="press-entry" href="https://www.youtube.com/watch?v=ituU4YcPzLA" target="_blank" rel="noopener">
+        <span class="press-type">TV</span>
+        <span class="press-main">
+          <span class="press-outlet">Valley News Live &middot; North Dakota Today</span>
+          <span class="press-desc">Morning-show segment on the Theodore Roosevelt Presidential Library and what&rsquo;s ahead (2024).</span>
+        </span>
+        <span class="press-action">Watch &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.youtube.com/watch?v=wiSthN0rbXc" target="_blank" rel="noopener">
+        <span class="press-type">Radio</span>
+        <span class="press-main">
+          <span class="press-outlet">KFGO &middot; For A Cause</span>
+          <span class="press-desc">Broadcast interview on the Library&rsquo;s July&nbsp;4, 2026 opening and how to become a member (2026).</span>
+        </span>
+        <span class="press-action">Listen &rarr;</span>
+      </a>
+
       <a class="press-entry" href="https://www.thedickinsonpress.com/news/local/medora-leaders-discuss-plans-for-grand-opening-of-the-theodore-roosevelt-presidential-library" target="_blank" rel="noopener">
         <span class="press-type">Press</span>
         <span class="press-main">
@@ -153,7 +171,7 @@ BODY = '''
 
     </div>
 
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Podcasts &amp; talks</h2>
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Podcasts</h2>
 
     <div class="press-index">
 
@@ -193,6 +211,30 @@ BODY = '''
         <span class="press-action">Listen &rarr;</span>
       </a>
 
+    </div>
+
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Speaking</h2>
+
+    <div class="press-index">
+
+      <a class="press-entry" href="https://www.youtube.com/watch?v=J82hjGTuUZA" target="_blank" rel="noopener">
+        <span class="press-type">Keynote</span>
+        <span class="press-main">
+          <span class="press-outlet">American Conservation Coalition &middot; ACC Summit 2025</span>
+          <span class="press-desc">Keynote on Theodore Roosevelt&rsquo;s conservation legacy and the building of his presidential library (2025).</span>
+        </span>
+        <span class="press-action">Watch &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.youtube.com/watch?v=T11tRPrvTrY" target="_blank" rel="noopener">
+        <span class="press-type">Talk</span>
+        <span class="press-main">
+          <span class="press-outlet">Preservation Maryland &middot; Old Line State Summit</span>
+          <span class="press-desc">&ldquo;Augmented &amp; Virtual Reality at Historic Sites&rdquo; &mdash; conference session on Mount Vernon&rsquo;s wearable AR tour (2019).</span>
+        </span>
+        <span class="press-action">Watch &rarr;</span>
+      </a>
+
       <a class="press-entry" href="https://fairfaxcountyeda.org/event/tourism-in-a-post-pandemic-world/" target="_blank" rel="noopener">
         <span class="press-type">Panel</span>
         <span class="press-main">
@@ -204,8 +246,7 @@ BODY = '''
 
     </div>
 
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Speaking</h2>
-    <p class="muted" style="max-width:70ch">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. <a href="mailto:mkbriney@gmail.com?subject=Speaking%20inquiry">Get in touch about speaking &rarr;</a></p>
+    <p class="muted" style="max-width:70ch;margin-top:1.25rem">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. <a href="mailto:mkbriney@gmail.com?subject=Speaking%20inquiry">Get in touch about speaking &rarr;</a></p>
 
   </div>
 </section>
