@@ -93,7 +93,7 @@ BODY = '''
       <li><strong>Board Member</strong> &mdash; Explore Fairfax South / Potomac Banks tourism brand (2022)</li>
       <li><strong>Member</strong> &mdash; Fairfax County VA250 Commission, America&rsquo;s 250th (2024)</li>
       <li><strong>Participating Member</strong> &mdash; Mount Vernon Tourism Taskforce (2019&ndash;2022)</li>
-      <li><strong>Board Member</strong> &mdash; The Campagna Center, Alexandria (2013&ndash;2016)</li>
+      <li><strong>Board Member</strong> &mdash; <a href="https://www.campagnacenter.org/wp-content/uploads/TCC%202013%20Annual%20Report.pdf" target="_blank" rel="noopener">The Campagna Center</a>, Alexandria (2013&ndash;2016)</li>
     </ul>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">In the press</h2>
