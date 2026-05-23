@@ -650,6 +650,37 @@ a.press-entry:hover .press-action { color: var(--gold); }
   text-align: center;
   margin-top: .5rem;
 }
+/* -------- Photo masonry (Gallery page) -------- */
+.photo-masonry {
+  column-count: 3;
+  column-gap: 14px;
+  margin: 0 0 1rem;
+}
+.photo-masonry figure {
+  break-inside: avoid;
+  margin: 0 0 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.photo-masonry img {
+  width: 100%;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity .15s ease;
+}
+.photo-masonry figure:hover img { opacity: .92; }
+.photo-masonry figcaption {
+  font-size: .82rem;
+  color: var(--ink-muted);
+  padding: .55rem .7rem .7rem;
+  line-height: 1.35;
+}
+@media (max-width: 900px) { .photo-masonry { column-count: 2; } }
+@media (max-width: 560px) { .photo-masonry { column-count: 1; } }
+
 @media (max-width: 920px) {
   .gallery.cols-3 { grid-template-columns: repeat(2, 1fr); }
 }

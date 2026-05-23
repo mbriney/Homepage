@@ -25,6 +25,7 @@
   var SELECTORS = [
     '.case-hero-image img',
     '.gallery img',
+    '.photo-masonry img',
     '.phone-strip .phone img'
   ];
 
