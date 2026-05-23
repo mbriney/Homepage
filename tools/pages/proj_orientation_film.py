@@ -152,6 +152,20 @@ BODY = '''
 
   <p class="muted" style="margin-top:2rem;font-size:.9rem;">Press: <a href="https://www.mountvernon.org/about/news/article/george-washington-s-mount-vernon-wins-prestigious-telly-award-for-innovative-guest-orientation-film" target="_blank" rel="noopener">Mount Vernon — Gold Telly press release</a> · <a href="https://wideawakefilms.com/mount-vernon-orientation" target="_blank" rel="noopener">Wide Awake Films &mdash; Orientation Film</a></p>
 
+  <h2>Media gallery</h2>
+  <div class="case-breakout">
+    <div class="photo-masonry">
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-02.webp"><img src="/img/gallery/orientation-onset-02.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="747" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-03.webp"><img src="/img/gallery/orientation-onset-03.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-04.webp"><img src="/img/gallery/orientation-onset-04.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-06.webp"><img src="/img/gallery/orientation-onset-06.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-07.webp"><img src="/img/gallery/orientation-onset-07.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="1500" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-08.webp"><img src="/img/gallery/orientation-onset-08.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-10.webp"><img src="/img/gallery/orientation-onset-10.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/orientation-onset-11.webp"><img src="/img/gallery/orientation-onset-11.jpg" alt="On set for the Mount Vernon orientation film" width="1000" height="667" loading="lazy"></picture></figure>
+    </div>
+  </div>
+
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/washingtons-war-4d/"><span class="dir">&larr; Previous</span><span class="title">Revolutionary War 4D Theater</span></a>
     <a class="next" href="/projects/ar-tour/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon in AR</span></a>

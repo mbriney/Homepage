@@ -122,6 +122,24 @@ BODY = '''
 
   <p class="muted" style="margin-top:2rem;font-size:.9rem;">Archive references: <a href="https://web.archive.org/web/20220121051456/https://www.mountvernon.org/education/resources-for-online-learning/" target="_blank" rel="noopener">Online Learning hub on the Wayback Machine</a> &middot; <a href="https://web.archive.org/web/20200627213354/https://www.mountvernon.org/plan-your-visit/reopening-information/" target="_blank" rel="noopener">June 2020 Reopening Information page</a> &middot; <a href="https://www.mountvernon.org/library/digitalhistory/podcast/teaching-online-in-a-time-of-covid-19-with-sadie-troy" target="_blank" rel="noopener">Podcast: Teaching Online with Sadie Troy</a></p>
 
+  <h2>Media gallery</h2>
+  <div class="case-breakout">
+    <div class="photo-masonry">
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-01.webp"><img src="/img/gallery/mv-covid-filming-01.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-02.webp"><img src="/img/gallery/mv-covid-filming-02.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-03.webp"><img src="/img/gallery/mv-covid-filming-03.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-04.webp"><img src="/img/gallery/mv-covid-filming-04.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-05.webp"><img src="/img/gallery/mv-covid-filming-05.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-06.webp"><img src="/img/gallery/mv-covid-filming-06.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-07.webp"><img src="/img/gallery/mv-covid-filming-07.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="1333" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-08.webp"><img src="/img/gallery/mv-covid-filming-08.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-09.webp"><img src="/img/gallery/mv-covid-filming-09.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/mv-covid-filming-10.webp"><img src="/img/gallery/mv-covid-filming-10.jpg" alt="Producing video during the pandemic at Mount Vernon" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bobblehead-01.webp"><img src="/img/gallery/bobblehead-01.jpg" alt="Filming Bobblehead George — Lessons on the Road" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bobblehead-04.webp"><img src="/img/gallery/bobblehead-04.jpg" alt="Filming Bobblehead George — Lessons on the Road" width="1000" height="1333" loading="lazy"></picture></figure>
+    </div>
+  </div>
+
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/magazine/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Magazine</span></a>
     <a class="next" href="/projects/mv-explorer/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon Explorer App</span></a>

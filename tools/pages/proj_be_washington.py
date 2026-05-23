@@ -162,6 +162,26 @@ BODY = '''
     <a class="btn btn-ghost" href="https://www.mountvernon.org/plan-your-visit/things-to-do/be-washington" target="_blank" rel="noopener" style="margin-left:.5rem">Visit the theater &rarr;</a>
   </p>
 
+  <h2>Media gallery</h2>
+  <div class="case-breakout">
+    <div class="photo-masonry">
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-02.webp"><img src="/img/gallery/bew-onset-02.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-03.webp"><img src="/img/gallery/bew-onset-03.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="1500" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-04.webp"><img src="/img/gallery/bew-onset-04.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-05.webp"><img src="/img/gallery/bew-onset-05.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-06.webp"><img src="/img/gallery/bew-onset-06.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-07.webp"><img src="/img/gallery/bew-onset-07.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-08.webp"><img src="/img/gallery/bew-onset-08.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-09.webp"><img src="/img/gallery/bew-onset-09.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-10.webp"><img src="/img/gallery/bew-onset-10.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-11.webp"><img src="/img/gallery/bew-onset-11.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-onset-12.webp"><img src="/img/gallery/bew-onset-12.jpg" alt="On set for Be Washington, with Christopher Jackson" width="1000" height="667" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-theater-01.webp"><img src="/img/gallery/bew-theater-01.jpg" alt="Inside the Be Washington interactive theater" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-theater-02.webp"><img src="/img/gallery/bew-theater-02.jpg" alt="Inside the Be Washington interactive theater" width="1000" height="750" loading="lazy"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/img/gallery/bew-theater-03.webp"><img src="/img/gallery/bew-theater-03.jpg" alt="Inside the Be Washington interactive theater" width="1000" height="1333" loading="lazy"></picture></figure>
+    </div>
+  </div>
+
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/mount-vernon-virtual-tour/"><span class="dir">&larr; Previous</span><span class="title">Mount Vernon Virtual Tour</span></a>
     <a class="next" href="/projects/washingtons-war-4d/"><span class="dir">Next &rarr;</span><span class="title">Revolutionary War 4D Theater</span></a>
