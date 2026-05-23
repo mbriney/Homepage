@@ -196,13 +196,13 @@ BODY = '''
         <span class="press-action">Details &rarr;</span>
       </a>
 
-      <a class="press-entry" href="https://www.goerie.com/story/news/local/crawford-county/2017/09/10/washington-s-visit-to-be/18788454007/" target="_blank" rel="noopener">
-        <span class="press-type">Panel</span>
+      <a class="press-entry" href="https://www.mountvernon.org/library/digitalhistory/past-projects/washingtons-world" target="_blank" rel="noopener">
+        <span class="press-type">Talk</span>
         <span class="press-main">
           <span class="press-outlet">Washington Trail Summit</span>
-          <span class="press-desc">Participated in a summit on commemorating George Washington&rsquo;s frontier travels (2017).</span>
+          <span class="press-desc">&ldquo;Envisioning the Past and the Future&rdquo; &mdash; a presentation on Mount Vernon&rsquo;s Washington&rsquo;s World mapping project (2017).</span>
         </span>
-        <span class="press-action">Details &rarr;</span>
+        <span class="press-action">About the project &rarr;</span>
       </a>
 
     <p class="muted" style="max-width:70ch;margin-top:1.25rem">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. <a href="mailto:mkbriney@gmail.com?subject=Speaking%20inquiry">Get in touch about speaking &rarr;</a></p>
