@@ -108,6 +108,7 @@ BODY = '''
       <span class="ps-outlet">Reuters</span>
       <span class="ps-outlet">USA Today</span>
       <span class="ps-outlet">Voice of America</span>
+      <span class="ps-outlet">C-SPAN</span>
       <span class="ps-outlet">The Washington Times</span>
       <span class="ps-outlet">WJLA ABC7</span>
       <span class="ps-outlet">FOX&nbsp;5 DC</span>
@@ -408,12 +409,12 @@ BODY = '''
       </a>
 
       <a class="press-entry" href="https://grabien.com/file?id=3378080" target="_blank" rel="noopener">
-        <span class="press-type">Clip</span>
+        <span class="press-type">TV</span>
         <span class="press-main">
-          <span class="press-outlet">Grabien</span>
-          <span class="press-desc">A licensed broadcast news clip featuring Mount Vernon.</span>
+          <span class="press-outlet">C-SPAN &middot; Washington Journal</span>
+          <span class="press-desc">Matt Briney on <em>Washington Journal</em>, discussing the Theodore Roosevelt Presidential Library.</span>
         </span>
-        <span class="press-action">Read &rarr;</span>
+        <span class="press-action">Watch &rarr;</span>
       </a>
 
       <a class="press-entry" href="https://www.alltrailsleadtoicecream.com/2022/09/bike-paths.html" target="_blank" rel="noopener">
