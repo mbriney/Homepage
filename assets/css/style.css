@@ -650,6 +650,29 @@ a.press-entry:hover .press-action { color: var(--gold); }
   text-align: center;
   margin-top: .5rem;
 }
+/* -------- Gallery featured video -------- */
+.gallery-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.gallery-video iframe,
+.gallery-video video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0; display: block;
+  object-fit: cover;
+}
+.gallery-video-cap {
+  font-size: .85rem; color: var(--ink-muted); font-style: italic;
+  margin: .55rem 0 1.4rem;
+}
+
 /* -------- Photo masonry (Gallery page) -------- */
 .photo-masonry {
   column-count: 3;
