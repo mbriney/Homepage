@@ -104,9 +104,24 @@ BODY = '''
   <p>An editor closing a page at 9&nbsp;p.m. Eastern is not going to email a communications office and wait. Publishing the art up front is what converts a story that ran with one wire photo into a story that ran with a gallery.</p>
 
   <h3>The crew that filled it</h3>
-  <p>A photo portal is only as good as the pipeline behind it. Through opening week that pipeline was a managed operation: <strong>three <a href="https://www.gettyimages.com/photos/theodore-roosevelt-presidential-library" target="_blank" rel="noopener">Getty</a> photographers, two photo editors, an in-house photographer, and a full documentary team</strong> working the campus simultaneously across the <a href="https://www.trlibrary.com/video/playlist/PLZyreFrm02D8" target="_blank" rel="noopener">presidential dedication</a>, the <a href="https://www.trlibrary.com/grand-opening" target="_blank" rel="noopener">Founding Benefactor Days</a>, the <a href="https://www.trlibrary.com/video/view/YBgXfxhtsl0" target="_blank" rel="noopener">ceremony</a>, the <a href="https://www.trlibrary.com/video/playlist/PLIEjRP2NQLiA" target="_blank" rel="noopener">talks</a>, and the <a href="https://www.trlibrary.com/video/view/HJxLVmaKb10" target="_blank" rel="noopener">drone show</a>.</p>
+  <p>A photo portal is only as good as the pipeline behind it. Through opening week that pipeline was a managed operation: <strong>three <a href="https://www.gettyimages.com/photos/theodore-roosevelt-presidential-library" target="_blank" rel="noopener">Getty</a> photographers, two photo editors, an in-house photographer, a full documentary team, and four interns working as production assistants</strong> working the campus simultaneously across the <a href="https://www.trlibrary.com/video/playlist/PLZyreFrm02D8" target="_blank" rel="noopener">presidential dedication</a>, the <a href="https://www.trlibrary.com/grand-opening" target="_blank" rel="noopener">Founding Benefactor Days</a>, the <a href="https://www.trlibrary.com/video/view/YBgXfxhtsl0" target="_blank" rel="noopener">ceremony</a>, the <a href="https://www.trlibrary.com/video/playlist/PLIEjRP2NQLiA" target="_blank" rel="noopener">talks</a>, and the <a href="https://www.trlibrary.com/video/view/HJxLVmaKb10" target="_blank" rel="noopener">drone show</a>.</p>
   <p>The photo editors are the part most institutions skip, and they are the reason the whole thing worked. Shooters produce volume &mdash; thousands of frames a day across six events. Without editors embedded in the operation, that volume sits unculled while the news cycle moves, and the institution ends up publishing its best images two days after anyone needed them. With them, selects were caught, captioned, and pushed to the portal while the story was still live.</p>
   <p>Getty coverage did something the portal alone couldn&rsquo;t: it put the Library&rsquo;s imagery onto a wire that thousands of outlets already subscribe to, reaching newsrooms that were never going to send a crew to western North Dakota and would otherwise have run the story with no art at all &mdash; or not run it.</p>
+
+  <h3>And four interns</h3>
+  <p>The other people on that riser were <strong>four interns, shadowing as production assistants</strong> through the whole of opening week.</p>
+  <p>The instinct on a week like this is to bring in only people who have done it before. That instinct is wrong, and it&rsquo;s wrong for a reason worth naming: opening weeks are the only time an institution runs a full-scale press operation, so if you don&rsquo;t train people during one, you never train them at all. There will not be a second grand opening.</p>
+  <p>They worked a national press pool, a Secret Service perimeter, a live network riser and a sold-out ceremony &mdash; the kind of week most communications professionals wait a decade to see once. It cost the operation almost nothing and it is the part of the week I&rsquo;d least want to have skipped.</p>
+
+  <div class="gallery cols-1">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/13.webp">
+        <img src="/img/projects/trpl-grand-opening-media/13.jpg" alt="Four Theodore Roosevelt Presidential Library interns standing together on the media riser, the motorcade and crowd visible on the road below" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">Four interns on the media riser during the presidential visit. The motorcade is on the road behind them.</figcaption>
+    </figure>
+  </div>
 
   <h3>One named human</h3>
   <p>Media inquiries route to a person with a name, a title, and a direct address &mdash; not a <code>press@</code> alias. For a first-time institution with no press relationships, being reachable is not a small thing. It is most of the job.</p>
@@ -130,6 +145,47 @@ BODY = '''
 
   <h2>The embargo window did more work than opening day</h2>
   <p>Accredited journalists were invited to the campus for <a href="https://www.trlibrary.com/press/tours" target="_blank" rel="noopener">press tours</a> <em>before</em> the Library opened, and pre-record interviews began as early as <strong>March</strong> &mdash; four months out. That single decision shaped the entire coverage arc.</p>
+
+  <h3>Before the embargo: national television in April</h3>
+  <p>The window opened earlier than the embargo did. On <strong>April&nbsp;15, 2026</strong> &mdash; two and a half months before opening &mdash; ABC&rsquo;s <em>Good Morning America</em> broadcast <strong>live from the Library</strong> as part of its <em>50 States in 50 Weeks</em> series, with the Theodore Roosevelt Presidential Library representing North Dakota. Four segments ran that morning.</p>
+  <p>The building was a construction site. There were no galleries to walk, no exhibits installed, no visitors to film. Which is exactly the problem worth describing, because it is the one every institution faces before it opens: <strong>you have to offer a morning show something other than the thing that isn&rsquo;t finished yet.</strong></p>
+  <p>What we offered instead was the place. The crew scouted the day before &mdash; a hard-hat walkthrough, the roof, pre-interviews on site &mdash; and on air the story ranged across Medora&rsquo;s historic main street, the Chateau de Mor&egrave;s, and the national park, with Library staff, Park Service rangers and townspeople assembled in the dark as the live audience. A national morning show didn&rsquo;t come to see a museum. It came to see a town that had been waiting a hundred years for one.</p>
+
+  <div class="gallery cols-2">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/09.webp">
+        <img src="/img/projects/trpl-grand-opening-media/09.jpg" alt="A network correspondent delivering a live segment at dawn, surrounded by National Park Service rangers, Library staff and Medora residents holding signs" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">The live hit, before sunrise. Rangers, staff and townspeople turned out in the dark to be the crowd.</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/10.webp">
+        <img src="/img/projects/trpl-grand-opening-media/10.jpg" alt="A hard-hat walkthrough of the unfinished Library interior, a group in high-visibility vests listening beside mass timber columns" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">The advance, the day before. You cannot broadcast from a building you haven&rsquo;t walked.</figcaption>
+    </figure>
+  </div>
+
+  <div class="gallery cols-2">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/11.webp">
+        <img src="/img/projects/trpl-grand-opening-media/11.jpg" alt="A camera operator filming a period-costumed interpreter on Medora's historic main street" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">Filming on Medora&rsquo;s main street. When the building isn&rsquo;t ready, the town is the story.</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/12.webp">
+        <img src="/img/projects/trpl-grand-opening-media/12.jpg" alt="The Dickinson Press front page of April 15, 2026, headlined Good Morning, Medora, reporting that national television aired a live segment from the Library" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">And then the local paper covered the fact that national television had come. Coverage generating coverage &mdash; the cheapest placement in the campaign.</figcaption>
+    </figure>
+  </div>
+
+  <p>That last image is the underrated mechanic. National attention is itself a local news story, and regional outlets will cover the arrival of a network crew as an event in its own right. One live segment produced a front page in the nearest daily &mdash; and the two together told western North Dakota that something real was happening, ten weeks before we asked anyone to buy a ticket.</p>
 
   <h3>Dividing one story into non-competing exclusives</h3>
   <p>This is the part of the job that doesn&rsquo;t show up in the clips. Every outlet wants an exclusive, and there was one opening to go around. Hand the whole story to the AP and the <em>New York Times</em> loses interest; hand it to the <em>Times</em> and the wires under-cover it and you lose the regional papers that run wire copy.</p>
@@ -175,6 +231,42 @@ BODY = '''
 
   <p>Fourteen pieces read as fourteen different stories rather than one press release refracted fourteen ways. That is the whole objective, and it is only achievable if you decide in advance who speaks for what.</p>
   <p>Look at the dates. <a href="https://www.cbsnews.com/news/theodore-roosevelt-presidential-library-opening-in-north-dakota-badlands/" target="_blank" rel="noopener">CBS News</a> and <a href="https://www.cbsnews.com/video/the-new-theodore-roosevelt-presidential-library/" target="_blank" rel="noopener"><em>CBS Sunday Morning</em></a> ran June&nbsp;21 &mdash; and that <em>Sunday Morning</em> segment alone went on to draw 224,000 views, more than any other piece of coverage the Library received. <a href="https://www.architecturaldigest.com/story/see-the-theodore-roosevelt-presidential-library" target="_blank" rel="noopener"><em>Architectural Digest</em></a> ran June&nbsp;29. <a href="https://www.foxnews.com/video/6399850184112" target="_blank" rel="noopener">Fox</a> ran June&nbsp;30. <a href="https://www.bloomberg.com/news/articles/2026-06-25/ken-griffin-joins-billionaire-donors-to-roosevelt-library-in-badlands" target="_blank" rel="noopener">Bloomberg</a> ran the Ken Griffin gift June&nbsp;25. <a href="https://www.domusweb.it/en/news/gallery/2026/06/24/snohetta-theodore-roosevelt-presidential-library-north-dakota.html" target="_blank" rel="noopener">Domus</a> ran June&nbsp;24. All of that published before a single member of the public walked through the doors.</p>
+  <p>What that access actually costs is worth showing, because it is the part institutions underestimate. A single broadcast sit-down is a half-day: two camera positions, lighting, sound, a colour reference before every setup, and a subject who has to be available for all of it &mdash; on a construction site, in a town with no crew base, weeks before anyone is ready for visitors.</p>
+
+  <div class="gallery cols-2">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/05.webp">
+        <img src="/img/projects/trpl-grand-opening-media/05.jpg" alt="A full broadcast interview rig — cameras, lights and diffusion on stands — set up on the boardwalk with the Library in the distance" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">One interview setup, on a boardwalk in the Badlands, weeks before the doors opened.</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/06.webp">
+        <img src="/img/projects/trpl-grand-opening-media/06.jpg" alt="A network correspondent interviewing a Library executive on stools outdoors, the building visible behind them" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">The sit-down. Access at this depth is what an embargo window buys &mdash; and it is why the segment ran thirteen days early.</figcaption>
+    </figure>
+  </div>
+
+  <div class="gallery cols-2">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/07.webp">
+        <img src="/img/projects/trpl-grand-opening-media/07.jpg" alt="A broadcast crew in hard hats and high-visibility vests filming inside the permanent exhibition before completion" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">Filming inside the permanent exhibition while it was still a hard-hat site. The galleries wouldn&rsquo;t see a visitor for weeks.</figcaption>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/08.webp">
+        <img src="/img/projects/trpl-grand-opening-media/08.jpg" alt="Two people walking the boardwalk toward the camera with the Library's planted roof rising behind them" loading="lazy" width="1280" height="720">
+      </picture>
+      <figcaption class="gallery-caption">The walk-and-talk. Every strand needed its own room, its own subject and its own day.</figcaption>
+    </figure>
+  </div>
+
   <p>By July&nbsp;1, when the President arrived, the story was already in the water. Opening day didn&rsquo;t have to introduce the Library. It only had to deliver on a story national audiences had been primed for over the preceding two weeks &mdash; which is a much easier assignment, and a much better one.</p>
 
   <h2>Four strands, four different pitches</h2>
@@ -182,7 +274,7 @@ BODY = '''
 
   <h3>National news</h3>
   <p>The hook was the presidential dedication and the America&nbsp;250 framing &mdash; a presidential library opening on the 250th anniversary of the Declaration. The AP led with <a href="https://apnews.com/article/trump-theodore-roosevelt-presidential-library-north-dakota-784bce4c9389b086a8a70a04d06b9939" target="_blank" rel="noopener">the visit to the Badlands</a>; <a href="https://www.reuters.com/business/aerospace-defense/trump-debut-new-air-force-one-trip-theodore-roosevelt-museum-dedication-2026-07-01/" target="_blank" rel="noopener">Reuters</a> led with the new Air Force One; the <a href="https://www.washingtonpost.com/politics/2026/07/01/trump-honor-president-he-sees-peer-theodore-roosevelt/" target="_blank" rel="noopener"><em>Washington Post</em></a> led with a president honoring one he sees as a peer. Same day, same event, three different stories &mdash; which is the outcome you want.</p>
-  <p>The full wire and network run: the <a href="https://apnews.com/article/trump-theodore-roosevelt-presidential-library-north-dakota-784bce4c9389b086a8a70a04d06b9939" target="_blank" rel="noopener">Associated Press</a>, <a href="https://www.reuters.com/business/aerospace-defense/trump-debut-new-air-force-one-trip-theodore-roosevelt-museum-dedication-2026-07-01/" target="_blank" rel="noopener">Reuters</a>, the <a href="https://www.washingtonpost.com/politics/2026/07/01/trump-honor-president-he-sees-peer-theodore-roosevelt/" target="_blank" rel="noopener"><em>Washington Post</em></a>, <a href="https://www.usatoday.com/story/news/politics/2026/07/01/trump-dedicates-new-theodore-roosevelt-library/90760301007/" target="_blank" rel="noopener"><em>USA TODAY</em></a>, <a href="https://www.theguardian.com/us-news/2026/jul/01/trump-theodore-roosevelt-north-dakota" target="_blank" rel="noopener"><em>The Guardian</em></a>, <a href="https://www.npr.org/2026/07/02/nx-s1-5871520/presidential-library-honoring-theodore-roosevelt-opens-in-north-dakota" target="_blank" rel="noopener">NPR&rsquo;s <em>Morning Edition</em></a>, <a href="https://www.cnn.com/2026/07/03/us/video/theodore-roosevelt-library-opening-presidential-vrtc-digvid" target="_blank" rel="noopener">CNN</a>, <a href="https://www.pbs.org/newshour/politics/watch-live-trump-attends-theodore-roosevelt-presidential-library-dedication-ceremony" target="_blank" rel="noopener">PBS <em>NewsHour</em></a>, <a href="https://www.c-span.org/program/america-250/opening-of-theodore-roosevelt-presidential-library/681198" target="_blank" rel="noopener">C-SPAN</a>, <a href="https://www.trlibrary.com/video/view/keuIKAkGqVs" target="_blank" rel="noopener">ABC News</a>, and <a href="https://www.trlibrary.com/video/view/gFlYlWqzRNo" target="_blank" rel="noopener">MS NOW</a>.</p>
+  <p>The full wire and network run: the <a href="https://apnews.com/article/trump-theodore-roosevelt-presidential-library-north-dakota-784bce4c9389b086a8a70a04d06b9939" target="_blank" rel="noopener">Associated Press</a>, <a href="https://www.reuters.com/business/aerospace-defense/trump-debut-new-air-force-one-trip-theodore-roosevelt-museum-dedication-2026-07-01/" target="_blank" rel="noopener">Reuters</a>, the <a href="https://www.washingtonpost.com/politics/2026/07/01/trump-honor-president-he-sees-peer-theodore-roosevelt/" target="_blank" rel="noopener"><em>Washington Post</em></a>, <a href="https://www.usatoday.com/story/news/politics/2026/07/01/trump-dedicates-new-theodore-roosevelt-library/90760301007/" target="_blank" rel="noopener"><em>USA TODAY</em></a>, <a href="https://www.theguardian.com/us-news/2026/jul/01/trump-theodore-roosevelt-north-dakota" target="_blank" rel="noopener"><em>The Guardian</em></a>, <a href="https://www.npr.org/2026/07/02/nx-s1-5871520/presidential-library-honoring-theodore-roosevelt-opens-in-north-dakota" target="_blank" rel="noopener">NPR&rsquo;s <em>Morning Edition</em></a>, <a href="https://www.cnn.com/2026/07/03/us/video/theodore-roosevelt-library-opening-presidential-vrtc-digvid" target="_blank" rel="noopener">CNN</a>, <a href="https://www.pbs.org/newshour/politics/watch-live-trump-attends-theodore-roosevelt-presidential-library-dedication-ceremony" target="_blank" rel="noopener">PBS <em>NewsHour</em></a>, <a href="https://www.c-span.org/program/america-250/opening-of-theodore-roosevelt-presidential-library/681198" target="_blank" rel="noopener">C-SPAN</a>, <a href="https://www.trlibrary.com/video/view/keuIKAkGqVs" target="_blank" rel="noopener">ABC News</a> (including four live <em>Good Morning America</em> segments in April), and <a href="https://www.trlibrary.com/video/view/gFlYlWqzRNo" target="_blank" rel="noopener">MS NOW</a>.</p>
 
   <h3>Architecture and design</h3>
   <p><a href="https://www.architecturaldigest.com/story/see-the-theodore-roosevelt-presidential-library" target="_blank" rel="noopener"><em>Architectural Digest</em></a>, Dezeen (<a href="https://www.dezeen.com/2026/07/02/theodore-roosevelt-presidential-library-snohetta-north-dakot/" target="_blank" rel="noopener">twice</a>, including its <a href="https://www.dezeen.com/2026/07/09/dezeen-agenda-theodore-roosevelt-presidential-library-snohetta-north-dakota/" target="_blank" rel="noopener">Agenda newsletter</a>), <a href="https://www.archdaily.com/1053997/theodore-roosevelt-presidential-library-trpl-snohetta" target="_blank" rel="noopener">ArchDaily</a>, <a href="https://www.designboom.com/architecture/snohetta-prairie-roof-roosevelt-library-theodore-roosevelt-badlands/" target="_blank" rel="noopener">Designboom</a>, <a href="https://www.wallpaper.com/architecture/public-buildings/theodore-roosevelt-presidential-library-snohetta-usa" target="_blank" rel="noopener"><em>Wallpaper*</em></a>, <a href="https://www.elledecor.com/life-culture/a71679851/theodore-roosevelt-presidential-library-north-dakota-badlands-architecture/" target="_blank" rel="noopener"><em>ELLE Decor</em></a>, <a href="https://metropolismag.com/projects/the-theodore-roosevelt-presidential-library/" target="_blank" rel="noopener"><em>Metropolis</em></a>, <a href="https://www.fastcompany.com/91568422/theodore-roosevelt-presidential-library" target="_blank" rel="noopener"><em>Fast Company</em></a>, <a href="https://www.domusweb.it/en/news/gallery/2026/06/24/snohetta-theodore-roosevelt-presidential-library-north-dakota.html" target="_blank" rel="noopener">Domus</a>, and <a href="https://parametric-architecture.com/snoehetta-theodore-roosevelt-library/" target="_blank" rel="noopener">Parametric Architecture</a>. Snøhetta&rsquo;s building &mdash; a structure engineered to disappear into the Badlands &mdash; was a story that stood entirely on its own merits. <em>Newsweek</em> called it &ldquo;<a href="https://www.newsweek.com/theodore-roosevelt-presidential-library-unveiled-north-dakota-12197790" target="_blank" rel="noopener">America&rsquo;s Newest Landmark&hellip; Designed to Disappear</a>.&rdquo; The <em>Wall Street Journal</em> ran it as &ldquo;<a href="https://www.wsj.com/style/design/the-theodore-roosevelt-presidential-library-at-one-with-nature-75a2915b" target="_blank" rel="noopener">At One With Nature</a>.&rdquo; <a href="https://www.archdaily.com/1053997/theodore-roosevelt-presidential-library-trpl-snohetta" target="_blank" rel="noopener">ArchDaily</a> gave it a full project profile, and <a href="https://www.architecturalrecord.com/articles/18326-the-theodore-roosevelt-presidential-library-honors-a-conservationist" target="_blank" rel="noopener"><em>Architectural Record</em></a> &mdash; the profession&rsquo;s journal of record &mdash; ran two pieces.</p>
@@ -289,7 +381,9 @@ BODY = '''
   <ul>
     <li><strong>Publish the assets before anyone asks.</strong> An open photo portal converted more coverage than any pitch. Friction is the enemy, and every gatekeeping step is friction.</li>
     <li><strong>Staff photo editors, not just photographers.</strong> Volume without editing arrives after the cycle closes. The two editors were the difference between having the images and being able to use them.</li>
-    <li><strong>The pre-opening window is the whole game.</strong> The most-watched coverage the Library ever received &mdash; the <em>CBS Sunday Morning</em> segment, 224,000 views &mdash; aired thirteen days before opening. Pre-records starting in March made that possible.</li>
+    <li><strong>Put junior people on the biggest week.</strong> An opening is the only time an institution runs a full-scale press operation. Train during it or don&rsquo;t train at all &mdash; there is no second grand opening.</li>
+    <li><strong>The pre-opening window is the whole game.</strong> The most-watched coverage the Library ever received &mdash; the <em>CBS Sunday Morning</em> segment, 224,000 views &mdash; aired thirteen days before opening, and <em>Good Morning America</em> went live from the site two and a half months before that. Pre-records starting in March made both possible.</li>
+    <li><strong>Sell what exists, not what&rsquo;s coming.</strong> With no galleries to film, the pitch became the town, the park and the people. Network television will come to a construction site if you give it something else to point a camera at.</li>
     <li><strong>Divide the story instead of rationing it.</strong> Five outlets can each have a real exclusive if you give them five different angles. One exclusive makes four enemies; five make five partners.</li>
     <li><strong>Segment by newsroom, not by outlet size.</strong> The design press and the travel desks required earlier, slower, entirely different pitches than the wires &mdash; and delivered the coverage that actually moved visitation.</li>
     <li><strong>A named contact beats an alias.</strong> Unglamorous, and it mattered more than most of the strategy.</li>
@@ -301,7 +395,7 @@ BODY = '''
   <p>A presidential library in the Badlands is, on paper, a hard sell: remote, expensive to reach, and named for a president whose legacy is genuinely contested. It opened to a <a href="https://www.kfyrtv.com/2026/07/15/teddy-roosevelt-presidential-library-releases-opening-attendance-numbers/" target="_blank" rel="noopener">sold-out ceremony and sold-out galleries</a>, <a href="https://northdakotamonitor.com/2026/07/23/theodore-roosevelt-presidential-library-surpasses-500m-in-fundraising/" target="_blank" rel="noopener">40,000 visitors in three weeks, more than $500&nbsp;million raised, and a projected $42&nbsp;million in annual regional economic impact</a>.</p>
   <p>The $98&nbsp;million in earned media is the number that summarizes it. But the number that mattered on the ground was simpler: people got in their cars and drove to Medora, North Dakota, because they had read something that made them want to.</p>
 
-  <p class="muted">Photography courtesy of the Theodore Roosevelt Presidential Library; visitor and landscape photography by Threefold. References: <a href="https://www.trlibrary.com/about/press" target="_blank" rel="noopener">TRPL Press Center</a> · <a href="https://www.trlibrary.com/press/clips" target="_blank" rel="noopener">In the News clips index</a> · <a href="https://www.trlibrary.com/video/playlist/PLWdA8F0rSmNg" target="_blank" rel="noopener">Grand Opening video</a></p>
+  <p class="muted">Photography courtesy of the Theodore Roosevelt Presidential Library; visitor and landscape photography by Threefold; behind-the-scenes production photography my own. References: <a href="https://www.trlibrary.com/about/press" target="_blank" rel="noopener">TRPL Press Center</a> · <a href="https://www.trlibrary.com/press/clips" target="_blank" rel="noopener">In the News clips index</a> · <a href="https://www.trlibrary.com/video/playlist/PLWdA8F0rSmNg" target="_blank" rel="noopener">Grand Opening video</a></p>
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/"><span class="dir">&larr; Back</span><span class="title">All projects</span></a>
