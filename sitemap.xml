@@ -171,10 +171,31 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mattbriney.com/projects/trpl-drip-campaign/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-drip-campaign/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mattbriney.com/projects/trpl-grand-opening-media/</loc>
     <lastmod>2026-08-29</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/trpl-grand-opening-media/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mattbriney.com/projects/trpl-labs/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-labs/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mattbriney.com/projects/trpl-launch-campaign/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-launch-campaign/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -196,6 +217,13 @@
     <lastmod>2026-08-29</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/tr-llm/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mattbriney.com/projects/trpl-trailblazer/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-trailblazer/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>

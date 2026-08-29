@@ -87,7 +87,7 @@ BODY = '''
   </p>
 
   <nav class="case-nav" aria-label="Case study navigation">
-    <a class="prev" href="/projects/trpl-potus-visit/"><span class="dir">&larr; Previous</span><span class="title">A Sitting President &amp; a Medal of Honor</span></a>
+    <a class="prev" href="/projects/trpl-trailblazer/"><span class="dir">&larr; Previous</span><span class="title">The Trailblazer</span></a>
     <a class="next" href="/projects/tessitura-ticketing/"><span class="dir">Next &rarr;</span><span class="title">Tessitura Plan-Your-Day</span></a>
   </nav>
 </div>

@@ -167,7 +167,7 @@ CV_NAME      = "Matt Briney"
 CV_ROLE      = "Museum &amp; Cultural Institution Executive"
 CV_CONTACT   = ("mkbriney@gmail.com<br/>"
                 '<a href="https://www.linkedin.com/in/mbriney/" color="#2d4a3e">linkedin.com/in/mbriney</a><br/>'
-                "Dallas, TX  ·  (703) 608-3413<br/>"
+                "Dallas, TX  ·  (214) 538-6840<br/>"
                 '<a href="https://mattbriney.com" color="#2d4a3e">mattbriney.com</a>')
 
 SUMMARY = [
@@ -207,14 +207,16 @@ ROLES = [
         company="Theodore Roosevelt Presidential Library — Remote",
         summary=(
             "Senior executive responsible for leading institutional communications and "
-            "public-facing strategy for a presidential library under construction. Serve as a "
-            "key member of the leadership team helping shape organizational vision, operational "
-            "readiness, and public engagement in advance of opening."
+            "public-facing strategy through the Library's July 4, 2026 opening. A key member "
+            "of the leadership team shaping organizational vision, operational readiness, and "
+            "public engagement — delivering an opening covered nationally from the AP to "
+            "Architectural Digest, with $98M in earned media across 312 placements."
         ),
         bullets=[
             "Served on the leadership team responsible for developing the Library's operations plan, including business and earned-revenue components, using benchmarking and planning data from peer presidential and cultural institutions.",
             "Led a daily historical storytelling initiative focused on Theodore Roosevelt's life and legacy, tripling social media engagement while using performance data to inform interpretation and audience engagement.",
-            "Direct and manage all press relations for the Presidential Library, overseeing an external agency and serving as institutional spokesperson while monitoring coverage, sentiment, and reach.",
+            "Direct and manage all press relations for the Presidential Library, overseeing an external agency and serving as institutional spokesperson. Built the press center, press kit, and open photo portal behind opening coverage in the AP, Reuters, the New York Times, the Wall Street Journal, the Washington Post, NPR, CNN, and Architectural Digest.",
+            "Managed opening-week visual coverage — three Getty photographers, two photo editors, an in-house photographer, and a documentary team — producing 2,400+ press assets published without gatekeeping.",
             "Developed and maintained an institution-wide talking-points framework covering construction, exhibitions, outreach, and Theodore Roosevelt's legacy, ensuring consistency across leadership and partners.",
             "Oversee a documentary video team capturing the Library's construction and development, producing interpretive and archival assets used for education, exhibitions, and public engagement.",
             "Led the selection of ticketing, e-commerce, and database systems, evaluating platforms for scalability, reporting capabilities, data integrity, and visitor experience.",

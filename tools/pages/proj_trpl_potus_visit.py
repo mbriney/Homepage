@@ -169,7 +169,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/trpl-opening-weekend/"><span class="dir">&larr; Previous</span><span class="title">1,776 Drones Over the Badlands</span></a>
-    <a class="next" href="/projects/mount-vernon-website/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon Website Redesign</span></a>
+    <a class="next" href="/projects/trpl-labs/"><span class="dir">Next &rarr;</span><span class="title">Twenty-Odd Tools, Zero Servers</span></a>
   </nav>
 </div>
 '''
