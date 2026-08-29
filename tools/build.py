@@ -343,8 +343,21 @@ def preload_hero_for(info: dict) -> str:
     """If a page has a hero image we know about, preload it for better LCP."""
     out = info["out"]
     og  = info.get("og_image", "")
-    # Only emit a preload for case-study heroes
+    # Homepage and bio share the portrait, which is the LCP element on mobile.
+    # It has srcset, so preload with imagesrcset/imagesizes to match exactly —
+    # preloading the wrong variant would download the image twice.
+    if out == "index.html" or out.startswith("bio/"):
+        return ('<link rel="preload" as="image" type="image/webp" fetchpriority="high"\n'
+                '      imagesrcset="/img/matt-portrait-1000.webp 1000w, /img/matt-portrait-600.webp 600w"\n'
+                '      imagesizes="(max-width: 820px) 80vw, 460px"\n'
+                '      href="/img/matt-portrait-1000.webp">')
+    # Case-study heroes are a single fixed-width image
     if og and out.startswith("projects/") and out != "projects/index.html":
+        webp = og.rsplit(".", 1)[0] + ".webp"
+        return (f'<link rel="preload" as="image" '
+                f'href="{webp}" type="image/webp" fetchpriority="high">')
+    # Toolkit detail pages: the screenshot is the LCP element
+    if og and out.startswith("toolkit/") and out != "toolkit/index.html":
         webp = og.rsplit(".", 1)[0] + ".webp"
         return (f'<link rel="preload" as="image" '
                 f'href="{webp}" type="image/webp" fetchpriority="high">')
@@ -408,6 +421,30 @@ def build_manifest():
     write(ROOT / "site.webmanifest", body + "\n")
 
 
+
+# ---------- CSS minification ----------
+def minify_css():
+    """Write minified copies of the stylesheets next to the sources.
+
+    Conservative: strips comments, collapses whitespace, removes the last
+    semicolon in a block. Sources stay readable; the site links the .min files.
+    """
+    for name in ("style", "fonts"):
+        src = ROOT / "assets" / "css" / f"{name}.css"
+        if not src.exists():
+            continue
+        css = src.read_text(encoding="utf-8")
+        css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)      # comments
+        css = re.sub(r"\s+", " ", css)                        # collapse ws
+        css = re.sub(r"\s*([{}:;,>~+])\s*", r"\1", css)       # around tokens
+        css = re.sub(r";}", "}", css)                         # trailing ;
+        css = css.strip()
+        out = ROOT / "assets" / "css" / f"{name}.min.css"
+        out.write_text(css, encoding="utf-8")
+        print(f"  wrote {out.relative_to(ROOT)}  "
+              f"({len(css):,} bytes, was {src.stat().st_size:,})")
+
+
 # ---------- Build all pages ----------
 def main():
     print("Building site…")
@@ -427,6 +464,7 @@ def main():
         # generated toolkit detail pages all come from one data-driven module).
         for info in (result if isinstance(result, list) else [result]):
             _emit_page(info, path, pages_info)
+    minify_css()
     build_sitemap(pages_info)
     build_robots()
     build_manifest()

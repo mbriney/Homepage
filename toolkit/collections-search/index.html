@@ -29,20 +29,44 @@
 <link rel="apple-touch-icon" sizes="180x180"      href="/img/matt-square-180.png" />
 <link rel="manifest" href="/site.webmanifest" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Fonts are self-hosted (see assets/css/fonts.css). Preloading the two faces
+     used above the fold means they start downloading with the stylesheet
+     rather than after it. -->
+<link rel="preload" href="/assets/fonts/fraunces-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.min.css" />
+<link rel="preload" as="image" href="/img/toolkit/collections.webp" type="image/webp" fetchpriority="high">
 
-
-<link rel="stylesheet" href="/assets/css/style.css" />
+<link rel="stylesheet" href="/assets/css/style.min.css" />
 
 
 
 <!-- Structured data -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mattbriney.com/#person","name":"Matt Briney","alternateName":["Matthew Briney","Matt K. Briney"],"jobTitle":"Chief Communications & Marketing Officer","description":"Museum and cultural institution executive. Chief Communications & Marketing Officer at the Theodore Roosevelt Presidential Library, which opened in July 2026. Previously Vice President of Media & Communications at George Washington's Mount Vernon and Vice President at Edelman.","worksFor":{"@type":"Organization","name":"Theodore Roosevelt Presidential Library","url":"https://www.trlibrary.com","sameAs":"https://en.wikipedia.org/wiki/Theodore_Roosevelt_Presidential_Library"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Virginia Tech","url":"https://www.vt.edu"},"knowsAbout":["Museum communications","Cultural institution marketing","Digital strategy","Audience development","Artificial intelligence in cultural heritage","Interpretive media","Membership and earned revenue","Public relations"],"award":["Thea Award for Outstanding Achievement","Telly Award"],"url":"https://mattbriney.com","image":"https://mattbriney.com/img/matt-portrait-1000.jpg","address":{"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.trlibrary.com/staff-members/matt-briney","https://www.linkedin.com/in/mbriney/","https://github.com/mbriney","https://x.com/mbriney","https://www.instagram.com/mbriney/","https://www.facebook.com/briney","https://www.alltrails.com/members/matt-briney","https://unsplash.com/@mbriney","https://www.imdb.com/name/nm9778875/"]},{"@type":"WebSite","@id":"https://mattbriney.com/#website","name":"Matt Briney","url":"https://mattbriney.com","inLanguage":"en-US","publisher":{"@id":"https://mattbriney.com/#person"}},{"@type":"SoftwareApplication","@id":"https://mattbriney.com/toolkit/collections-search/#software","name":"Collections Search","applicationCategory":"WebApplication","operatingSystem":"Any (web browser)","description":"A free, open-source archival collections search widget with autocomplete and a relationship graph. Embeddable on any museum or library website. Caches its taxonomy so the source archive carries no load. MIT licensed.","url":"https://mattbriney.com/toolkit/collections-search/","image":"https://mattbriney.com/img/toolkit/collections.jpg","license":"https://opensource.org/licenses/MIT","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@id":"https://mattbriney.com/#person"},"codeRepository":"https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget","installUrl":"https://trc.labs.trlibrary.com"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mattbriney.com/"},{"@type":"ListItem","position":2,"name":"Toolkit","item":"https://mattbriney.com/toolkit/"},{"@type":"ListItem","position":3,"name":"Collections Search","item":"https://mattbriney.com/toolkit/collections-search/"}]}]}</script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41"></script>
+<!-- Google tag (gtag.js). Loaded lazily — gtag.js is ~70KB of mostly-unused
+     JavaScript and a third-party connection, neither of which should compete
+     with first paint. We attach it on first interaction, or after the page has
+     been idle for 3s, whichever comes first. Analytics still records the
+     pageview; it just stops taxing the critical path. -->
+<script>
+  (function () {
+    var loaded = false;
+    function loadGA() {
+      if (loaded) return; loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) {
+      window.addEventListener(e, loadGA, { once: true, passive: true });
+    });
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA, { timeout: 3000 });
+    } else { setTimeout(loadGA, 3000); }
+  })();
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
