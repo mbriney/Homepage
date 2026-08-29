@@ -9,28 +9,42 @@ ICON_SRC = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
             '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>')
 
 
+SLUGS = {
+    "Trip Planner": "trip-planner", "Ticketing Widgets": "ticketing-widgets",
+    "Quizzes": "quizzes", "Timeline": "timeline", "Family Tree": "family-tree",
+    "Photo Gallery": "photo-gallery", "Digital Invite": "digital-invite",
+    "Campus Map": "campus-map", "Weather": "weather", "Link Checker": "link-checker",
+    "Reviews": "reviews", "Social Calendar": "social-calendar",
+    "Newsletter Builder": "newsletter", "DAM Photo Embed": "dam-embed",
+    "Hours Embed": "hours-embed", "Collections Search": "collections-search",
+    "Anniversaries": "anniversaries", "Panorama Viewer": "panoramas",
+    "Retro Game": "retro-game",
+}
+
+
 def slugify(name):
-    return name.lower().replace("&", "and").replace(" ", "-").replace("--", "-")
+    return SLUGS[name]
 
 
 def tool(name, shot, url, repo, desc, badge, alt):
-    live = (f'<a class="btn-tool btn-tool-live" href="{url}" target="_blank" rel="noopener">'
-            f'{ICON_LIVE} Try it live</a>') if url else ''
+    live_ghost = (f'<a class="btn-tool btn-tool-src" href="{url}" target="_blank" rel="noopener">'
+                  f'{ICON_LIVE} Live</a>') if url else ''
     anchor = slugify(name)
     return f'''      <div class="tool-card" id="{anchor}">
-        <div class="tool-shot">
+        <a class="tool-shot" href="/toolkit/{anchor}/">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/{shot}.webp">
             <img src="/img/toolkit/{shot}.jpg" alt="{alt}" loading="lazy" width="800" height="500">
           </picture>
-        </div>
+        </a>
         <div class="tool-body">
           <span class="tool-badge">{badge}</span>
-          <h3 style="margin-top:.5rem"><a href="#{anchor}" style="color:inherit;text-decoration:none">{name}</a></h3>
+          <h3 style="margin-top:.5rem"><a href="/toolkit/{anchor}/" style="color:inherit;text-decoration:none">{name}</a></h3>
           <p>{desc}</p>
         </div>
         <div class="tool-actions">
-          {live}
+          <a class="btn-tool btn-tool-live" href="/toolkit/{anchor}/">Details</a>
+          {live_ghost}
           <a class="btn-tool btn-tool-src" href="{ORG}/{repo}" target="_blank" rel="noopener">{ICON_SRC} Source</a>
         </div>
       </div>

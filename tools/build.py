@@ -422,7 +422,18 @@ def main():
         exec(path.read_text(encoding="utf-8"), ns)
         if "build" not in ns:
             continue
-        info = ns["build"]()
+        result = ns["build"]()
+        # A module may return one page dict, or a list of them (e.g. the
+        # generated toolkit detail pages all come from one data-driven module).
+        for info in (result if isinstance(result, list) else [result]):
+            _emit_page(info, path, pages_info)
+    build_sitemap(pages_info)
+    build_robots()
+    build_manifest()
+    print("Done.")
+
+
+def _emit_page(info: dict, path, pages_info: list[dict]):
         # Record the source template so date helpers can read its git history
         info["_src"] = path
         og_type, og_article_meta = article_meta_for(info)
@@ -446,10 +457,7 @@ def main():
         # Skip noindex pages (e.g. 404) from the sitemap
         if not info.get("noindex"):
             pages_info.append(info)
-    build_sitemap(pages_info)
-    build_robots()
-    build_manifest()
-    print("Done.")
+
 
 if __name__ == "__main__":
     main()
