@@ -495,7 +495,7 @@ BODY = '''
     </div>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">The Theodore Roosevelt Library in the news</h2>
-    <p class="muted" style="max-width:70ch;margin:-.4rem 0 1rem">As CCMO and spokesperson, leading press for a presidential library under construction &mdash; selected coverage:</p>
+    <p class="muted" style="max-width:70ch;margin:-.4rem 0 1rem">As CCMO and spokesperson, leading press for a presidential library through construction and its July 2026 opening &mdash; selected coverage:</p>
 
     <div class="press-index">
 
@@ -557,7 +557,7 @@ BODY = '''
         <span class="press-type">TV</span>
         <span class="press-main">
           <span class="press-outlet">KVRR &middot; Connections</span>
-          <span class="press-desc">Inside the Theodore Roosevelt Presidential Library, one year before it opens (2025).</span>
+          <span class="press-desc">Inside the Theodore Roosevelt Presidential Library, one year before it opened (2025).</span>
         </span>
         <span class="press-action">Watch &rarr;</span>
       </a>

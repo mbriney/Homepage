@@ -19,7 +19,7 @@ BODY = '''
     <div class="hero-text">
       <p class="eyebrow">Museum &amp; Cultural Institution Executive</p>
       <h1>Matt Briney</h1>
-      <p class="lede">I help mission-driven institutions reach more people — through brand, digital products, and AI-powered audience experiences, with the visitor at the center. Today I&rsquo;m the Chief Communications &amp; Marketing Officer at the Theodore Roosevelt Presidential Library.</p>
+      <p class="lede">I run communications for cultural institutions &mdash; and I build the software they run on. Twenty years of brand, audience, and revenue work, most recently at the Theodore Roosevelt Presidential Library, which opened in the North Dakota Badlands in July 2026. Along the way: two AI products in production and roughly 25 in-house tools that cost nothing to host.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="/bio/">About me</a>
         <a class="btn btn-ghost" href="/projects/">Selected work</a>
@@ -41,8 +41,8 @@ BODY = '''
   <div class="container">
     <div class="section-header">
       <p class="eyebrow">Currently</p>
-      <h2>Building a presidential library&rsquo;s public voice from the ground up.</h2>
-      <p class="lede">As CCMO at the Theodore Roosevelt Presidential Library, I&rsquo;m helping shape institutional strategy, operations, and audience experience in advance of opening — from membership and ticketing systems to the daily storytelling that introduces Theodore Roosevelt to a new generation.</p>
+      <h2>We opened a presidential library in the Badlands.</h2>
+      <p class="lede">As CCMO at the Theodore Roosevelt Presidential Library, I led communications through a July&nbsp;4, 2026 opening that drew a sitting President, 1,776 drones over the Badlands, and coverage from the AP to <em>Architectural Digest</em>. The work now is what comes after &mdash; turning a national moment into a sustained audience.</p>
       <p><a class="btn btn-primary" href="https://www.trlibrary.com" target="_blank" rel="noopener">Learn more about the TR Library &rarr;</a></p>
     </div>
 
@@ -52,21 +52,21 @@ BODY = '''
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/><path d="M21 7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3h18z"/><path d="M10 14h4"/></svg>
         </div>
         <h3>Communications &amp; Brand</h3>
-        <p class="muted">Press, spokesperson duties, talking-points strategy, and a daily TR storytelling initiative that tripled social engagement.</p>
+        <p class="muted">Press center, press kit, and spokesperson duties through an opening covered by the AP, Reuters, the <em>New York Times</em>, NPR, and CNN.</p>
       </div>
       <div class="card">
         <div class="card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3 9 4-18 3 9h6"/></svg>
         </div>
         <h3>Audience &amp; Revenue</h3>
-        <p class="muted">Membership, annual giving, ticketing, and e-commerce — built on platforms chosen for scale, reporting, and visitor experience.</p>
+        <p class="muted">Membership, annual giving, ticketing, and e-commerce &mdash; plus an automated visitor-lifecycle program unifying six source systems.</p>
       </div>
       <div class="card">
         <div class="card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/><path d="M7 9l2 2 5-5"/></svg>
         </div>
         <h3>Digital &amp; Interpretive</h3>
-        <p class="muted">Permanent exhibition digital components, AI-powered collections access, and a documentary team capturing the Library&rsquo;s build.</p>
+        <p class="muted">Two AI products in production, permanent exhibition digital components, and ~25 in-house tools running on zero servers.</p>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@ BODY = '''
       <div class="off-clock-text">
         <p class="eyebrow">Off the clock</p>
         <h2>Dallas-based. Hiking, hosting, and the long view.</h2>
-        <p class="lede" style="color:var(--cream-soft);opacity:.9">When I&rsquo;m not building a presidential library, my wife Julie and I are out on a trail somewhere, hosting a watch party for Formula&nbsp;1 or Texas&nbsp;A&amp;M, or chasing a weekend in the Hill Country. I&rsquo;m also tinkering on side projects — a virtual passport built from my TripIt history, an AI-driven family-tree research engine, and whatever else catches my attention.</p>
+        <p class="lede" style="color:var(--cream-soft);opacity:.9">When I&rsquo;m not running a presidential library&rsquo;s communications, my wife Julie and I are out on a trail somewhere, hosting a watch party for Formula&nbsp;1 or Texas&nbsp;A&amp;M, or chasing a weekend in the Hill Country. I&rsquo;m also tinkering on side projects — a virtual passport built from my TripIt history, an AI-driven family-tree research engine, and whatever else catches my attention.</p>
         <p><a class="btn btn-gold" href="/bio/">Read the full bio</a></p>
       </div>
       <figure class="off-clock-photo">
@@ -178,7 +178,7 @@ def build():
     return dict(
         out="index.html",
         title="Matt Briney — Museum & Cultural Institution Executive",
-        description="Matt Briney is a museum and cultural institution executive based in Dallas, Texas. Currently Chief Communications & Marketing Officer at the Theodore Roosevelt Presidential Library.",
+        description="Matt Briney is a museum and cultural institution executive based in Dallas, Texas. Chief Communications & Marketing Officer at the Theodore Roosevelt Presidential Library, which opened in July 2026.",
         active="home",
         canonical="https://mattbriney.com/",
         body=BODY,
