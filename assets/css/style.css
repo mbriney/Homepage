@@ -1621,3 +1621,22 @@ body.lightbox-open { overflow: hidden; }
   font-size: .95rem; color: var(--ink);
 }
 .tool-rel:hover span { color: var(--accent); }
+
+/* ---------- Start-here reading path ---------- */
+.start-here {
+  border: 1px solid var(--border); border-left: 3px solid var(--gold);
+  border-radius: 6px; background: var(--cream-soft);
+  padding: 1.4rem 1.5rem; margin: 0 0 2.5rem;
+}
+.start-here h2 {
+  font-size: .95rem !important; text-transform: uppercase; letter-spacing: .14em;
+  color: var(--gold); font-family: Inter, sans-serif; font-weight: 700;
+  margin: 0 0 .4rem !important;
+}
+.start-here > p { margin: 0 0 1rem; color: var(--ink-muted); font-size: .95rem; }
+.start-here ol { margin: 0; padding-left: 1.1rem; }
+.start-here li { margin-bottom: .7rem; line-height: 1.5; }
+.start-here li:last-child { margin-bottom: 0; }
+.start-here li a { font-family: Fraunces, Georgia, serif; font-size: 1.05rem; color: var(--ink); }
+.start-here li a:hover { color: var(--accent); }
+.start-here li span { display: block; font-size: .9rem; color: var(--ink-muted); margin-top: .15rem; }

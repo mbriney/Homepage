@@ -20,6 +20,10 @@
     <lastmod>2026-08-29</lastmod>
   </url>
   <url>
+    <loc>https://mattbriney.com/leading/</loc>
+    <lastmod>2026-08-29</lastmod>
+  </url>
+  <url>
     <loc>https://mattbriney.com/projects/agent-711/</loc>
     <lastmod>2026-05-18</lastmod>
     <image:image>
@@ -380,5 +384,9 @@
     <image:image>
       <image:loc>https://mattbriney.com/img/toolkit/retro-game.jpg</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://mattbriney.com/writing/institutions/</loc>
+    <lastmod>2026-08-29</lastmod>
   </url>
 </urlset>

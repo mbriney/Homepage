@@ -206,13 +206,14 @@ ROLES = [
         dates="2024 — Present",
         company="Theodore Roosevelt Presidential Library — Remote",
         summary=(
-            "Senior executive responsible for leading institutional communications and "
-            "public-facing strategy through the Library's July 4, 2026 opening. A key member "
-            "of the leadership team shaping organizational vision, operational readiness, and "
-            "public engagement — delivering an opening covered nationally from the AP to "
+            "Built the communications and marketing function from zero at a nonprofit startup, "
+            "reporting to the CEO on a $1.3M budget. Led institutional communications and "
+            "public-facing strategy through the Library's July 4, 2026 opening as a key member "
+            "of the leadership team — delivering an opening covered nationally from the AP to "
             "Architectural Digest, with $98M in earned media across 312 placements."
         ),
         bullets=[
+            "Hired and manage the in-house communications team, and previously built out web content editing and group tour sales roles — scaling the function deliberately as a nonprofit startup rather than staffing ahead of need.",
             "Served on the leadership team responsible for developing the Library's operations plan, including business and earned-revenue components, using benchmarking and planning data from peer presidential and cultural institutions.",
             "Led a daily historical storytelling initiative focused on Theodore Roosevelt's life and legacy, tripling social media engagement while using performance data to inform interpretation and audience engagement.",
             "Direct and manage all press relations for the Presidential Library, overseeing an external agency and serving as institutional spokesperson. Built the press center, press kit, and open photo portal behind opening coverage in the AP, Reuters, the New York Times, the Wall Street Journal, the Washington Post, NPR, CNN, and Architectural Digest.",
@@ -233,9 +234,12 @@ ROLES = [
             "Senior executive at one of the nation's most-visited historic sites, responsible "
             "for leading integrated communications, interpretive media, and public-facing "
             "initiatives in coordination with museum leadership, curatorial, education, guest "
-            "services, and operations teams. Managed a $2.5M annual operating budget."
+            "services, and operations teams. Reported to the President &amp; CEO and led a "
+            "13-person department across graphic design, marketing, media relations, video "
+            "production and social media, on a $2.5M annual operating budget."
         ),
         bullets=[
+            "Led a 13-person department spanning graphic design, marketing, media relations, video production and social media, with hiring, structure and development responsibility for the function.",
             "Led website redesign for Mount Vernon, prioritizing content marketing to enhance educational outreach and drive increased visitation via organic SEO impact, boosting annual visitation from 2.5M to 8M+ visitors and 18M+ pageviews per year.",
             "Produced Mount Vernon's immersive virtual tour, attracting 4M+ visitors with average dwell time of 18 minutes. Widely used in classrooms nationwide.",
             "Achieved major growth in e-commerce revenue from $1.1M in 2015 to $8.6M in 2021 by leading strategic initiatives, marketing innovations, and seamless online shopping experiences.",

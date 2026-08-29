@@ -10,6 +10,19 @@ BODY = '''
 <section class="section section--tight">
   <div class="container">
 
+    <div class="start-here">
+      <h2>Start here</h2>
+      <p>Thirty-one case studies is a lot. If you have five minutes, these three cover the range &mdash; a communications campaign, an institutional build, and something I wrote the code for.</p>
+      <ol>
+        <li><a href="/projects/trpl-grand-opening-media/">$98M in Earned Media</a>
+          <span>Opening a presidential library to the world &mdash; 312 placements, a four-strand campaign, and an honest account of the coverage that wasn&rsquo;t friendly.</span></li>
+        <li><a href="/projects/mount-vernon-website/">Mount Vernon&rsquo;s Website Rebuilt</a>
+          <span>Ten years, 2.5M to 8M+ annual visitors, and e-commerce from $1.1M to $8.6M. The long-horizon institutional work.</span></li>
+        <li><a href="/projects/trpl-labs/">Twenty-Odd Tools, Zero Servers</a>
+          <span>Why a two-person communications shop built its own software instead of buying it &mdash; and what that decision saved.</span></li>
+      </ol>
+    </div>
+
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin-bottom:1.25rem;">Featured</h2>
 
     <div class="teaser-grid teaser-grid--featured">

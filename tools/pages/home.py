@@ -43,6 +43,7 @@ BODY = '''
       <p class="eyebrow">Currently</p>
       <h2>We opened a presidential library in the Badlands.</h2>
       <p class="lede">As CCMO at the Theodore Roosevelt Presidential Library, I led communications through a July&nbsp;4, 2026 opening that drew a sitting President, 1,776 drones over the Badlands, and coverage from the AP to <em>Architectural Digest</em>. The work now is what comes after &mdash; turning a national moment into a sustained audience.</p>
+      <p class="muted" style="font-size:.95rem;margin-top:-.4rem">Reporting to the CEO on a $1.3M budget, having built the communications function from zero. Before this: ten years at George Washington&rsquo;s Mount Vernon leading a 13-person department on a $2.5M budget, reporting to the President &amp; CEO.</p>
       <p><a class="btn btn-primary" href="https://www.trlibrary.com" target="_blank" rel="noopener">Learn more about the TR Library &rarr;</a></p>
     </div>
 
@@ -126,6 +127,33 @@ BODY = '''
     </div>
 
     <p style="margin-top:2rem"><a class="kicker" href="/projects/">See all projects &rarr;</a></p>
+  </div>
+</section>
+
+
+<!-- ====== Writing / how I work ====== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">How I think about the work</p>
+      <h2>Two pieces worth more than a r&eacute;sum&eacute; line.</h2>
+    </div>
+    <div class="teaser-grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+      <a class="teaser" href="/writing/institutions/" style="padding:1.5rem">
+        <div class="teaser-body" style="padding:0">
+          <p class="project-tag">Essay &middot; August 2026</p>
+          <h3>The Institutions That Will Matter in 2035</h3>
+          <p class="muted">Four decisions cultural institutions are currently making by default &mdash; what AI should refuse to do, the quiet cost of software procurement, digital as a primary channel, and why honest institutions outperform careful ones.</p>
+        </div>
+      </a>
+      <a class="teaser" href="/leading/" style="padding:1.5rem">
+        <div class="teaser-body" style="padding:0">
+          <p class="project-tag">How I work</p>
+          <h3>Six Things I Believe About Running a Team</h3>
+          <p class="muted">Put junior people on the biggest week. Publish the bad news yourself. Design the failure before the feature. Every one of them came from getting it wrong first.</p>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
