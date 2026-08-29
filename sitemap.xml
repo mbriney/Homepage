@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mattbriney.com/bio/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-29</lastmod>
   </url>
   <url>
     <loc>https://mattbriney.com/cv/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-29</lastmod>
   </url>
   <url>
     <loc>https://mattbriney.com/gallery/</loc>
@@ -17,18 +17,18 @@
   </url>
   <url>
     <loc>https://mattbriney.com/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-29</lastmod>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/agent-711/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/agent-711/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/annual-reports/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/annual-reports/hero.jpg</image:loc>
     </image:image>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/audio-tour/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/audio-tour/hero.jpg</image:loc>
     </image:image>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/campaign-mount-vernon/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/campaign-mount-vernon/hero.jpg</image:loc>
     </image:image>
@@ -70,53 +70,53 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/democracy-symposium/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/democracy-symposium/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/family-tree/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/family-tree/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/google-grants-optimizer/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/magazine/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/magazine/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/mlk-memorial/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/mlk-memorial/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/mount-vernon-website/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/mount-vernon-website/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/multiplier/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/multiplier/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://mattbriney.com/projects/mv-explorer/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/mv-explorer/phone-01.jpg</image:loc>
     </image:image>
@@ -130,7 +130,7 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/numismatic-kiosk/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/numismatic-kiosk/hero.jpg</image:loc>
     </image:image>
@@ -144,7 +144,7 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/pickens-plan/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/pickens-plan/hero.jpg</image:loc>
     </image:image>
@@ -165,14 +165,21 @@
   </url>
   <url>
     <loc>https://mattbriney.com/projects/travel-passport/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/travel-site/hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
+    <loc>https://mattbriney.com/projects/trpl-grand-opening-media/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-grand-opening-media/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mattbriney.com/projects/trpl-reading-room/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/tr-llm/hero.jpg</image:loc>
     </image:image>
@@ -190,6 +197,6 @@
   </url>
   <url>
     <loc>https://mattbriney.com/recognition/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-29</lastmod>
   </url>
 </urlset>

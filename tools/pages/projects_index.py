@@ -14,6 +14,25 @@ BODY = '''
 
     <div class="teaser-grid teaser-grid--featured">
 
+      <a class="teaser teaser--featured" href="/projects/trpl-grand-opening-media/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/hero.webp">
+            <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="The Theodore Roosevelt Presidential Library set into the North Dakota Badlands" loading="lazy" width="1600" height="900">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">TR Presidential Library · 2024–2026</p>
+          <h3>$98M in Earned Media</h3>
+          <p class="muted">Opening a $450M presidential library in a North Dakota town of 121 people &mdash; and getting the world to come look.</p>
+          <div class="teaser-meta">
+            <span><strong>$98M</strong><br>earned media</span>
+            <span><strong>250+</strong><br>placements</span>
+            <span><strong>40K</strong><br>visitors in 3 weeks</span>
+          </div>
+        </div>
+      </a>
+
       <a class="teaser teaser--featured" href="/projects/mount-vernon-website/">
         <div class="teaser-thumb">
           <picture>
@@ -69,7 +88,14 @@ BODY = '''
         </div>
       </a>
 
-      <a class="teaser teaser--featured" href="/projects/google-grants-optimizer/">
+
+    </div>
+
+    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.5rem 0 1.25rem;">Institutional work</h2>
+
+    <div class="teaser-grid">
+
+      <a class="teaser" href="/projects/google-grants-optimizer/">
         <div class="teaser-thumb" style="background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);text-align:center;padding:1.5rem;">
           <div>
             <div style="font-family:Fraunces,serif;font-size:3rem;line-height:1;font-weight:500;color:var(--cream);letter-spacing:-0.02em;">16.46<span style="color:var(--gold);font-size:.6em;margin-left:.05em;">%</span></div>
@@ -87,12 +113,6 @@ BODY = '''
           </div>
         </div>
       </a>
-
-    </div>
-
-    <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.5rem 0 1.25rem;">Institutional work</h2>
-
-    <div class="teaser-grid">
 
       <a class="teaser" href="/projects/tessitura-ticketing/">
         <div class="teaser-thumb">

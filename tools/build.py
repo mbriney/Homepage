@@ -9,7 +9,7 @@ Run from the repo root:
     python3 tools/build.py
 """
 from __future__ import annotations
-import os, re, sys, html, json
+import os, re, sys, html, json, subprocess
 from pathlib import Path
 from datetime import date
 
@@ -202,8 +202,8 @@ def json_ld_for(info: dict) -> str:
             "isPartOf": {"@id": f"{SITE_ORIGIN}/#website"},
             "author": {"@id": f"{SITE_ORIGIN}/#person"},
             "publisher": {"@id": f"{SITE_ORIGIN}/#person"},
-            "datePublished": _lastmod_for(out),
-            "dateModified":  _lastmod_for(out),
+            "datePublished": _page_dates(info)[0],
+            "dateModified":  _page_dates(info)[1],
             "mainEntityOfPage": canonical,
         })
         items.append(_breadcrumb([
@@ -225,13 +225,65 @@ def _breadcrumb(steps):
     }
 
 
-def _lastmod_for(out_rel: str) -> str:
-    """Return the last-modified ISO date for an output file. Falls back to today."""
-    p = ROOT / out_rel
+_DATE_CACHE: dict[str, tuple[str, str]] = {}
+
+
+def _git_dates(src: Path) -> tuple[str, str] | None:
+    """(published, modified) ISO dates from a source template's git history.
+
+    Newest-first commit list: last line is the first commit (published),
+    first line is the most recent (modified). Returns None if git is
+    unavailable or the file is untracked (e.g. a brand-new page).
+    """
+    key = str(src)
+    if key in _DATE_CACHE:
+        return _DATE_CACHE[key]
     try:
-        return date.fromtimestamp(p.stat().st_mtime).isoformat()
+        out = subprocess.run(
+            ["git", "log", "--follow", "--format=%ad", "--date=short", "--", str(src)],
+            cwd=ROOT, capture_output=True, text=True, timeout=10,
+        )
+        lines = [ln.strip() for ln in out.stdout.splitlines() if ln.strip()]
+        if not lines:
+            return None
+        result = (lines[-1], lines[0])
     except Exception:
-        return date.today().isoformat()
+        return None
+    _DATE_CACHE[key] = result
+    return result
+
+
+def _page_dates(info: dict) -> tuple[str, str]:
+    """Return (published, modified) ISO dates for a page.
+
+    Resolution order:
+      1. Explicit `published` / `modified` keys in the page's build() dict
+      2. Git history of the source template
+      3. Source template mtime (covers new, uncommitted pages)
+      4. Today
+
+    Deliberately never uses the *output* file's mtime — the build rewrites
+    every output on every run, so that would restamp all 30 pages as
+    published-today on each build.
+    """
+    src = info.get("_src")
+    published = info.get("published")
+    modified = info.get("modified")
+    if published and modified:
+        return (published, modified)
+
+    if src is not None:
+        git = _git_dates(src)
+        if git:
+            return (published or git[0], modified or git[1])
+        try:
+            mt = date.fromtimestamp(Path(src).stat().st_mtime).isoformat()
+            return (published or mt, modified or mt)
+        except Exception:
+            pass
+
+    today = date.today().isoformat()
+    return (published or today, modified or today)
 
 
 def article_meta_for(info: dict) -> tuple[str, str]:
@@ -239,10 +291,10 @@ def article_meta_for(info: dict) -> tuple[str, str]:
     out = info["out"]
     if out.startswith("projects/") and out != "projects/index.html":
         # Case study: article
-        lm = _lastmod_for(out)
+        pub, mod = _page_dates(info)
         meta = (
-            f'<meta property="article:published_time" content="{lm}" />\n'
-            f'<meta property="article:modified_time"  content="{lm}" />\n'
+            f'<meta property="article:published_time" content="{pub}" />\n'
+            f'<meta property="article:modified_time"  content="{mod}" />\n'
             f'<meta property="article:author"         content="{AUTHOR_NAME}" />\n'
             f'<meta property="article:section"        content="Case Study" />'
         )
@@ -272,10 +324,11 @@ def build_sitemap(pages_info: list[dict]):
              '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
     for info in pages_info:
         canonical = info["canonical"]
-        out = ROOT / info["out"]
         og  = info.get("og_image", "")
+        # Use the source template's real modified date, not the output file's
+        # mtime — the build rewrites every output on every run.
         try:
-            ts = date.fromtimestamp(out.stat().st_mtime).isoformat()
+            ts = _page_dates(info)[1]
         except Exception:
             ts = today
         parts.append("  <url>")
@@ -331,6 +384,8 @@ def main():
         if "build" not in ns:
             continue
         info = ns["build"]()
+        # Record the source template so date helpers can read its git history
+        info["_src"] = path
         og_type, og_article_meta = article_meta_for(info)
         json_ld_block = json_ld_for(info)
         preload = preload_hero_for(info)
