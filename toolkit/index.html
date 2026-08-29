@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Toolkit — Free Tools for Museums & Nonprofits — Matt Briney</title>
+<meta name="description" content="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees." />
+<meta name="author" content="Matt Briney" />
+<meta name="theme-color" content="#2d4a3e" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Toolkit — Free Tools for Museums & Nonprofits — Matt Briney" />
+<meta property="og:description" content="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees." />
+<meta property="og:url" content="https://mattbriney.com/toolkit/" />
+<meta property="og:image" content="https://mattbriney.com/img/matt-og-1200x630.jpg" />
+<meta property="og:site_name" content="Matt Briney" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@mbriney" />
+<meta name="twitter:creator" content="@mbriney" />
+
+<link rel="canonical" href="https://mattbriney.com/toolkit/" />
+
+<!-- Favicons — MB monogram -->
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32"   href="/img/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/img/matt-square-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="/img/matt-square-512.png" />
+<link rel="apple-touch-icon" sizes="180x180"      href="/img/matt-square-180.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/assets/css/style.css" />
+
+
+
+<!-- Structured data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mattbriney.com/#person","name":"Matt Briney","alternateName":["Matthew Briney","Matt K. Briney"],"jobTitle":"Chief Communications & Marketing Officer","worksFor":{"@type":"Organization","name":"Theodore Roosevelt Presidential Library","url":"https://www.trlibrary.com"},"url":"https://mattbriney.com","image":"https://mattbriney.com/img/matt-portrait-1000.jpg","address":{"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/mbriney/","https://github.com/mbriney","https://x.com/mbriney","https://www.instagram.com/mbriney/","https://www.facebook.com/briney","https://www.alltrails.com/members/matt-briney","https://unsplash.com/@mbriney","https://www.imdb.com/name/nm9778875/"]},{"@type":"WebSite","@id":"https://mattbriney.com/#website","name":"Matt Briney","url":"https://mattbriney.com","inLanguage":"en-US","publisher":{"@id":"https://mattbriney.com/#person"}}]}</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Derive content_group from URL so GA4 reports split by career chapter
+  var __cg = (function(p){
+    if (p === '/' || p === '/index.html') return 'Home';
+    if (p.indexOf('/bio') === 0) return 'Bio';
+    if (p.indexOf('/cv')  === 0) return 'CV';
+    var m = p.match(/^\/projects\/([^/]+)\//);
+    if (!m) return 'Other';
+    var slug = m[1];
+    var GROUPS = {
+      'Mount Vernon': ['mount-vernon-website','tessitura-ticketing','mount-vernon-virtual-tour','be-washington','washingtons-war-4d','orientation-film','ar-tour','numismatic-kiosk','audio-tour','short-films','magazine','covid-response','mv-explorer','agent-711','campaign-mount-vernon','democracy-symposium'],
+      'TRPL':         ['trpl-reading-room','google-grants-optimizer','trpl-grand-opening-media','trpl-opening-weekend','trpl-potus-visit','trpl-labs','trpl-drip-campaign','trpl-launch-campaign','trpl-trailblazer'],
+      'Edelman':      ['multiplier'],
+      'Emotive':      ['mlk-memorial','pickens-plan'],
+      'Personal':     ['travel-passport','family-tree']
+    };
+    for (var k in GROUPS) if (GROUPS[k].indexOf(slug) !== -1) return k;
+    return 'Projects';
+  })(location.pathname);
+
+  gtag('config', 'G-0RQJ767Q41', { content_group: __cg });
+</script>
+
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand">Matt Briney</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/" class="">Home</a></li>
+      <li><a href="/bio/" class="">Bio</a></li>
+      <li><a href="/projects/" class="">Projects</a></li>
+      <li><a href="/toolkit/" class="active">Toolkit</a></li>
+      <li><a href="/recognition/" class="">Recognition</a></li>
+      <li><a href="/gallery/" class="">Gallery</a></li>
+      <li><a href="/cv/" class="">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Toolkit</p>
+    <h1 style="margin-bottom:.2em">Free tools for museums and nonprofits</h1>
+    <p class="lede" style="max-width:64ch">Nineteen working tools built for the Theodore Roosevelt Presidential Library and released under the MIT license. Every one runs as static files on GitHub Pages with scheduled jobs doing anything that needs fresh data &mdash; so there is no server to buy, no vendor contract, and no hosting bill. Fork them, change a config file, ship.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container" style="max-width:860px">
+
+    <p class="muted" style="border-left:3px solid var(--gold);padding-left:1rem;margin-bottom:2.5rem">
+      <strong>Why this exists.</strong> Small institutions are quoted $15,000&ndash;$60,000 per tool for things that are, underneath, a data file and a page. We built ours instead, on an architecture a two-person communications team can maintain. There is no reason for the next museum to pay for them either. <a href="/projects/trpl-labs/">How the whole system works &rarr;</a>
+    </p>
+
+    <div class="tool-group">
+      <h2>Visitor-facing</h2>
+      <p class="muted">Embeds and experiences for your own website.</p>
+      <div class="tool-list">
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener">Trip Planner</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://trip.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener">Source</a></div>
+        <p>A ten-step wizard that builds a multi-day regional itinerary. Rule-based and deterministic &mdash; no AI, nothing to hallucinate. Schedules against real pace budgets, places time-anchored events only on days they run, and folds nearby stops into day trips. Regional data is JSON; the engine is generic.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener">Ticketing Widgets</a><span class="tool-badge">ACME</span></h3>
+        <div class="tool-links"><a href="https://ticketing.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener">Source</a></div>
+        <p>Six embeddable timed-entry availability widgets on a fifteen-minute refresh, with sell-out warnings and better-day suggestions. Models risk as supply against expected demand for that weekday rather than raw percent-sold. Requires ACME Ticketing.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener">Quizzes</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://quiz.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener">Source</a></div>
+        <p>Eighty-five embeddable fifteen-question quizzes with shareable challenge links and live head-to-head play peer-to-peer over WebRTC. Adding a quiz is one JSON file and no code changes.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener">Timeline</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://timeline.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener">Source</a></div>
+        <p>A dual-axis embeddable timeline &mdash; your subject's life on top, world history beneath. Two files, zero dependencies, no build step. All content lives in one data file or a JSON URL you point at.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener">Family Tree</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://familytree.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener">Source</a></div>
+        <p>An interactive genealogical tree that computes its own layout, so adding people needs no coordinate work. The deploy renders the whole tree in a headless browser to confirm nobody overlaps before publishing.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener">Photo Gallery</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://photogallery.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener">Source</a></div>
+        <p>Drop a folder of full-resolution photos, run one script, get a masonry gallery embeddable on any site. 926 MB of originals became 5.6 MB of thumbnails. The build only processes what it hasn't already built.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener">Digital Invite</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://rsvp.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener">Source</a></div>
+        <p>Paperless Post&ndash;style animated envelope invitations with per-guest name personalization, a no-code builder, and a matching email template. No backend and no JavaScript dependencies.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener">Campus Map</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://campus.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener">Source</a></div>
+        <p>A web 3D site model taken from a 338 MB source file to a 7.7 MB delivered asset, with points of interest that hide when a building blocks the line of sight. POIs are fully externalized and there's a visual editor.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/MedoraWeather" target="_blank" rel="noopener">Weather</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://weather.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/MedoraWeather" target="_blank" rel="noopener">Source</a></div>
+        <p>A National Weather Service&ndash;backed weather widget plus eight hotlinkable image variants, so staff can drop conditions into an email, a CMS block or a signage screen without a developer. Falls back to the last good forecast and flags it stale.</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="tool-group">
+      <h2>Staff &amp; operations</h2>
+      <p class="muted">Tools that save a communications or marketing team time every week.</p>
+      <div class="tool-list">
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener">Link Checker</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/LinkChecker/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener">Source</a></div>
+        <p>A weekly crawl of your entire site for broken links and spelling errors, published as an interactive triage report with a local ignore list. Every organization-specific value is an environment variable &mdash; set your domain and go.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener">Reviews</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://reviews.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener">Source</a></div>
+        <p>Daily collection of public reviews across Google, TripAdvisor, Yelp and Facebook, classified into a hand-authored theme vocabulary, with response triage and a screened pull-quote widget. A new theme only enters the vocabulary after three reviews across at least fourteen days.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener">Social Calendar</a><span class="tool-badge">Hootsuite</span></h3>
+        <div class="tool-links"><a href="https://socialcalendar.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener">Source</a></div>
+        <p>A read-only public view of your social publishing schedule, so colleagues can see what's going out without a seat in the scheduling tool. Scheduled posts appear on time without a rebuild. Requires Hootsuite.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener">Newsletter Builder</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://newsletter.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener">Source</a></div>
+        <p>A browser-only email newsletter builder that exports drop-in Constant Contact HTML. The saved file <em>is</em> the project format &mdash; reopen it later to keep editing.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener">Acquia DAM Photo Embed</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://portalphotos.labs.trlibrary.com/demo.html" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener">Source</a></div>
+        <p>Renders any Acquia DAM press portal as native gallery tiles on your own page instead of a fixed-height iframe. Snapshots the portal on a schedule and caches thumbnails, because the vendor's preview URLs are pre-signed and expire. Add a portal to one config file.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/HoursEmbed" target="_blank" rel="noopener">Hours Embed</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/HoursEmbed/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/HoursEmbed" target="_blank" rel="noopener">Source</a></div>
+        <p>Publishes opening hours from one site onto another that can't read it directly. A scheduled job scrapes server-side, where the cross-origin block doesn't apply, and commits static JSON. If parsing ever fails, the last good file stays published.</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="tool-group">
+      <h2>Collections &amp; interpretation</h2>
+      <p class="muted">Getting people closer to the objects.</p>
+      <div class="tool-list">
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener">Collections Search Widget</a><span class="tool-badge">Adaptable</span></h3>
+        <div class="tool-links"><a href="https://trc.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener">Source</a></div>
+        <p>Search and a relationship graph over 139,714 archival items across 52 partner institutions. Adds the autocomplete a controlled vocabulary needs, and caches the taxonomy as static JSON so the source archive's server carries no load.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener">Anniversaries</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/TRAnniversaries/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener">Source</a></div>
+        <p>Tracks upcoming five-year milestone anniversaries of events you define, for commemoration and content planning. Swap one data file for your own institution's dates.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener">Panorama Viewer</a><span class="tool-badge">Fork &amp; go</span></h3>
+        <div class="tool-links"><a href="https://elkhorn.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener">Source</a></div>
+        <p>Full-screen 360&deg; panorama viewing for a historic site. Drop your equirectangular images in a folder and duplicate one HTML file per view. There is no logic to change.</p>
+      </div>
+      <div class="tool">
+        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRRetroGame" target="_blank" rel="noopener">Retro Game</a><span class="tool-badge">Reference</span></h3>
+        <div class="tool-links"><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRRetroGame" target="_blank" rel="noopener">Source</a></div>
+        <p>A historical figure's life as a ten-chapter 2D platformer, each ending in a mini-game and a learning recap. All audio synthesized at runtime with Web Audio &mdash; no sound files. A working reference for browser-game engineering in a museum context.</p>
+      </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:3rem">How to read the labels</h2>
+    <ul>
+      <li><strong>Fork &amp; go</strong> &mdash; nothing institution-specific in the code. Change a data or config file and it is yours.</li>
+      <li><strong>Adaptable</strong> &mdash; the engine is generic but you will need to point it at your own content, styles or data source.</li>
+      <li><strong>ACME / Hootsuite</strong> &mdash; genuinely useful, but only if you already run that platform.</li>
+      <li><strong>Reference</strong> &mdash; not built to be reused wholesale, but worth reading if you are building something similar.</li>
+    </ul>
+
+    <h2>The honest caveats</h2>
+    <p>These were built for one institution and released because they might help another &mdash; not packaged as products. So:</p>
+    <ul>
+      <li>There is no support, no roadmap and no guarantee of maintenance. The licence is MIT; the warranty is none.</li>
+      <li>Most READMEs document how the tool works for us, not a step-by-step setup for you. Expect to read some code.</li>
+      <li>Hosting is free. A couple of tools do have small running costs &mdash; the review pipeline pays for scraping and a small language model, a few dollars a year.</li>
+      <li>Brand assets, fonts and collection content are deliberately <em>not</em> included. The code is yours; the Roosevelt material is not.</li>
+    </ul>
+
+    <h2>If you use one</h2>
+    <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a>.</p>
+
+    <p class="muted" style="margin-top:2rem">All source: <a href="https://github.com/orgs/Theodore-Roosevelt-Presidential-Library/repositories" target="_blank" rel="noopener">the Theodore Roosevelt Presidential Library GitHub organization</a>. Related reading: <a href="/projects/trpl-labs/">the architecture behind these tools</a>.</p>
+
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="brand-foot">Matt Briney</div>
+      <p class="meta">Dallas, TX · <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a></p>
+    </div>
+    <ul class="socials" aria-label="Social profiles" style="list-style:none;padding:0;margin:0;">
+      <li><a href="https://www.linkedin.com/in/mbriney/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.91 1.65-1.86 3.4-1.86 3.64 0 4.31 2.39 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+      <li><a href="https://github.com/mbriney" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></a></li>
+      <li><a href="https://x.com/mbriney" aria-label="X" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/mbriney/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.22.06 1.27.07 1.65.07 4.86s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.22.41-1.27.06-1.65.07-4.86.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.34 4.14.63a5.85 5.85 0 0 0-2.13 1.38A5.85 5.85 0 0 0 .63 4.14C.34 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.27 2.14.56 2.9.3.79.7 1.46 1.38 2.13a5.85 5.85 0 0 0 2.13 1.38c.76.3 1.63.5 2.9.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.14-.27 2.9-.56a5.85 5.85 0 0 0 2.13-1.38 5.85 5.85 0 0 0 1.38-2.13c.3-.76.5-1.63.56-2.9.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.27-2.14-.56-2.9a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63c-.76-.3-1.63-.5-2.9-.56C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a></li>
+      <li><a href="https://www.facebook.com/briney" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.67 0H1.33A1.33 1.33 0 0 0 0 1.33v21.34C0 23.4.6 24 1.33 24h11.5v-9.3H9.69V11.1h3.13V8.42c0-3.1 1.9-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.92c-1.5 0-1.8.72-1.8 1.77v2.31h3.59l-.47 3.62h-3.12V24h6.12c.74 0 1.33-.6 1.33-1.33V1.33C24 .6 23.4 0 22.67 0"/></svg></a></li>
+      <li><a href="https://www.alltrails.com/members/matt-briney" aria-label="AllTrails" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"><path d="M3 19h18L15 9l-3 4-2-2-7 8z"/><circle cx="17" cy="6" r="1.8" fill="currentColor" stroke="none"/></svg></a></li>
+      <li><a href="https://unsplash.com/@mbriney" aria-label="Unsplash" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 6.75V0h9v6.75h-9zM16.5 10.5H24V24H0V10.5h7.5v6.75h9V10.5z"/></svg></a></li>
+      <li><a href="https://www.imdb.com/name/nm9778875/" aria-label="IMDb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="1" y="6" width="22" height="12" rx="2"/><text x="12" y="15.2" font-family="Inter, system-ui, sans-serif" font-size="7" font-weight="800" text-anchor="middle" fill="var(--cream, #f5f0e1)">IMDb</text></svg></a></li>
+    </ul>
+    <p class="meta">&copy; <span id="year">2026</span> Matt Briney</p>
+  </div>
+</footer>
+
+<script src="/assets/js/nav.js" defer></script>
+<script src="/assets/js/analytics.js" defer></script>
+</body>
+</html>
