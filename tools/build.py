@@ -17,6 +17,9 @@ ROOT = Path(__file__).resolve().parent.parent
 PAGES_DIR = ROOT / "tools" / "pages"
 PARTIALS = ROOT / "tools" / "_partials"
 
+sys.path.insert(0, str(ROOT / "tools"))
+from _contact import mail_link, MAIL_USER, MAIL_DOMAIN  # noqa: E402
+
 def read(p: Path) -> str:
     return p.read_text(encoding="utf-8")
 
@@ -59,7 +62,8 @@ def page(slug: str, out: Path, *, title: str, description: str,
         cls_gallery="active" if active=="gallery" else "",
         cls_cv="active" if active=="cv" else "",
     )
-    html_doc = render(BASE, head=head, header=header, body=body, footer=FOOTER)
+    footer = render(FOOTER, contact_link=mail_link(show=True))
+    html_doc = render(BASE, head=head, header=header, body=body, footer=footer)
     write(out, html_doc)
 
 # ---------- SEO metadata ----------
@@ -73,11 +77,37 @@ PERSON_LD = {
     "name": AUTHOR_NAME,
     "alternateName": ["Matthew Briney", "Matt K. Briney"],
     "jobTitle": "Chief Communications & Marketing Officer",
+    "description": (
+        "Museum and cultural institution executive. Chief Communications & Marketing "
+        "Officer at the Theodore Roosevelt Presidential Library, which opened in July 2026. "
+        "Previously Vice President of Media & Communications at George Washington's Mount "
+        "Vernon and Vice President at Edelman."
+    ),
     "worksFor": {
         "@type": "Organization",
         "name": "Theodore Roosevelt Presidential Library",
         "url": "https://www.trlibrary.com",
+        "sameAs": "https://en.wikipedia.org/wiki/Theodore_Roosevelt_Presidential_Library",
     },
+    "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Virginia Tech",
+        "url": "https://www.vt.edu",
+    },
+    "knowsAbout": [
+        "Museum communications",
+        "Cultural institution marketing",
+        "Digital strategy",
+        "Audience development",
+        "Artificial intelligence in cultural heritage",
+        "Interpretive media",
+        "Membership and earned revenue",
+        "Public relations",
+    ],
+    "award": [
+        "Thea Award for Outstanding Achievement",
+        "Telly Award",
+    ],
     "url": SITE_ORIGIN,
     "image": f"{SITE_ORIGIN}/img/matt-portrait-1000.jpg",
     "address": {
@@ -87,6 +117,9 @@ PERSON_LD = {
         "addressCountry": "US",
     },
     "sameAs": [
+        # Authoritative third-party profile pages about this person come first —
+        # these are the strongest entity-resolution signals available.
+        "https://www.trlibrary.com/staff-members/matt-briney",
         "https://www.linkedin.com/in/mbriney/",
         "https://github.com/mbriney",
         "https://x.com/mbriney",
@@ -135,6 +168,8 @@ def json_ld_for(info: dict) -> str:
     is_proj = (out == "projects/index.html")
 
     items = [PERSON_LD, WEBSITE_LD]
+    # Pages may contribute their own schema.org nodes via an `extra_ld` list
+    items.extend(info.get("extra_ld", []))
 
     if is_home:
         items.append({
@@ -145,6 +180,7 @@ def json_ld_for(info: dict) -> str:
             "description": description,
             "isPartOf": {"@id": f"{SITE_ORIGIN}/#website"},
             "about": {"@id": f"{SITE_ORIGIN}/#person"},
+            "mainEntity": {"@id": f"{SITE_ORIGIN}/#person"},
             "primaryImageOfPage": f"{SITE_ORIGIN}{info.get('og_image','')}",
         })
     elif is_bio:
@@ -380,7 +416,9 @@ def main():
     for path in sorted(PAGES_DIR.rglob("*.py")):
         # Each page is a Python module that returns a dict.
         # Import via exec for simplicity (no need for package structure).
-        ns = {}
+        # Page modules get the contact helper injected so the email address
+        # is never written literally into a template (see tools/_contact.py).
+        ns = {"mail_link": mail_link, "MAIL_USER": MAIL_USER, "MAIL_DOMAIN": MAIL_DOMAIN}
         exec(path.read_text(encoding="utf-8"), ns)
         if "build" not in ns:
             continue

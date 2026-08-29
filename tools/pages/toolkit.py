@@ -9,10 +9,15 @@ ICON_SRC = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
             '<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>')
 
 
+def slugify(name):
+    return name.lower().replace("&", "and").replace(" ", "-").replace("--", "-")
+
+
 def tool(name, shot, url, repo, desc, badge, alt):
     live = (f'<a class="btn-tool btn-tool-live" href="{url}" target="_blank" rel="noopener">'
             f'{ICON_LIVE} Try it live</a>') if url else ''
-    return f'''      <div class="tool-card">
+    anchor = slugify(name)
+    return f'''      <div class="tool-card" id="{anchor}">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/{shot}.webp">
@@ -21,7 +26,7 @@ def tool(name, shot, url, repo, desc, badge, alt):
         </div>
         <div class="tool-body">
           <span class="tool-badge">{badge}</span>
-          <h3 style="margin-top:.5rem">{name}</h3>
+          <h3 style="margin-top:.5rem"><a href="#{anchor}" style="color:inherit;text-decoration:none">{name}</a></h3>
           <p>{desc}</p>
         </div>
         <div class="tool-actions">
@@ -154,8 +159,25 @@ BODY = '''
         <li>Three previews above are labelled cards rather than screenshots &mdash; those tools render their content live in the browser, which automated capture can&rsquo;t wait out. Use the live links.</li>
       </ul>
 
+      <h2>Common questions</h2>
+
+      <h3>Are these really free?</h3>
+      <p>Yes. All nineteen are released under the MIT license, which means you can use, modify and redistribute them commercially, with or without attribution. There is no fee, no seat count and no upgrade tier. Hosting them costs nothing either, because they run as static files on GitHub Pages.</p>
+
+      <h3>Do I need a developer?</h3>
+      <p>For the ones marked <em>Fork &amp; go</em> &mdash; not really. You need someone comfortable editing a JSON or YAML file and clicking &ldquo;commit&rdquo; in GitHub&rsquo;s web interface. For the <em>Adaptable</em> ones, budget a developer day. Nothing here requires a server, a database, or a hosting contract.</p>
+
+      <h3>What does &ldquo;no backend&rdquo; actually mean for my organization?</h3>
+      <p>It means there is nothing to pay for and nothing to keep running. Anything needing fresh data &mdash; review counts, ticket availability, opening hours, weather &mdash; is fetched by a scheduled job that writes a static file. Your website reads the file. No API key ever reaches a visitor&rsquo;s browser, and no amount of traffic can knock the tool over.</p>
+
+      <h3>Will these work with my website?</h3>
+      <p>Most are embeddable on any platform &mdash; WordPress, Drupal, Squarespace, Wix &mdash; via a single <code>&lt;script&gt;</code> tag, because they mount into a shadow root and don&rsquo;t inherit or fight your site&rsquo;s CSS. A few are standalone pages you host at your own subdomain.</p>
+
+      <h3>Can I use them if I&rsquo;m not a museum?</h3>
+      <p>Yes. Nothing in the code assumes a museum. Libraries, historic sites, parks, zoos, botanical gardens, arts organizations and small nonprofits generally have the same problems &mdash; a broken-link crawl, a photo gallery, review monitoring and a public events calendar are universal.</p>
+
       <h2>If you use one</h2>
-      <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a>.</p>
+      <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at ''' + mail_link(show=True) + '''.</p>
 
       <p class="muted" style="margin-top:2rem">All source: <a href="https://github.com/orgs/Theodore-Roosevelt-Presidential-Library/repositories" target="_blank" rel="noopener">the Theodore Roosevelt Presidential Library GitHub organization</a>. Related reading: <a href="/projects/trpl-labs/">the architecture behind these tools</a>.</p>
     </div>
@@ -165,13 +187,46 @@ BODY = '''
 '''
 
 
+FAQ_LD = {
+    "@type": "FAQPage",
+    "@id": "https://mattbriney.com/toolkit/#faq",
+    "mainEntity": [
+        {"@type": "Question", "name": "Are these tools really free?",
+         "acceptedAnswer": {"@type": "Answer", "text":
+          "Yes. All nineteen are released under the MIT license, so you can use, modify and "
+          "redistribute them commercially. There is no fee, no seat count and no upgrade tier. "
+          "Hosting costs nothing either, because they run as static files on GitHub Pages."}},
+        {"@type": "Question", "name": "Do I need a developer to use them?",
+         "acceptedAnswer": {"@type": "Answer", "text":
+          "For the tools marked Fork and go, you need someone comfortable editing a JSON or YAML "
+          "file and committing it in GitHub's web interface. For the Adaptable ones, budget about "
+          "a developer day. None of them require a server, a database or a hosting contract."}},
+        {"@type": "Question", "name": "What does no backend mean for my organization?",
+         "acceptedAnswer": {"@type": "Answer", "text":
+          "Nothing to pay for and nothing to keep running. Anything needing fresh data is fetched "
+          "by a scheduled job that writes a static file, which your website then reads. No API key "
+          "reaches a visitor's browser and no amount of traffic can knock the tool over."}},
+        {"@type": "Question", "name": "Will these work with my existing website?",
+         "acceptedAnswer": {"@type": "Answer", "text":
+          "Most are embeddable on any platform including WordPress, Drupal, Squarespace and Wix "
+          "via a single script tag, because they mount into a shadow root and do not inherit or "
+          "conflict with your site's CSS. A few are standalone pages you host at your own subdomain."}},
+        {"@type": "Question", "name": "Can I use these if I am not a museum?",
+         "acceptedAnswer": {"@type": "Answer", "text":
+          "Yes. Nothing in the code assumes a museum. Libraries, historic sites, parks, zoos, "
+          "botanical gardens, arts organizations and small nonprofits share the same problems."}},
+    ],
+}
+
+
 def build():
     return dict(
         out="toolkit/index.html",
-        title="Toolkit — Free Tools for Museums & Nonprofits — Matt Briney",
-        description="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees.",
+        title="Free Open-Source Tools for Museums & Nonprofits — Matt Briney",
+        description="19 free, MIT-licensed tools for museums and nonprofits: trip planner, collections search widget, review monitoring, broken-link checker, photo galleries, quizzes, timelines and more. Static hosting, no servers, no licence fees.",
         active="toolkit",
         canonical="https://mattbriney.com/toolkit/",
         og_image="/img/toolkit/trip-planner.jpg",
         body=BODY,
+        extra_ld=[FAQ_LD],
     )

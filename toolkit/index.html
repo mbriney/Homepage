@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Toolkit — Free Tools for Museums & Nonprofits — Matt Briney</title>
-<meta name="description" content="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees." />
+<title>Free Open-Source Tools for Museums & Nonprofits — Matt Briney</title>
+<meta name="description" content="19 free, MIT-licensed tools for museums and nonprofits: trip planner, collections search widget, review monitoring, broken-link checker, photo galleries, quizzes, timelines and more. Static hosting, no servers, no licence fees." />
 <meta name="author" content="Matt Briney" />
 <meta name="theme-color" content="#2d4a3e" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Toolkit — Free Tools for Museums & Nonprofits — Matt Briney" />
-<meta property="og:description" content="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees." />
+<meta property="og:title" content="Free Open-Source Tools for Museums & Nonprofits — Matt Briney" />
+<meta property="og:description" content="19 free, MIT-licensed tools for museums and nonprofits: trip planner, collections search widget, review monitoring, broken-link checker, photo galleries, quizzes, timelines and more. Static hosting, no servers, no licence fees." />
 <meta property="og:url" content="https://mattbriney.com/toolkit/" />
 <meta property="og:image" content="https://mattbriney.com/img/toolkit/trip-planner.jpg" />
 <meta property="og:site_name" content="Matt Briney" />
@@ -39,7 +39,7 @@
 
 
 <!-- Structured data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mattbriney.com/#person","name":"Matt Briney","alternateName":["Matthew Briney","Matt K. Briney"],"jobTitle":"Chief Communications & Marketing Officer","worksFor":{"@type":"Organization","name":"Theodore Roosevelt Presidential Library","url":"https://www.trlibrary.com"},"url":"https://mattbriney.com","image":"https://mattbriney.com/img/matt-portrait-1000.jpg","address":{"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.linkedin.com/in/mbriney/","https://github.com/mbriney","https://x.com/mbriney","https://www.instagram.com/mbriney/","https://www.facebook.com/briney","https://www.alltrails.com/members/matt-briney","https://unsplash.com/@mbriney","https://www.imdb.com/name/nm9778875/"]},{"@type":"WebSite","@id":"https://mattbriney.com/#website","name":"Matt Briney","url":"https://mattbriney.com","inLanguage":"en-US","publisher":{"@id":"https://mattbriney.com/#person"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mattbriney.com/#person","name":"Matt Briney","alternateName":["Matthew Briney","Matt K. Briney"],"jobTitle":"Chief Communications & Marketing Officer","description":"Museum and cultural institution executive. Chief Communications & Marketing Officer at the Theodore Roosevelt Presidential Library, which opened in July 2026. Previously Vice President of Media & Communications at George Washington's Mount Vernon and Vice President at Edelman.","worksFor":{"@type":"Organization","name":"Theodore Roosevelt Presidential Library","url":"https://www.trlibrary.com","sameAs":"https://en.wikipedia.org/wiki/Theodore_Roosevelt_Presidential_Library"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Virginia Tech","url":"https://www.vt.edu"},"knowsAbout":["Museum communications","Cultural institution marketing","Digital strategy","Audience development","Artificial intelligence in cultural heritage","Interpretive media","Membership and earned revenue","Public relations"],"award":["Thea Award for Outstanding Achievement","Telly Award"],"url":"https://mattbriney.com","image":"https://mattbriney.com/img/matt-portrait-1000.jpg","address":{"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},"sameAs":["https://www.trlibrary.com/staff-members/matt-briney","https://www.linkedin.com/in/mbriney/","https://github.com/mbriney","https://x.com/mbriney","https://www.instagram.com/mbriney/","https://www.facebook.com/briney","https://www.alltrails.com/members/matt-briney","https://unsplash.com/@mbriney","https://www.imdb.com/name/nm9778875/"]},{"@type":"WebSite","@id":"https://mattbriney.com/#website","name":"Matt Briney","url":"https://mattbriney.com","inLanguage":"en-US","publisher":{"@id":"https://mattbriney.com/#person"}},{"@type":"FAQPage","@id":"https://mattbriney.com/toolkit/#faq","mainEntity":[{"@type":"Question","name":"Are these tools really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. All nineteen are released under the MIT license, so you can use, modify and redistribute them commercially. There is no fee, no seat count and no upgrade tier. Hosting costs nothing either, because they run as static files on GitHub Pages."}},{"@type":"Question","name":"Do I need a developer to use them?","acceptedAnswer":{"@type":"Answer","text":"For the tools marked Fork and go, you need someone comfortable editing a JSON or YAML file and committing it in GitHub's web interface. For the Adaptable ones, budget about a developer day. None of them require a server, a database or a hosting contract."}},{"@type":"Question","name":"What does no backend mean for my organization?","acceptedAnswer":{"@type":"Answer","text":"Nothing to pay for and nothing to keep running. Anything needing fresh data is fetched by a scheduled job that writes a static file, which your website then reads. No API key reaches a visitor's browser and no amount of traffic can knock the tool over."}},{"@type":"Question","name":"Will these work with my existing website?","acceptedAnswer":{"@type":"Answer","text":"Most are embeddable on any platform including WordPress, Drupal, Squarespace and Wix via a single script tag, because they mount into a shadow root and do not inherit or conflict with your site's CSS. A few are standalone pages you host at your own subdomain."}},{"@type":"Question","name":"Can I use these if I am not a museum?","acceptedAnswer":{"@type":"Answer","text":"Yes. Nothing in the code assumes a museum. Libraries, historic sites, parks, zoos, botanical gardens, arts organizations and small nonprofits share the same problems."}}]}]}</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RQJ767Q41"></script>
@@ -111,7 +111,7 @@
       <h2>Visitor-facing</h2>
       <p class="muted">Embeds and experiences for your own website.</p>
       <div class="tool-grid">
-      <div class="tool-card">
+      <div class="tool-card" id="trip-planner">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/trip-planner.webp">
@@ -120,7 +120,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Trip Planner</h3>
+          <h3 style="margin-top:.5rem"><a href="#trip-planner" style="color:inherit;text-decoration:none">Trip Planner</a></h3>
           <p>A ten-step wizard that builds a multi-day regional itinerary. Rule-based and deterministic &mdash; no AI, nothing to hallucinate. Schedules against real pace budgets and folds nearby stops into day trips.</p>
         </div>
         <div class="tool-actions">
@@ -128,7 +128,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="ticketing-widgets">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/ticketing.webp">
@@ -137,7 +137,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Needs ACME</span>
-          <h3 style="margin-top:.5rem">Ticketing Widgets</h3>
+          <h3 style="margin-top:.5rem"><a href="#ticketing-widgets" style="color:inherit;text-decoration:none">Ticketing Widgets</a></h3>
           <p>Six embeddable timed-entry availability widgets on a fifteen-minute refresh, with sell-out warnings and better-day suggestions. Models risk as supply against expected demand for that weekday.</p>
         </div>
         <div class="tool-actions">
@@ -145,7 +145,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="quizzes">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/quizzes.webp">
@@ -154,7 +154,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Quizzes</h3>
+          <h3 style="margin-top:.5rem"><a href="#quizzes" style="color:inherit;text-decoration:none">Quizzes</a></h3>
           <p>Eighty-five embeddable fifteen-question quizzes with shareable challenge links and live head-to-head play peer-to-peer over WebRTC. Adding a quiz is one JSON file and no code changes.</p>
         </div>
         <div class="tool-actions">
@@ -162,7 +162,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="timeline">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/timeline.webp">
@@ -171,7 +171,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Timeline</h3>
+          <h3 style="margin-top:.5rem"><a href="#timeline" style="color:inherit;text-decoration:none">Timeline</a></h3>
           <p>A dual-axis embeddable timeline &mdash; your subject&rsquo;s life on top, world history beneath. Two files, zero dependencies, no build step. All content lives in one data file.</p>
         </div>
         <div class="tool-actions">
@@ -179,7 +179,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="family-tree">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/family-tree.webp">
@@ -188,7 +188,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Family Tree</h3>
+          <h3 style="margin-top:.5rem"><a href="#family-tree" style="color:inherit;text-decoration:none">Family Tree</a></h3>
           <p>An interactive genealogical tree that computes its own layout, so adding people needs no coordinate work. The deploy renders the whole tree in a headless browser to confirm nobody overlaps before publishing.</p>
         </div>
         <div class="tool-actions">
@@ -196,7 +196,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="photo-gallery">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/photo-gallery.webp">
@@ -205,7 +205,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Photo Gallery</h3>
+          <h3 style="margin-top:.5rem"><a href="#photo-gallery" style="color:inherit;text-decoration:none">Photo Gallery</a></h3>
           <p>Drop a folder of full-resolution photos, run one script, get a masonry gallery embeddable on any site. 926 MB of originals became 5.6 MB of thumbnails, and the build only processes what it hasn&rsquo;t already built.</p>
         </div>
         <div class="tool-actions">
@@ -213,7 +213,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="digital-invite">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/digital-invite.webp">
@@ -222,7 +222,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Digital Invite</h3>
+          <h3 style="margin-top:.5rem"><a href="#digital-invite" style="color:inherit;text-decoration:none">Digital Invite</a></h3>
           <p>Paperless Post&ndash;style animated envelope invitations with per-guest personalization, a no-code builder, and a matching email template. No backend and no JavaScript dependencies.</p>
         </div>
         <div class="tool-actions">
@@ -230,7 +230,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="campus-map">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/campus-map.webp">
@@ -239,7 +239,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Campus Map</h3>
+          <h3 style="margin-top:.5rem"><a href="#campus-map" style="color:inherit;text-decoration:none">Campus Map</a></h3>
           <p>A web 3D site model taken from a 338 MB source file to 7.7 MB delivered, with points of interest that hide when a building blocks the line of sight. POIs are externalized and there&rsquo;s a visual editor.</p>
         </div>
         <div class="tool-actions">
@@ -247,7 +247,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="weather">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/weather.webp">
@@ -256,7 +256,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Weather</h3>
+          <h3 style="margin-top:.5rem"><a href="#weather" style="color:inherit;text-decoration:none">Weather</a></h3>
           <p>A National Weather Service&ndash;backed widget plus eight hotlinkable image variants, so staff can drop conditions into an email, a CMS block or a signage screen without a developer.</p>
         </div>
         <div class="tool-actions">
@@ -271,7 +271,7 @@
       <h2>Staff &amp; operations</h2>
       <p class="muted">Tools that save a communications or marketing team time every week.</p>
       <div class="tool-grid">
-      <div class="tool-card">
+      <div class="tool-card" id="link-checker">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/link-checker.webp">
@@ -280,7 +280,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Link Checker</h3>
+          <h3 style="margin-top:.5rem"><a href="#link-checker" style="color:inherit;text-decoration:none">Link Checker</a></h3>
           <p>A weekly crawl of your entire site for broken links and spelling errors, published as an interactive triage report with a local ignore list. Every organization-specific value is an environment variable.</p>
         </div>
         <div class="tool-actions">
@@ -288,7 +288,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="reviews">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/reviews.webp">
@@ -297,7 +297,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Reviews</h3>
+          <h3 style="margin-top:.5rem"><a href="#reviews" style="color:inherit;text-decoration:none">Reviews</a></h3>
           <p>Daily collection of public reviews across Google, TripAdvisor, Yelp and Facebook, classified into a hand-authored theme vocabulary, with response triage and a screened pull-quote widget.</p>
         </div>
         <div class="tool-actions">
@@ -305,7 +305,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="social-calendar">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/social-calendar.webp">
@@ -314,7 +314,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Needs Hootsuite</span>
-          <h3 style="margin-top:.5rem">Social Calendar</h3>
+          <h3 style="margin-top:.5rem"><a href="#social-calendar" style="color:inherit;text-decoration:none">Social Calendar</a></h3>
           <p>A read-only public view of your social publishing schedule, so colleagues can see what&rsquo;s going out without a seat in the scheduling tool. Scheduled posts appear on time without a rebuild.</p>
         </div>
         <div class="tool-actions">
@@ -322,7 +322,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="newsletter-builder">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/newsletter.webp">
@@ -331,7 +331,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Newsletter Builder</h3>
+          <h3 style="margin-top:.5rem"><a href="#newsletter-builder" style="color:inherit;text-decoration:none">Newsletter Builder</a></h3>
           <p>A browser-only email newsletter builder that exports drop-in Constant Contact HTML. The saved file <em>is</em> the project format &mdash; reopen it later to keep editing.</p>
         </div>
         <div class="tool-actions">
@@ -339,7 +339,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="dam-photo-embed">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/dam-embed.webp">
@@ -348,7 +348,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">DAM Photo Embed</h3>
+          <h3 style="margin-top:.5rem"><a href="#dam-photo-embed" style="color:inherit;text-decoration:none">DAM Photo Embed</a></h3>
           <p>Renders any Acquia DAM press portal as native gallery tiles instead of a fixed-height iframe. Snapshots the portal on a schedule and caches thumbnails, because the vendor&rsquo;s preview URLs expire.</p>
         </div>
         <div class="tool-actions">
@@ -356,7 +356,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="hours-embed">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/hours-embed.webp">
@@ -365,7 +365,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Hours Embed</h3>
+          <h3 style="margin-top:.5rem"><a href="#hours-embed" style="color:inherit;text-decoration:none">Hours Embed</a></h3>
           <p>Publishes opening hours from one site onto another that can&rsquo;t read it directly. A scheduled job scrapes server-side, where the cross-origin block doesn&rsquo;t apply. If parsing fails, the last good file stays published.</p>
         </div>
         <div class="tool-actions">
@@ -380,7 +380,7 @@
       <h2>Collections &amp; interpretation</h2>
       <p class="muted">Getting people closer to the objects.</p>
       <div class="tool-grid">
-      <div class="tool-card">
+      <div class="tool-card" id="collections-search">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/collections.webp">
@@ -389,7 +389,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Adaptable</span>
-          <h3 style="margin-top:.5rem">Collections Search</h3>
+          <h3 style="margin-top:.5rem"><a href="#collections-search" style="color:inherit;text-decoration:none">Collections Search</a></h3>
           <p>Search and a relationship graph over 139,714 archival items across 52 partner institutions. Adds the autocomplete a controlled vocabulary needs, and caches the taxonomy so the source archive carries no load.</p>
         </div>
         <div class="tool-actions">
@@ -397,7 +397,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="anniversaries">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/anniversaries.webp">
@@ -406,7 +406,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Anniversaries</h3>
+          <h3 style="margin-top:.5rem"><a href="#anniversaries" style="color:inherit;text-decoration:none">Anniversaries</a></h3>
           <p>Tracks upcoming five-year milestone anniversaries of events you define, for commemoration and content planning. Swap one data file for your own institution&rsquo;s dates.</p>
         </div>
         <div class="tool-actions">
@@ -414,7 +414,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="panorama-viewer">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/panoramas.webp">
@@ -423,7 +423,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Fork &amp; go</span>
-          <h3 style="margin-top:.5rem">Panorama Viewer</h3>
+          <h3 style="margin-top:.5rem"><a href="#panorama-viewer" style="color:inherit;text-decoration:none">Panorama Viewer</a></h3>
           <p>Full-screen 360&deg; panorama viewing for a historic site. Drop your equirectangular images in a folder and duplicate one HTML file per view. There is no logic to change.</p>
         </div>
         <div class="tool-actions">
@@ -431,7 +431,7 @@
           <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
         </div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" id="retro-game">
         <div class="tool-shot">
           <picture>
             <source type="image/webp" srcset="/img/toolkit/retro-game.webp">
@@ -440,7 +440,7 @@
         </div>
         <div class="tool-body">
           <span class="tool-badge">Reference</span>
-          <h3 style="margin-top:.5rem">Retro Game</h3>
+          <h3 style="margin-top:.5rem"><a href="#retro-game" style="color:inherit;text-decoration:none">Retro Game</a></h3>
           <p>A historical figure&rsquo;s life as a ten-chapter 2D platformer, each ending in a mini-game and a learning recap. All audio synthesized at runtime &mdash; no sound files. A working reference for browser-game engineering in a museum context.</p>
         </div>
         <div class="tool-actions">
@@ -470,8 +470,25 @@
         <li>Three previews above are labelled cards rather than screenshots &mdash; those tools render their content live in the browser, which automated capture can&rsquo;t wait out. Use the live links.</li>
       </ul>
 
+      <h2>Common questions</h2>
+
+      <h3>Are these really free?</h3>
+      <p>Yes. All nineteen are released under the MIT license, which means you can use, modify and redistribute them commercially, with or without attribution. There is no fee, no seat count and no upgrade tier. Hosting them costs nothing either, because they run as static files on GitHub Pages.</p>
+
+      <h3>Do I need a developer?</h3>
+      <p>For the ones marked <em>Fork &amp; go</em> &mdash; not really. You need someone comfortable editing a JSON or YAML file and clicking &ldquo;commit&rdquo; in GitHub&rsquo;s web interface. For the <em>Adaptable</em> ones, budget a developer day. Nothing here requires a server, a database, or a hosting contract.</p>
+
+      <h3>What does &ldquo;no backend&rdquo; actually mean for my organization?</h3>
+      <p>It means there is nothing to pay for and nothing to keep running. Anything needing fresh data &mdash; review counts, ticket availability, opening hours, weather &mdash; is fetched by a scheduled job that writes a static file. Your website reads the file. No API key ever reaches a visitor&rsquo;s browser, and no amount of traffic can knock the tool over.</p>
+
+      <h3>Will these work with my website?</h3>
+      <p>Most are embeddable on any platform &mdash; WordPress, Drupal, Squarespace, Wix &mdash; via a single <code>&lt;script&gt;</code> tag, because they mount into a shadow root and don&rsquo;t inherit or fight your site&rsquo;s CSS. A few are standalone pages you host at your own subdomain.</p>
+
+      <h3>Can I use them if I&rsquo;m not a museum?</h3>
+      <p>Yes. Nothing in the code assumes a museum. Libraries, historic sites, parks, zoos, botanical gardens, arts organizations and small nonprofits generally have the same problems &mdash; a broken-link crawl, a photo gallery, review monitoring and a public events calendar are universal.</p>
+
       <h2>If you use one</h2>
-      <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a>.</p>
+      <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="#" data-cu="yenirbkm" data-cd="moc.liamg" data-cshow="1">email me</a>.</p>
 
       <p class="muted" style="margin-top:2rem">All source: <a href="https://github.com/orgs/Theodore-Roosevelt-Presidential-Library/repositories" target="_blank" rel="noopener">the Theodore Roosevelt Presidential Library GitHub organization</a>. Related reading: <a href="/projects/trpl-labs/">the architecture behind these tools</a>.</p>
     </div>
@@ -484,7 +501,7 @@
   <div class="container">
     <div>
       <div class="brand-foot">Matt Briney</div>
-      <p class="meta">Dallas, TX · <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a></p>
+      <p class="meta">Dallas, TX · <a href="#" data-cu="yenirbkm" data-cd="moc.liamg" data-cshow="1">email me</a></p>
     </div>
     <ul class="socials" aria-label="Social profiles" style="list-style:none;padding:0;margin:0;">
       <li><a href="https://www.linkedin.com/in/mbriney/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.91 1.65-1.86 3.4-1.86 3.64 0 4.31 2.39 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li>

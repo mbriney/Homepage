@@ -222,3 +222,32 @@
   });
 
 })();
+
+/* ---------- Email obfuscation ----------
+   Addresses are never present in the served HTML. Each link carries the
+   user and domain in reversed, split data-* attributes; the real mailto is
+   assembled here at runtime. Stops address harvesters that parse source
+   without executing JavaScript.                                          */
+(function () {
+  function rev(s) { return (s || '').split('').reverse().join(''); }
+  function build(el) {
+    var u = rev(el.getAttribute('data-cu') || '');
+    var d = rev(el.getAttribute('data-cd') || '');
+    if (!u || !d) return;
+    var addr = u + String.fromCharCode(64) + d;
+    var subj = el.getAttribute('data-cs');
+    el.setAttribute('href', 'mailto:' + addr + (subj ? '?subject=' + subj : ''));
+    if (el.getAttribute('data-cshow') === '1') el.textContent = addr;
+    el.removeAttribute('data-cu');
+    el.removeAttribute('data-cd');
+    el.removeAttribute('data-cs');
+    el.removeAttribute('data-cshow');
+  }
+  function init() {
+    var links = document.querySelectorAll('a[data-cu]');
+    for (var i = 0; i < links.length; i++) build(links[i]);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();

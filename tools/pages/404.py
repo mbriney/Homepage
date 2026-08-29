@@ -28,7 +28,7 @@ BODY = '''
     </div>
 
     <p style="font-size:.9rem;color:var(--ink-muted);margin-top:3rem">
-      Still stuck? <a href="mailto:mkbriney@gmail.com?subject=Broken%20link%20on%20mattbriney.com">Drop me a line</a> and I&rsquo;ll get you where you were trying to go.
+      Still stuck? ''' + mail_link('Drop me a line', subject='Broken%20link%20on%20mattbriney.com') + ''' and I&rsquo;ll get you where you were trying to go.
     </p>
 
   </div>

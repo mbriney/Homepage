@@ -51,7 +51,7 @@ BODY = '''
         <div class="divider-mark">&#10070;&nbsp;&nbsp;&nbsp;&#10070;&nbsp;&nbsp;&nbsp;&#10070;</div>
 
         <h2>Get in touch</h2>
-        <p>The best way to reach me is by email at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a> or on <a href="https://www.linkedin.com/in/mbriney/" target="_blank" rel="noopener">LinkedIn</a>. If you want the long version of the work, the <a href="/cv/">CV is here</a> &mdash; or download the <a href="/files/Matt-Briney-Resume.pdf">PDF</a>.</p>
+        <p>The best way to reach me is by email at ''' + mail_link(show=True) + ''' or on <a href="https://www.linkedin.com/in/mbriney/" target="_blank" rel="noopener">LinkedIn</a>. If you want the long version of the work, the <a href="/cv/">CV is here</a> &mdash; or download the <a href="/files/Matt-Briney-Resume.pdf">PDF</a>.</p>
 
         <p style="margin-top:2rem;">
           <a class="btn btn-primary" href="/projects/">See selected work</a>

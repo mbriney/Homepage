@@ -139,7 +139,7 @@ BODY = '''
         <p class="muted">Twenty years across museums, agencies, and a presidential library — brand, digital products, audience &amp; revenue, and AI in production. Happy to talk.</p>
       </div>
       <div class="inquiry-cta-actions">
-        <a class="btn btn-primary" href="mailto:mkbriney@gmail.com?subject=Executive%20search%20%2F%20speaking%20inquiry">Email me</a>
+        ''' + mail_link('Email me', subject='Executive%20search%20%2F%20speaking%20inquiry', cls='btn btn-primary') + '''
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/mbriney/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="/files/Matt-Briney-Resume.pdf" download>Download CV (PDF)</a>
       </div>

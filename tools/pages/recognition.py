@@ -215,7 +215,7 @@ BODY = '''
         <span class="press-action">About the project &rarr;</span>
       </a>
 
-    <p class="muted" style="max-width:70ch;margin-top:1.25rem">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. <a href="mailto:mkbriney@gmail.com?subject=Speaking%20inquiry">Get in touch about speaking &rarr;</a></p>
+    <p class="muted" style="max-width:70ch;margin-top:1.25rem">Available for talks and panels on cultural-institution digital strategy, AI in the nonprofit sector, and audience &amp; revenue growth. ''' + mail_link('Get in touch about speaking &rarr;', subject='Speaking%20inquiry') + '''</p>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">In the press</h2>
 
