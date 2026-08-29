@@ -305,7 +305,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/"><span class="dir">&larr; Back</span><span class="title">All projects</span></a>
-    <a class="next" href="/projects/mount-vernon-website/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon Website Redesign</span></a>
+    <a class="next" href="/projects/trpl-opening-weekend/"><span class="dir">Next &rarr;</span><span class="title">1,776 Drones Over the Badlands</span></a>
   </nav>
 </div>
 '''
@@ -314,7 +314,7 @@ def build():
     return dict(
         out="projects/trpl-grand-opening-media/index.html",
         title="$98M in Earned Media: Opening a Presidential Library — Matt Briney",
-        description="How the Theodore Roosevelt Presidential Library opened to $98M in earned media and 250+ placements — press center, open photo portal, embargoed tours, and four separate campaigns.",
+        description="How the Theodore Roosevelt Presidential Library opened to $98M in earned media and 312 placements — press center, open photo portal, embargoed tours, and four separate campaigns.",
         active="projects",
         canonical="https://mattbriney.com/projects/trpl-grand-opening-media/",
         og_image="/img/projects/trpl-grand-opening-media/hero.jpg",

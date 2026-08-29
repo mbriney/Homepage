@@ -91,7 +91,7 @@ BODY = '''
         <div class="teaser-body">
           <p class="project-tag">TR Presidential Library &middot; 2024&ndash;2026</p>
           <h3>$98M in Earned Media</h3>
-          <p class="muted">Opening a presidential library in a town of 121 people &mdash; AP to <em>Architectural Digest</em>.</p>
+          <p class="muted">Opening a presidential library in a town of 130 people &mdash; AP to <em>Architectural Digest</em>.</p>
         </div>
       </a>
 
