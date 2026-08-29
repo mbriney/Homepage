@@ -202,7 +202,7 @@ BODY = '''
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/trpl-grand-opening-media/"><span class="dir">&larr; Previous</span><span class="title">$98M in Earned Media</span></a>
-    <a class="next" href="/projects/mount-vernon-website/"><span class="dir">Next &rarr;</span><span class="title">Mount Vernon Website Redesign</span></a>
+    <a class="next" href="/projects/trpl-potus-visit/"><span class="dir">Next &rarr;</span><span class="title">A Sitting President &amp; a Medal of Honor</span></a>
   </nav>
 </div>
 '''

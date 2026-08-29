@@ -85,7 +85,7 @@ BODY = '''
         <div class="teaser-thumb">
           <picture>
             <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/hero.webp">
-            <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="The Theodore Roosevelt Presidential Library set into the North Dakota Badlands" loading="lazy" width="1600" height="900">
+            <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="Visitors walking the Theodore Roosevelt Presidential Library's planted roof at golden hour" loading="lazy" width="1600" height="900">
           </picture>
         </div>
         <div class="teaser-body">

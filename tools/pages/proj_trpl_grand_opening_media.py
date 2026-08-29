@@ -17,7 +17,7 @@ BODY = '''
     <div class="case-hero-image">
       <picture>
         <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/hero.webp">
-        <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="Aerial view of the Theodore Roosevelt Presidential Library set into the North Dakota Badlands, its planted roof merging with the surrounding grassland" width="1600" height="900">
+        <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="Visitors walking the Theodore Roosevelt Presidential Library's planted roof at golden hour, native prairie in the foreground" width="1600" height="900">
       </picture>
     </div>
   </div>
@@ -115,9 +115,9 @@ BODY = '''
     <figure>
       <picture>
         <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/01.webp">
-        <img src="/img/projects/trpl-grand-opening-media/01.jpg" alt="The entry approach to the Theodore Roosevelt Presidential Library, mass timber and earthen walls under a planted roof" loading="lazy" width="1600" height="900">
+        <img src="/img/projects/trpl-grand-opening-media/01.jpg" alt="The mile-long boardwalk running from the Library out into the Badlands" loading="lazy" width="1600" height="900">
       </picture>
-      <figcaption class="gallery-caption">Snøhetta&rsquo;s building was its own campaign. Mass timber, rammed earth, and a planted roof gave the design press a story independent of the politics.</figcaption>
+      <figcaption class="gallery-caption">Snøhetta&rsquo;s building was its own campaign. Mass timber, a planted roof and a mile of boardwalk gave the design press a story independent of the politics.</figcaption>
     </figure>
     <figure>
       <picture>
@@ -201,16 +201,16 @@ BODY = '''
     <figure>
       <picture>
         <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/03.webp">
-        <img src="/img/projects/trpl-grand-opening-media/03.jpg" alt="The Library's accessible planted roof terrace overlooking the Badlands" loading="lazy" width="1600" height="900">
+        <img src="/img/projects/trpl-grand-opening-media/03.jpg" alt="Detail photograph of an artifact from the Theodore Roosevelt Presidential Library collection" loading="lazy" width="1600" height="900">
       </picture>
-      <figcaption class="gallery-caption">The roof terrace. A building that photographs well is a communications asset before it is an architectural one.</figcaption>
+      <figcaption class="gallery-caption">Collection photography, shot and published to the portal. A press kit is only as good as the art that ships alongside it.</figcaption>
     </figure>
     <figure>
       <picture>
         <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/04.webp">
-        <img src="/img/projects/trpl-grand-opening-media/04.jpg" alt="The mile-long boardwalk running from the Library out into the Badlands landscape" loading="lazy" width="1600" height="900">
+        <img src="/img/projects/trpl-grand-opening-media/04.jpg" alt="Visitors gathered around an interactive station in the Library galleries during opening weekend" loading="lazy" width="1600" height="900">
       </picture>
-      <figcaption class="gallery-caption">The boardwalk. Travel desks needed a reason to recommend a whole day, not a stop.</figcaption>
+      <figcaption class="gallery-caption">Opening weekend in the galleries. Travel desks needed a reason to recommend a whole day, not a stop.</figcaption>
     </figure>
   </div>
 
@@ -301,7 +301,7 @@ BODY = '''
   <p>A presidential library in the Badlands is, on paper, a hard sell: remote, expensive to reach, and named for a president whose legacy is genuinely contested. It opened to a <a href="https://www.kfyrtv.com/2026/07/15/teddy-roosevelt-presidential-library-releases-opening-attendance-numbers/" target="_blank" rel="noopener">sold-out ceremony and sold-out galleries</a>, <a href="https://northdakotamonitor.com/2026/07/23/theodore-roosevelt-presidential-library-surpasses-500m-in-fundraising/" target="_blank" rel="noopener">40,000 visitors in three weeks, more than $500&nbsp;million raised, and a projected $42&nbsp;million in annual regional economic impact</a>.</p>
   <p>The $98&nbsp;million in earned media is the number that summarizes it. But the number that mattered on the ground was simpler: people got in their cars and drove to Medora, North Dakota, because they had read something that made them want to.</p>
 
-  <p class="muted">Photography: exterior and aerial &copy; Plomp, courtesy Snøhetta and the Theodore Roosevelt Presidential Library; visitor and landscape photography by Threefold, courtesy TRPL. References: <a href="https://www.trlibrary.com/about/press" target="_blank" rel="noopener">TRPL Press Center</a> · <a href="https://www.trlibrary.com/press/clips" target="_blank" rel="noopener">In the News clips index</a> · <a href="https://www.trlibrary.com/video/playlist/PLWdA8F0rSmNg" target="_blank" rel="noopener">Grand Opening video</a></p>
+  <p class="muted">Photography courtesy of the Theodore Roosevelt Presidential Library; visitor and landscape photography by Threefold. References: <a href="https://www.trlibrary.com/about/press" target="_blank" rel="noopener">TRPL Press Center</a> · <a href="https://www.trlibrary.com/press/clips" target="_blank" rel="noopener">In the News clips index</a> · <a href="https://www.trlibrary.com/video/playlist/PLWdA8F0rSmNg" target="_blank" rel="noopener">Grand Opening video</a></p>
 
   <nav class="case-nav" aria-label="Case study navigation">
     <a class="prev" href="/projects/"><span class="dir">&larr; Back</span><span class="title">All projects</span></a>

@@ -185,8 +185,15 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mattbriney.com/projects/trpl-potus-visit/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/projects/trpl-potus-visit/hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mattbriney.com/projects/trpl-reading-room/</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <image:image>
       <image:loc>https://mattbriney.com/img/projects/tr-llm/hero.jpg</image:loc>
     </image:image>

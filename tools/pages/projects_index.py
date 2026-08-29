@@ -18,7 +18,7 @@ BODY = '''
         <div class="teaser-thumb">
           <picture>
             <source type="image/webp" srcset="/img/projects/trpl-grand-opening-media/hero.webp">
-            <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="The Theodore Roosevelt Presidential Library set into the North Dakota Badlands" loading="lazy" width="1600" height="900">
+            <img src="/img/projects/trpl-grand-opening-media/hero.jpg" alt="Visitors walking the Theodore Roosevelt Presidential Library's planted roof at golden hour" loading="lazy" width="1600" height="900">
           </picture>
         </div>
         <div class="teaser-body">
@@ -111,6 +111,25 @@ BODY = '''
             <span><strong>1,776</strong><br>drones</span>
             <span><strong>6,000</strong><br>at the show</span>
             <span><strong>12</strong><br>sessions</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="teaser" href="/projects/trpl-potus-visit/">
+        <div class="teaser-thumb">
+          <picture>
+            <source type="image/webp" srcset="/img/projects/trpl-potus-visit/hero.webp">
+            <img src="/img/projects/trpl-potus-visit/hero.jpg" alt="The Medal of Honor presentation at the Theodore Roosevelt Presidential Library" loading="lazy" width="1600" height="900">
+          </picture>
+        </div>
+        <div class="teaser-body">
+          <p class="project-tag">TR Presidential Library · July 2026</p>
+          <h3>A Sitting President &amp; a Medal of Honor</h3>
+          <p class="muted">Advancing a presidential dedication three days before opening &mdash; two press operations, one site, and a news cycle nobody scripted.</p>
+          <div class="teaser-meta">
+            <span><strong>269K</strong><br>views</span>
+            <span><strong>5</strong><br>videos</span>
+            <span><strong>3 days</strong><br>before opening</span>
           </div>
         </div>
       </a>
