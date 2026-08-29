@@ -244,5 +244,8 @@
   <url>
     <loc>https://mattbriney.com/toolkit/</loc>
     <lastmod>2026-08-29</lastmod>
+    <image:image>
+      <image:loc>https://mattbriney.com/img/toolkit/trip-planner.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>

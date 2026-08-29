@@ -12,7 +12,7 @@
 <meta property="og:title" content="Toolkit — Free Tools for Museums & Nonprofits — Matt Briney" />
 <meta property="og:description" content="Nineteen open-source tools built for the Theodore Roosevelt Presidential Library and released under MIT — trip planning, collections search, review monitoring, link checking and more. No servers, no licence fees." />
 <meta property="og:url" content="https://mattbriney.com/toolkit/" />
-<meta property="og:image" content="https://mattbriney.com/img/matt-og-1200x630.jpg" />
+<meta property="og:image" content="https://mattbriney.com/img/toolkit/trip-planner.jpg" />
 <meta property="og:site_name" content="Matt Briney" />
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -96,65 +96,173 @@
   <div class="container">
     <p class="eyebrow">Toolkit</p>
     <h1 style="margin-bottom:.2em">Free tools for museums and nonprofits</h1>
-    <p class="lede" style="max-width:64ch">Nineteen working tools built for the Theodore Roosevelt Presidential Library and released under the MIT license. Every one runs as static files on GitHub Pages with scheduled jobs doing anything that needs fresh data &mdash; so there is no server to buy, no vendor contract, and no hosting bill. Fork them, change a config file, ship.</p>
+    <p class="lede" style="max-width:64ch">Nineteen working tools built for the Theodore Roosevelt Presidential Library and released under the MIT license. Every one runs as static files with scheduled jobs doing anything that needs fresh data &mdash; so there is no server to buy, no vendor contract, and no hosting bill. Fork them, change a config file, ship.</p>
   </div>
 </section>
 
 <section class="section section--tight">
-  <div class="container" style="max-width:860px">
+  <div class="container">
 
-    <p class="muted" style="border-left:3px solid var(--gold);padding-left:1rem;margin-bottom:2.5rem">
+    <p class="muted" style="border-left:3px solid var(--gold);padding-left:1rem;margin-bottom:1rem;max-width:70ch">
       <strong>Why this exists.</strong> Small institutions are quoted $15,000&ndash;$60,000 per tool for things that are, underneath, a data file and a page. We built ours instead, on an architecture a two-person communications team can maintain. There is no reason for the next museum to pay for them either. <a href="/projects/trpl-labs/">How the whole system works &rarr;</a>
     </p>
 
     <div class="tool-group">
       <h2>Visitor-facing</h2>
       <p class="muted">Embeds and experiences for your own website.</p>
-      <div class="tool-list">
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener">Trip Planner</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://trip.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener">Source</a></div>
-        <p>A ten-step wizard that builds a multi-day regional itinerary. Rule-based and deterministic &mdash; no AI, nothing to hallucinate. Schedules against real pace budgets, places time-anchored events only on days they run, and folds nearby stops into day trips. Regional data is JSON; the engine is generic.</p>
+      <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/trip-planner.webp">
+            <img src="/img/toolkit/trip-planner.jpg" alt="The Trip Planner wizard asking what a visitor wants to see and do" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Trip Planner</h3>
+          <p>A ten-step wizard that builds a multi-day regional itinerary. Rule-based and deterministic &mdash; no AI, nothing to hallucinate. Schedules against real pace budgets and folds nearby stops into day trips.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://trip.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TripPlanner" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener">Ticketing Widgets</a><span class="tool-badge">ACME</span></h3>
-        <div class="tool-links"><a href="https://ticketing.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener">Source</a></div>
-        <p>Six embeddable timed-entry availability widgets on a fifteen-minute refresh, with sell-out warnings and better-day suggestions. Models risk as supply against expected demand for that weekday rather than raw percent-sold. Requires ACME Ticketing.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/ticketing.webp">
+            <img src="/img/toolkit/ticketing.jpg" alt="Sell-out alert banner and timed-entry availability grid" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Needs ACME</span>
+          <h3 style="margin-top:.5rem">Ticketing Widgets</h3>
+          <p>Six embeddable timed-entry availability widgets on a fifteen-minute refresh, with sell-out warnings and better-day suggestions. Models risk as supply against expected demand for that weekday.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://ticketing.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TicketingWidgets" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener">Quizzes</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://quiz.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener">Source</a></div>
-        <p>Eighty-five embeddable fifteen-question quizzes with shareable challenge links and live head-to-head play peer-to-peer over WebRTC. Adding a quiz is one JSON file and no code changes.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/quizzes.webp">
+            <img src="/img/toolkit/quizzes.jpg" alt="The quiz embed documentation and preview page" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Quizzes</h3>
+          <p>Eighty-five embeddable fifteen-question quizzes with shareable challenge links and live head-to-head play peer-to-peer over WebRTC. Adding a quiz is one JSON file and no code changes.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://quiz.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/Quizes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener">Timeline</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://timeline.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener">Source</a></div>
-        <p>A dual-axis embeddable timeline &mdash; your subject's life on top, world history beneath. Two files, zero dependencies, no build step. All content lives in one data file or a JSON URL you point at.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/timeline.webp">
+            <img src="/img/toolkit/timeline.jpg" alt="The Roosevelt timeline comparison view" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Timeline</h3>
+          <p>A dual-axis embeddable timeline &mdash; your subject&rsquo;s life on top, world history beneath. Two files, zero dependencies, no build step. All content lives in one data file.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://timeline.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRTimelineWidget" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener">Family Tree</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://familytree.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener">Source</a></div>
-        <p>An interactive genealogical tree that computes its own layout, so adding people needs no coordinate work. The deploy renders the whole tree in a headless browser to confirm nobody overlaps before publishing.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/family-tree.webp">
+            <img src="/img/toolkit/family-tree.jpg" alt="Family Tree — 46 people across six generations" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Family Tree</h3>
+          <p>An interactive genealogical tree that computes its own layout, so adding people needs no coordinate work. The deploy renders the whole tree in a headless browser to confirm nobody overlaps before publishing.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://familytree.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/FamilyTree" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener">Photo Gallery</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://photogallery.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener">Source</a></div>
-        <p>Drop a folder of full-resolution photos, run one script, get a masonry gallery embeddable on any site. 926 MB of originals became 5.6 MB of thumbnails. The build only processes what it hasn't already built.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/photo-gallery.webp">
+            <img src="/img/toolkit/photo-gallery.jpg" alt="Photo Gallery — 926 MB of originals reduced to 5.6 MB" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Photo Gallery</h3>
+          <p>Drop a folder of full-resolution photos, run one script, get a masonry gallery embeddable on any site. 926 MB of originals became 5.6 MB of thumbnails, and the build only processes what it hasn&rsquo;t already built.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://photogallery.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/PhotoGallery" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener">Digital Invite</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://rsvp.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener">Source</a></div>
-        <p>Paperless Post&ndash;style animated envelope invitations with per-guest name personalization, a no-code builder, and a matching email template. No backend and no JavaScript dependencies.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/digital-invite.webp">
+            <img src="/img/toolkit/digital-invite.jpg" alt="The digital invitation builder with brand colour options" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Digital Invite</h3>
+          <p>Paperless Post&ndash;style animated envelope invitations with per-guest personalization, a no-code builder, and a matching email template. No backend and no JavaScript dependencies.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://rsvp.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/DigitalInvite" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener">Campus Map</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://campus.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener">Source</a></div>
-        <p>A web 3D site model taken from a 338 MB source file to a 7.7 MB delivered asset, with points of interest that hide when a building blocks the line of sight. POIs are fully externalized and there's a visual editor.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/campus-map.webp">
+            <img src="/img/toolkit/campus-map.jpg" alt="The 3D campus model showing the building and trail network" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Campus Map</h3>
+          <p>A web 3D site model taken from a 338 MB source file to 7.7 MB delivered, with points of interest that hide when a building blocks the line of sight. POIs are externalized and there&rsquo;s a visual editor.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://campus.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/CampusMap" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/MedoraWeather" target="_blank" rel="noopener">Weather</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://weather.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/MedoraWeather" target="_blank" rel="noopener">Source</a></div>
-        <p>A National Weather Service&ndash;backed weather widget plus eight hotlinkable image variants, so staff can drop conditions into an email, a CMS block or a signage screen without a developer. Falls back to the last good forecast and flags it stale.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/weather.webp">
+            <img src="/img/toolkit/weather.jpg" alt="The Medora weather widget showing a five-day forecast" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Weather</h3>
+          <p>A National Weather Service&ndash;backed widget plus eight hotlinkable image variants, so staff can drop conditions into an email, a CMS block or a signage screen without a developer.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://weather.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/MedoraWeather" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
       </div>
     </div>
@@ -162,36 +270,108 @@
     <div class="tool-group">
       <h2>Staff &amp; operations</h2>
       <p class="muted">Tools that save a communications or marketing team time every week.</p>
-      <div class="tool-list">
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener">Link Checker</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/LinkChecker/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener">Source</a></div>
-        <p>A weekly crawl of your entire site for broken links and spelling errors, published as an interactive triage report with a local ignore list. Every organization-specific value is an environment variable &mdash; set your domain and go.</p>
+      <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/link-checker.webp">
+            <img src="/img/toolkit/link-checker.jpg" alt="The link and spelling report dashboard showing pages crawled and issues found" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Link Checker</h3>
+          <p>A weekly crawl of your entire site for broken links and spelling errors, published as an interactive triage report with a local ignore list. Every organization-specific value is an environment variable.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://theodore-roosevelt-presidential-library.github.io/LinkChecker/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/LinkChecker" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener">Reviews</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://reviews.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener">Source</a></div>
-        <p>Daily collection of public reviews across Google, TripAdvisor, Yelp and Facebook, classified into a hand-authored theme vocabulary, with response triage and a screened pull-quote widget. A new theme only enters the vocabulary after three reviews across at least fourteen days.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/reviews.webp">
+            <img src="/img/toolkit/reviews.jpg" alt="The reviews dashboard showing rating trend and theme breakdown" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Reviews</h3>
+          <p>Daily collection of public reviews across Google, TripAdvisor, Yelp and Facebook, classified into a hand-authored theme vocabulary, with response triage and a screened pull-quote widget.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://reviews.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/Reviews" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener">Social Calendar</a><span class="tool-badge">Hootsuite</span></h3>
-        <div class="tool-links"><a href="https://socialcalendar.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener">Source</a></div>
-        <p>A read-only public view of your social publishing schedule, so colleagues can see what's going out without a seat in the scheduling tool. Scheduled posts appear on time without a rebuild. Requires Hootsuite.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/social-calendar.webp">
+            <img src="/img/toolkit/social-calendar.jpg" alt="Social Calendar — month, agenda and filter views" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Needs Hootsuite</span>
+          <h3 style="margin-top:.5rem">Social Calendar</h3>
+          <p>A read-only public view of your social publishing schedule, so colleagues can see what&rsquo;s going out without a seat in the scheduling tool. Scheduled posts appear on time without a rebuild.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://socialcalendar.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/SocialCalendar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener">Newsletter Builder</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://newsletter.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener">Source</a></div>
-        <p>A browser-only email newsletter builder that exports drop-in Constant Contact HTML. The saved file <em>is</em> the project format &mdash; reopen it later to keep editing.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/newsletter.webp">
+            <img src="/img/toolkit/newsletter.jpg" alt="The newsletter builder with its block palette and live preview" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Newsletter Builder</h3>
+          <p>A browser-only email newsletter builder that exports drop-in Constant Contact HTML. The saved file <em>is</em> the project format &mdash; reopen it later to keep editing.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://newsletter.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/NewsletterBuilder" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener">Acquia DAM Photo Embed</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://portalphotos.labs.trlibrary.com/demo.html" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener">Source</a></div>
-        <p>Renders any Acquia DAM press portal as native gallery tiles on your own page instead of a fixed-height iframe. Snapshots the portal on a schedule and caches thumbnails, because the vendor's preview URLs are pre-signed and expire. Add a portal to one config file.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/dam-embed.webp">
+            <img src="/img/toolkit/dam-embed.jpg" alt="A press portal rendered as native gallery tiles" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">DAM Photo Embed</h3>
+          <p>Renders any Acquia DAM press portal as native gallery tiles instead of a fixed-height iframe. Snapshots the portal on a schedule and caches thumbnails, because the vendor&rsquo;s preview URLs expire.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://portalphotos.labs.trlibrary.com/demo.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/AcquiaDAM-Photo-Embed" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/HoursEmbed" target="_blank" rel="noopener">Hours Embed</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/HoursEmbed/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/HoursEmbed" target="_blank" rel="noopener">Source</a></div>
-        <p>Publishes opening hours from one site onto another that can't read it directly. A scheduled job scrapes server-side, where the cross-origin block doesn't apply, and commits static JSON. If parsing ever fails, the last good file stays published.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/hours-embed.webp">
+            <img src="/img/toolkit/hours-embed.jpg" alt="The hours embed shown in light and dark themes" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Hours Embed</h3>
+          <p>Publishes opening hours from one site onto another that can&rsquo;t read it directly. A scheduled job scrapes server-side, where the cross-origin block doesn&rsquo;t apply. If parsing fails, the last good file stays published.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://theodore-roosevelt-presidential-library.github.io/HoursEmbed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/HoursEmbed" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
       </div>
     </div>
@@ -199,51 +379,102 @@
     <div class="tool-group">
       <h2>Collections &amp; interpretation</h2>
       <p class="muted">Getting people closer to the objects.</p>
-      <div class="tool-list">
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener">Collections Search Widget</a><span class="tool-badge">Adaptable</span></h3>
-        <div class="tool-links"><a href="https://trc.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener">Source</a></div>
-        <p>Search and a relationship graph over 139,714 archival items across 52 partner institutions. Adds the autocomplete a controlled vocabulary needs, and caches the taxonomy as static JSON so the source archive's server carries no load.</p>
+      <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/collections.webp">
+            <img src="/img/toolkit/collections.jpg" alt="The collections search widget with autocomplete over 139,714 items" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Adaptable</span>
+          <h3 style="margin-top:.5rem">Collections Search</h3>
+          <p>Search and a relationship graph over 139,714 archival items across 52 partner institutions. Adds the autocomplete a controlled vocabulary needs, and caches the taxonomy so the source archive carries no load.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://trc.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRC-Widget" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener">Anniversaries</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://theodore-roosevelt-presidential-library.github.io/TRAnniversaries/" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener">Source</a></div>
-        <p>Tracks upcoming five-year milestone anniversaries of events you define, for commemoration and content planning. Swap one data file for your own institution's dates.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/anniversaries.webp">
+            <img src="/img/toolkit/anniversaries.jpg" alt="The anniversaries view listing upcoming milestone dates by year" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Anniversaries</h3>
+          <p>Tracks upcoming five-year milestone anniversaries of events you define, for commemoration and content planning. Swap one data file for your own institution&rsquo;s dates.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://theodore-roosevelt-presidential-library.github.io/TRAnniversaries/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRAnniversaries" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener">Panorama Viewer</a><span class="tool-badge">Fork &amp; go</span></h3>
-        <div class="tool-links"><a href="https://elkhorn.labs.trlibrary.com" target="_blank" rel="noopener">Live</a> · <a href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener">Source</a></div>
-        <p>Full-screen 360&deg; panorama viewing for a historic site. Drop your equirectangular images in a folder and duplicate one HTML file per view. There is no logic to change.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/panoramas.webp">
+            <img src="/img/toolkit/panoramas.jpg" alt="A 360-degree panorama of the Elkhorn Ranch site" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Fork &amp; go</span>
+          <h3 style="margin-top:.5rem">Panorama Viewer</h3>
+          <p>Full-screen 360&deg; panorama viewing for a historic site. Drop your equirectangular images in a folder and duplicate one HTML file per view. There is no logic to change.</p>
+        </div>
+        <div class="tool-actions">
+          <a class="btn-tool btn-tool-live" href="https://elkhorn.labs.trlibrary.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Try it live</a>
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/elkhorn-panos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
-      <div class="tool">
-        <h3><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRRetroGame" target="_blank" rel="noopener">Retro Game</a><span class="tool-badge">Reference</span></h3>
-        <div class="tool-links"><a href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRRetroGame" target="_blank" rel="noopener">Source</a></div>
-        <p>A historical figure's life as a ten-chapter 2D platformer, each ending in a mini-game and a learning recap. All audio synthesized at runtime with Web Audio &mdash; no sound files. A working reference for browser-game engineering in a museum context.</p>
+      <div class="tool-card">
+        <div class="tool-shot">
+          <picture>
+            <source type="image/webp" srcset="/img/toolkit/retro-game.webp">
+            <img src="/img/toolkit/retro-game.jpg" alt="The Rough Rider game title screen" loading="lazy" width="800" height="500">
+          </picture>
+        </div>
+        <div class="tool-body">
+          <span class="tool-badge">Reference</span>
+          <h3 style="margin-top:.5rem">Retro Game</h3>
+          <p>A historical figure&rsquo;s life as a ten-chapter 2D platformer, each ending in a mini-game and a learning recap. All audio synthesized at runtime &mdash; no sound files. A working reference for browser-game engineering in a museum context.</p>
+        </div>
+        <div class="tool-actions">
+          
+          <a class="btn-tool btn-tool-src" href="https://github.com/Theodore-Roosevelt-Presidential-Library/TRRetroGame" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Source</a>
+        </div>
       </div>
       </div>
     </div>
 
-    <h2 style="margin-top:3rem">How to read the labels</h2>
-    <ul>
-      <li><strong>Fork &amp; go</strong> &mdash; nothing institution-specific in the code. Change a data or config file and it is yours.</li>
-      <li><strong>Adaptable</strong> &mdash; the engine is generic but you will need to point it at your own content, styles or data source.</li>
-      <li><strong>ACME / Hootsuite</strong> &mdash; genuinely useful, but only if you already run that platform.</li>
-      <li><strong>Reference</strong> &mdash; not built to be reused wholesale, but worth reading if you are building something similar.</li>
-    </ul>
+    <div style="max-width:70ch">
+      <h2 style="margin-top:3.5rem">How to read the labels</h2>
+      <ul>
+        <li><strong>Fork &amp; go</strong> &mdash; nothing institution-specific in the code. Change a data or config file and it is yours.</li>
+        <li><strong>Adaptable</strong> &mdash; the engine is generic, but you will need to point it at your own content, styles or data source.</li>
+        <li><strong>Needs ACME / Hootsuite</strong> &mdash; genuinely useful, but only if you already run that platform.</li>
+        <li><strong>Reference</strong> &mdash; not built to be reused wholesale, but worth reading if you are building something similar.</li>
+      </ul>
 
-    <h2>The honest caveats</h2>
-    <p>These were built for one institution and released because they might help another &mdash; not packaged as products. So:</p>
-    <ul>
-      <li>There is no support, no roadmap and no guarantee of maintenance. The licence is MIT; the warranty is none.</li>
-      <li>Most READMEs document how the tool works for us, not a step-by-step setup for you. Expect to read some code.</li>
-      <li>Hosting is free. A couple of tools do have small running costs &mdash; the review pipeline pays for scraping and a small language model, a few dollars a year.</li>
-      <li>Brand assets, fonts and collection content are deliberately <em>not</em> included. The code is yours; the Roosevelt material is not.</li>
-    </ul>
+      <h2>The honest caveats</h2>
+      <p>These were built for one institution and released because they might help another &mdash; not packaged as products. So:</p>
+      <ul>
+        <li>There is no support, no roadmap and no guarantee of maintenance. The licence is MIT; the warranty is none.</li>
+        <li>Most READMEs document how the tool works for us, not a step-by-step setup for you. Expect to read some code.</li>
+        <li>Hosting is free. A couple of tools do have small running costs &mdash; the review pipeline pays for scraping and a small language model, a few dollars a year.</li>
+        <li>Brand assets, fonts and collection content are deliberately <em>not</em> included. The code is yours; the Roosevelt material is not.</li>
+        <li>Three previews above are labelled cards rather than screenshots &mdash; those tools render their content live in the browser, which automated capture can&rsquo;t wait out. Use the live links.</li>
+      </ul>
 
-    <h2>If you use one</h2>
-    <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a>.</p>
+      <h2>If you use one</h2>
+      <p>I would genuinely like to know &mdash; partly out of curiosity, mostly because knowing which of these are useful to other institutions is the only way to know which are worth improving. Issues and pull requests are welcome on any repository, and you can reach me at <a href="mailto:mkbriney@gmail.com">mkbriney@gmail.com</a>.</p>
 
-    <p class="muted" style="margin-top:2rem">All source: <a href="https://github.com/orgs/Theodore-Roosevelt-Presidential-Library/repositories" target="_blank" rel="noopener">the Theodore Roosevelt Presidential Library GitHub organization</a>. Related reading: <a href="/projects/trpl-labs/">the architecture behind these tools</a>.</p>
+      <p class="muted" style="margin-top:2rem">All source: <a href="https://github.com/orgs/Theodore-Roosevelt-Presidential-Library/repositories" target="_blank" rel="noopener">the Theodore Roosevelt Presidential Library GitHub organization</a>. Related reading: <a href="/projects/trpl-labs/">the architecture behind these tools</a>.</p>
+    </div>
 
   </div>
 </section>
