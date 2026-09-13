@@ -69,6 +69,18 @@ BODY = '''
         </div>
       </a>
 
+
+      <div class="award-card">
+        <div class="award-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M5 4H3v2a3 3 0 0 0 3 3M19 4h2v2a3 3 0 0 1-3 3"/></svg>
+        </div>
+        <div class="award-body">
+          <p class="award-name">Silver ADDY Award</p>
+          <p class="award-meta">American Advertising Federation, North Dakota &middot; 2024</p>
+          <p class="award-note">Film, Video &amp; Sound / Branded Content for <em>TRPL Year in Review</em> &mdash; the Theodore Roosevelt Presidential Library&rsquo;s first advertising honor.</p>
+        </div>
+      </div>
+
     </div>
 
     <h2 style="font-size:1.1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);font-family:Inter,sans-serif;font-weight:700;margin:3.25rem 0 1.25rem;">Film &amp; Executive Producer credits</h2>
@@ -103,10 +115,19 @@ BODY = '''
     <div class="press-index">
 
       <a class="press-entry" href="https://www.whitehousehistory.org/presidential-sites-summit/presidential-sites-summit-schedule-2026" target="_blank" rel="noopener">
-        <span class="press-type">Upcoming</span>
+        <span class="press-type">Panel</span>
         <span class="press-main">
           <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
-          <span class="press-desc">Panelist on &ldquo;Digital Frontiers: Integrating Technology for Post-250 Engagement,&rdquo; with Elizabeth Merritt (American Alliance of Museums) and Stephen Platenberg (Cortina Productions) &mdash; 2026.</span>
+          <span class="press-desc">&ldquo;Funding and Sustaining the Mission: Partnerships and Philanthropy&rdquo; &mdash; panelist in the Theodore Roosevelt Presidential Library board chair&rsquo;s seat, moderated by <strong>David M. Rubenstein</strong> (The Carlyle Group), with Bank of America, Boeing Global Engagement, and the former CEO of America250. Mayflower Hotel, Washington, D.C., September&nbsp;10, 2026.</span>
+        </span>
+        <span class="press-action">Details &rarr;</span>
+      </a>
+
+      <a class="press-entry" href="https://www.whitehousehistory.org/presidential-sites-summit/presidential-sites-summit-schedule-2026" target="_blank" rel="noopener">
+        <span class="press-type">Panel</span>
+        <span class="press-main">
+          <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
+          <span class="press-desc">&ldquo;Digital Frontiers: Integrating Technology for Post-250 Engagement&rdquo; &mdash; panelist, moderated by <strong>Teresa Carlson</strong> (Global Head of Public Sector, Anthropic), with Elizabeth Merritt (Center for the Future of Museums, American Alliance of Museums), Stephen Platenberg (Cortina Productions), and Chris Cummings (Iconic). Washington, D.C., September&nbsp;10, 2026.</span>
         </span>
         <span class="press-action">Details &rarr;</span>
       </a>
