@@ -137,7 +137,7 @@ BODY = '''
         <span class="press-type">Keynote</span>
         <span class="press-main">
           <span class="press-outlet">American Conservation Coalition &middot; ACC Summit 2025</span>
-          <span class="press-desc">Keynote on Theodore Roosevelt&rsquo;s conservation legacy and the building of his presidential library (2025).</span>
+          <span class="press-desc">Keynote on Theodore Roosevelt&rsquo;s conservation legacy and the building of his presidential library &mdash; Montgomery Bell State Park, Tennessee, August 2025.</span>
         </span>
         <span class="press-action">Watch &rarr;</span>
       </a>
