@@ -217,6 +217,7 @@ ROLES = [
             "Served on the leadership team responsible for developing the Library's operations plan, including business and earned-revenue components, using benchmarking and planning data from peer presidential and cultural institutions.",
             "Led a daily historical storytelling initiative focused on Theodore Roosevelt's life and legacy, tripling social media engagement while using performance data to inform interpretation and audience engagement.",
             "Direct and manage all press relations for the Presidential Library, overseeing an external agency and serving as institutional spokesperson. Built the press center, press kit, and open photo portal behind opening coverage in the AP, Reuters, the New York Times, the Wall Street Journal, the Washington Post, NPR, CNN, and Architectural Digest.",
+            "Co-authored the published framework behind the Library's AI collections work — \"The Living Library,\" with Microsoft's AI for Good Lab (arXiv:2609.09368, September 2026) — documenting a transferable four-layer model for conversational access to archival collections.",
             "Represented the Library on two panels at the 2026 Presidential Sites Summit (White House Historical Association) — taking the board chair's seat on \"Funding and Sustaining the Mission,\" moderated by David M. Rubenstein with Bank of America, Boeing and the former CEO of America250, and serving on \"Digital Frontiers,\" the sector's technology panel, moderated by Anthropic's Global Head of Public Sector.",
             "Built the Library's institutional video program, recognized with a 2024 Silver ADDY (American Advertising Federation, North Dakota) in Film, Video &amp; Sound / Branded Content for <i>TRPL Year in Review</i>.",
             "Managed opening-week visual coverage — three Getty photographers, two photo editors, an in-house photographer, and a documentary team — producing 2,400+ press assets published without gatekeeping.",
@@ -303,6 +304,12 @@ ADDITIONAL = [
      "American International Automobile Dealers Association — Alexandria, VA"),
     ("Web Properties Manager",
      "DCI Group — Washington, DC"),
+]
+
+PUBLICATIONS = [
+    ("Wang, P., Ronchi Darre, L., <b>Briney, M.</b>, et al. \u201cThe Living Library: Transforming Archival "
+     "Collections into Conversational Knowledge Systems \u2014 Lessons from the Theodore Roosevelt Presidential "
+     "Library.\u201d arXiv:2609.09368 [cs.CV], September 2026. With Microsoft\u2019s AI for Good Lab."),
 ]
 
 EDUCATION = ("Bachelor of Arts, Interdisciplinary Studies",
@@ -422,6 +429,11 @@ def build_pdf(out_path):
         story.append(Paragraph(title, S["role_title"]))
         story.append(Paragraph(company, S["role_company"]))
         story.append(Spacer(1, 4))
+
+    # --- Publications
+    story += h2("Publications")
+    for pub in PUBLICATIONS:
+        story.append(Paragraph(f"<font color='#a06b2c'>\u25aa</font>&nbsp;&nbsp;{pub}", S["board"]))
 
     # --- Education
     story += h2("Education")
