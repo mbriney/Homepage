@@ -110,6 +110,16 @@ BODY = '''
   <p>That is harder to build than a system that simply refuses to discuss Roosevelt&rsquo;s record on race and empire. It is also the only version worth having at a presidential library.</p>
   <p>One thing the corpus taught us: the collection is far stranger and better than a catalogue suggests. It holds roughly a hundred kinds of object &mdash; letters and telegrams, essays, speeches, sheet music, diary entries, even napkins. Among them is Roosevelt&rsquo;s diary entry for the day his wife and his mother died in the same house, which reads, in full, as a single large <strong>X</strong>. No summarization improves on that. The system&rsquo;s job is to put you in front of it.</p>
 
+  <div class="gallery cols-1">
+    <figure>
+      <picture>
+        <source type="image/webp" srcset="/img/projects/tr-llm/04.webp">
+        <img src="/img/projects/tr-llm/04.jpg" alt="Doris Kearns Goodwin and Library staff examining Roosevelt artifacts laid out on a table in the collections workroom, including a 1912 Progressive Party battle flag" loading="lazy" width="1600" height="900">
+      </picture>
+      <figcaption class="gallery-caption">The collections workroom &mdash; a 1912 Progressive battle flag, a branding iron, campaign ephemera, and the file boxes behind them. Everything the system can answer from starts here, on a table.</figcaption>
+    </figure>
+  </div>
+
   <h2>What the evaluation showed</h2>
   <p>The system is measured rather than asserted, against a fixed test set with published baselines:</p>
   <ul>
@@ -132,6 +142,19 @@ BODY = '''
 
   <h2>Off the screen: AI TR in the gallery</h2>
   <p>The step that changed the project&rsquo;s public profile was moving it off the web. In the permanent exhibition, visitors hold a spoken conversation with Theodore Roosevelt &mdash; the same grounded retrieval, the same refusal to speculate past 1919, delivered as a person in a room rather than text in a box.</p>
+  <div class="film film--portrait" style="margin:1.75rem 0">
+    <div class="film-video">
+      <iframe src="https://www.youtube-nocookie.com/embed/MJu_-hiK_qk" title="Doris Kearns Goodwin meets Teddy Roosevelt" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="film-body">
+      <div class="film-head">
+        <h3 class="film-title">Doris Kearns Goodwin meets Theodore Roosevelt</h3>
+        <span class="film-meta">Microsoft &middot; July 2026 &middot; 1:05</span>
+      </div>
+      <p class="muted" style="margin:.5rem 0 0">The historian who has spent a career with Roosevelt&rsquo;s papers, in conversation with the avatar built on them &mdash; filmed during a visit with Microsoft Vice Chair and President Brad Smith. She is the hardest audience this system has: she knows when it is wrong.</p>
+    </div>
+  </div>
+
   <p>It became the most-covered single feature of the opening. <em>Forbes</em> ran &ldquo;<a href="https://www.forbes.com/sites/lesliekatz/2026/07/01/ai-powered-theodore-roosevelt-is-ready-to-answer-your-questions/" target="_blank" rel="noopener">AI-Powered Theodore Roosevelt Is Ready To Answer Your Questions</a>.&rdquo; When the President spoke with it during the <a href="/projects/trpl-grand-opening-media/">dedication tour</a>, <a href="https://thehill.com/homenews/administration/5950575-trump-ai-teddy-roosevelt-chat/" target="_blank" rel="noopener"><em>The Hill</em></a> and <a href="https://newrepublic.com/post/212650/donald-trump-teddy-roosevelt-ai-conversation" target="_blank" rel="noopener"><em>The New Republic</em></a> both covered it &mdash; the latter under the headline &ldquo;People Think Trump Hallucinated Teddy Roosevelt. The Truth Is Weirder.&rdquo; A science-ethics publication used the exhibit to ask whether <a href="https://www.acsh.org/news/2026/07/10/talking-dead-ethical-50222" target="_blank" rel="noopener">talking with the dead is ethical at all</a>.</p>
   <p>That last one is the fair question, and the reason the guardrails were built first. An institution that animates a historical figure takes on a duty not to put words in his mouth. Every constraint above &mdash; cite or say nothing, never fall back on general knowledge, never speculate past the date of death &mdash; exists so that the answer to &ldquo;is this ethical?&rdquo; can be something more substantial than &ldquo;we were careful.&rdquo;</p>
 

@@ -785,6 +785,8 @@ a.press-entry:hover .press-action { color: var(--gold); }
   border: 0;
   display: block;
 }
+.film--portrait { max-width: 420px; margin-left: auto; margin-right: auto; }
+.film--portrait .film-video { aspect-ratio: 9 / 16; }
 .film-body { padding: 1.5rem 1.75rem 1.75rem; }
 .film-head {
   display: flex; flex-wrap: wrap;
