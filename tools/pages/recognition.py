@@ -129,22 +129,24 @@ BODY = '''
 
     <div class="press-index">
 
-      <a class="press-entry" href="https://www.whitehousehistory.org/presidential-sites-summit/presidential-sites-summit-schedule-2026" target="_blank" rel="noopener">
+      <a class="press-entry" href="https://www.youtube.com/watch?v=uESbzI0CqmQ" target="_blank" rel="noopener">
+        <img class="press-thumb" src="/img/recognition/pss-2026-funding.jpg" alt="Matt Briney on the Funding and Sustaining the Mission panel with David Rubenstein at the 2026 Presidential Sites Summit" loading="lazy">
         <span class="press-type">Panel</span>
         <span class="press-main">
           <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
-          <span class="press-desc">&ldquo;Funding and Sustaining the Mission: Partnerships and Philanthropy&rdquo; &mdash; panelist in the Theodore Roosevelt Presidential Library board chair&rsquo;s seat, moderated by <strong>David M. Rubenstein</strong> (The Carlyle Group), with Bank of America, Boeing Global Engagement, and the former CEO of America250. Mayflower Hotel, Washington, D.C., September&nbsp;10, 2026.</span>
+          <span class="press-desc">&ldquo;Funding and Sustaining the Mission: Partnerships and Philanthropy&rdquo; &mdash; panelist in the Theodore Roosevelt Presidential Library board chair&rsquo;s seat, moderated by <strong>David M. Rubenstein</strong> (The Carlyle Group), with Lawrence Di Rita (Bank of America), Lindsay Leonard (Boeing Global Engagement), and Jennifer Condon (former CEO, America250). Mayflower Hotel, Washington, D.C., September&nbsp;10, 2026. Aired live on <a href="https://www.c-span.org/program/the-presidency/white-house-historical-association-presidential-sites-summit/685004?start=4316" target="_blank" rel="noopener">C-SPAN</a>.</span>
         </span>
-        <span class="press-action">Details &rarr;</span>
+        <span class="press-action">Watch &rarr;</span>
       </a>
 
-      <a class="press-entry" href="https://www.whitehousehistory.org/presidential-sites-summit/presidential-sites-summit-schedule-2026" target="_blank" rel="noopener">
+      <a class="press-entry" href="https://www.youtube.com/watch?v=TWYhr5eXNJo" target="_blank" rel="noopener">
+        <img class="press-thumb" src="/img/recognition/pss-2026-digital-frontiers.jpg" alt="Matt Briney on the Digital Frontiers panel moderated by Teresa Carlson at the 2026 Presidential Sites Summit" loading="lazy">
         <span class="press-type">Panel</span>
         <span class="press-main">
           <span class="press-outlet">Presidential Sites Summit 2026 &middot; White House Historical Association</span>
-          <span class="press-desc">&ldquo;Digital Frontiers: Integrating Technology for Post-250 Engagement&rdquo; &mdash; panelist, moderated by <strong>Teresa Carlson</strong> (Global Head of Public Sector, Anthropic), with Elizabeth Merritt (Center for the Future of Museums, American Alliance of Museums), Stephen Platenberg (Cortina Productions), and Chris Cummings (Iconic). Washington, D.C., September&nbsp;10, 2026.</span>
+          <span class="press-desc">&ldquo;Digital Frontiers: Integrating Technology for Post-250 Engagement&rdquo; &mdash; panelist on the Library&rsquo;s AI collections work and the ethics of a conversational Theodore Roosevelt, moderated by <strong>Teresa Carlson</strong> (Global Head of Public Sector, Anthropic), with Franck Cordes (National Archives Foundation), Stephen Platenberg (Cortina Productions), and Chris Cummings (Iconic). Mayflower Hotel, Washington, D.C., September&nbsp;10, 2026.</span>
         </span>
-        <span class="press-action">Details &rarr;</span>
+        <span class="press-action">Watch &rarr;</span>
       </a>
 
       <a class="press-entry" href="https://www.youtube.com/watch?v=J82hjGTuUZA" target="_blank" rel="noopener">
